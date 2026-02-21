@@ -1,0 +1,33 @@
+.columns-service > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns-service img {
+  width: 100%;
+}
+
+.columns-service > div > div {
+  order: 1;
+}
+
+.columns-service > div > .columns-service-img-col {
+  order: 0;
+}
+
+.columns-service > div > .columns-service-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns-service > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns-service > div > div {
+    flex: 1;
+    order: unset;
+  }
+}

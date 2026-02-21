@@ -1,0 +1,39 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": ["https://www.hyundai.com.br/"],
+      "description": "Hyundai Brazil homepage with hero carousel, vehicle showroom, promotional mosaic, offers, CTA, and services hub",
+      "blocks": [
+        {
+          "name": "carousel-promo",
+          "instances": [".hyundai-carousel-container"]
+        },
+        {
+          "name": "hero-product",
+          "instances": [".kona-video-container, .vehicle-video-hero"]
+        },
+        {
+          "name": "cards-vehicle",
+          "instances": [".vehicle-showroom"]
+        },
+        {
+          "name": "cards-promo",
+          "instances": [".mosaic"]
+        },
+        {
+          "name": "cards-offer",
+          "instances": [".offers-slider"]
+        },
+        {
+          "name": "columns-cta",
+          "instances": [".call-page"]
+        },
+        {
+          "name": "columns-service",
+          "instances": [".link-hub"]
+        }
+      ]
+    }
+  ]
+}
