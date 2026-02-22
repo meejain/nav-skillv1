@@ -1,3 +1,13 @@
+/* Full-bleed: break out of section constraints */
+.carousel-promo-container {
+  margin: 0;
+}
+
+.carousel-promo-container .carousel-promo-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
 .carousel-promo .carousel-promo-slides-container {
   position: relative;
 }
@@ -29,7 +39,7 @@
   justify-content: center;
   position: relative;
   width: 100%;
-  min-height: min(50vw, calc(100dvh - var(--header-height)));
+  min-height: min(50vw, 100dvh);
 }
 
 .carousel-promo .carousel-promo-slide:has(.carousel-promo-slide-content[data-align='center']) {
