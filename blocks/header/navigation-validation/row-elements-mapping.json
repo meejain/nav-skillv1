@@ -1,0 +1,72 @@
+{
+  "rows": [
+    {
+      "index": 0,
+      "elements": [
+        {
+          "id": "row-0-hamburger",
+          "label": "Hamburger icon",
+          "type": "hamburger-icon",
+          "hoverBehavior": { "description": "no hover effect", "hasEffect": false },
+          "clickBehavior": { "description": "Opens full-width tools panel with 4 icon cards + 8 text links. Header turns solid white. Hamburger morphs to cross (CSS transform 0.3s ease-out).", "hasEffect": true, "opensPanel": true }
+        },
+        {
+          "id": "row-0-logo",
+          "label": "Hyundai logo",
+          "type": "logo-text",
+          "hoverBehavior": { "description": "no hover effect", "hasEffect": false },
+          "clickBehavior": { "description": "Navigates to homepage", "hasEffect": true, "navigatesTo": "/" }
+        },
+        {
+          "id": "row-0-nav-proprietarios",
+          "label": "Proprietários",
+          "type": "nav-link-with-dropdown",
+          "hoverBehavior": { "description": "Opens dropdown panel with 2 icon cards + 7 text links. Header turns solid white. Teal underline under trigger.", "hasEffect": true, "opensPanel": true },
+          "clickBehavior": { "description": "Navigates to /proprietarios.html", "hasEffect": true, "navigatesTo": "/proprietarios.html" }
+        },
+        {
+          "id": "row-0-nav-servicos",
+          "label": "Serviços",
+          "type": "nav-button-with-dropdown",
+          "hoverBehavior": { "description": "Opens dropdown panel with 2 icon cards + 1 text link. Header turns solid white. Teal underline under trigger.", "hasEffect": true, "opensPanel": true },
+          "clickBehavior": { "description": "No navigation (span element)", "hasEffect": false }
+        },
+        {
+          "id": "row-0-nav-veiculos",
+          "label": "Veículos",
+          "type": "nav-button-with-megamenu",
+          "hoverBehavior": { "description": "Opens megamenu panel with featured vehicle area (image + specs) + 5 category tabs (Todos, Suv, Hatchback, Sedan, Utilitario) + 9 vehicle cards in grid. Featured area updates on vehicle card hover. Header turns solid white. Teal underline under trigger.", "hasEffect": true, "opensPanel": true },
+          "clickBehavior": { "description": "No navigation (span element)", "hasEffect": false }
+        },
+        {
+          "id": "row-0-nav-concessionarias",
+          "label": "Concessionárias",
+          "type": "nav-link-with-dropdown",
+          "hoverBehavior": { "description": "Opens dropdown panel with 2 icon cards + dealer search form. Header turns solid white. Teal underline under trigger.", "hasEffect": true, "opensPanel": true },
+          "clickBehavior": { "description": "Navigates to /concessionarias.html", "hasEffect": true, "navigatesTo": "/concessionarias.html" }
+        },
+        {
+          "id": "row-0-nav-alugar",
+          "label": "Alugar",
+          "type": "nav-link",
+          "hoverBehavior": { "description": "no dropdown, no hover effect beyond cursor", "hasEffect": false },
+          "clickBehavior": { "description": "Navigates to /hyundai-assina.html", "hasEffect": true, "navigatesTo": "/hyundai-assina.html" }
+        },
+        {
+          "id": "row-0-nav-comprar",
+          "label": "Comprar",
+          "type": "nav-link-with-dropdown",
+          "hoverBehavior": { "description": "Opens dropdown panel with 2 icon cards (Ofertas, Estoque - Pronta Entrega) + 7 text links (Click to Buy, Hyundai Semprenovos, Monte o seu, Vendas Diretas e PcD, Test Drive, Financiamentos, Compare seu Hyundai). Header turns solid white. Teal underline under trigger.", "hasEffect": true, "opensPanel": true },
+          "clickBehavior": { "description": "Navigates to /monte-o-seu.html", "hasEffect": true, "navigatesTo": "/monte-o-seu.html" }
+        },
+        {
+          "id": "row-0-cta",
+          "label": "Ofertas",
+          "type": "cta-button",
+          "hoverBehavior": { "description": "Background color darkens slightly on hover", "hasEffect": true },
+          "clickBehavior": { "description": "Navigates to /ofertas.html", "hasEffect": true, "navigatesTo": "/ofertas.html" }
+        }
+      ]
+    }
+  ]
+}

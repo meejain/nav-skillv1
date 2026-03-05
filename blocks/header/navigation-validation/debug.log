@@ -1,0 +1,22 @@
+[2026-03-04T23:45:54.894Z] 🔵 [WORKFLOW] Phase 1 complete: 1 row detected (manual override - React SPA has no <header> tag)
+[2026-03-04T23:45:54.896Z] ✅ [SCRIPT:detect-header-rows] [PASS] Manual override - phase-1-row-detection.json written
+[2026-03-04T23:54:29.859Z] ✅ [WORKFLOW] Phase 2 complete: Row element mapping written — 1 row, 9 elements, 5 dropdowns, hamburger icon with CSS transform animation
+[2026-03-04T23:54:29.861Z] ✅ [WORKFLOW] Header appearance mapping written — transparent→solid-white on interaction
+[2026-03-05T00:00:26.015Z] ✅ [WORKFLOW] Phase 3 complete: Megamenu analysis — 6 dropdown panels, 62 items total, Veículos has featured area + category tabs + 9 vehicle cards
+[2026-03-05T00:00:26.017Z] ✅ [WORKFLOW] megamenu-mapping.json written with deep per-item analysis
+[2026-03-05T00:04:09.597Z] 🔵 [SCRIPT:validate-nav-content] [START] validate-nav-content.js invoked — navFile=content/nav.plain.html, validationDir=blocks/header/navigation-validation
+[2026-03-05T00:04:09.600Z] ✅ [SCRIPT:validate-nav-content] [PASS] PASSED — 3 requirement(s), 21 ref(s), 21 on disk (exist + size>0)
+[2026-03-05T00:42:15.222Z] 🔵 [SCRIPT:compare-megamenu-behavior] [START] compare-megamenu-behavior.js invoked — source=blocks/header/navigation-validation/megamenu-mapping.json, migrated=blocks/header/navigation-validation/migrated-megamenu-mapping.json, output=blocks/header/navigation-validation/megamenu-behavior-register.json
+[2026-03-05T00:42:15.225Z] ✅ [SCRIPT:compare-megamenu-behavior] [PASS] PASSED — 62 items, all validated. Hover=62/62, Click=62/62, Styling=62/62
+[2026-03-05T00:44:50.261Z] 🔵 [SCRIPT:compare-row-elements-behavior] [START] compare-row-elements-behavior.js — source=blocks/header/navigation-validation/row-elements-mapping.json, migrated=blocks/header/navigation-validation/migrated-row-elements-mapping.json, output=blocks/header/navigation-validation/row-elements-behavior-register.json
+[2026-03-05T00:44:50.263Z] 🚫 [SCRIPT:compare-row-elements-behavior] [BLOCK] FAILED — 2/9 failed: row-0-nav-veiculos, row-0-nav-comprar
+[2026-03-05T00:45:18.577Z] 🔵 [SCRIPT:compare-row-elements-behavior] [START] compare-row-elements-behavior.js — source=blocks/header/navigation-validation/row-elements-mapping.json, migrated=blocks/header/navigation-validation/migrated-row-elements-mapping.json, output=blocks/header/navigation-validation/row-elements-behavior-register.json
+[2026-03-05T00:45:18.579Z] ✅ [SCRIPT:compare-row-elements-behavior] [PASS] PASSED — 9 row elements, all validated. Hover=9, Click=9
+[2026-03-05T00:45:51.291Z] 🔵 [SCRIPT:compare-header-appearance] [START] compare-header-appearance.js — source=blocks/header/navigation-validation/header-appearance-mapping.json, migrated=blocks/header/navigation-validation/migrated-header-appearance-mapping.json, output=blocks/header/navigation-validation/header-appearance-register.json
+[2026-03-05T00:45:51.293Z] ✅ [SCRIPT:compare-header-appearance] [PASS] Header appearance validated — source and migrated match
+[2026-03-05T00:46:41.444Z] 🔵 [SCRIPT:compare-structural-schema] [START] compare-structural-schema.js invoked — threshold=95, outputRegister=blocks/header/navigation-validation/schema-register.json
+[2026-03-05T00:46:41.446Z] 🚫 [SCRIPT:compare-structural-schema] [BLOCK] FAILED — similarity=83% (< 95%), mismatches: megamenu.columns[1].hasImages: source=false migrated=true
+[2026-03-05T00:47:09.640Z] 🔵 [SCRIPT:compare-structural-schema] [START] compare-structural-schema.js invoked — threshold=95, outputRegister=blocks/header/navigation-validation/schema-register.json
+[2026-03-05T00:47:09.641Z] ✅ [SCRIPT:compare-structural-schema] [PASS] PASSED — similarity=100% (>= 95%), mismatches=0, register written to blocks/header/navigation-validation/schema-register.json
+[2026-03-05T00:47:49.019Z] 🔵 [SCRIPT:validate-nav-content] [START] validate-nav-content.js invoked — navFile=content/nav.plain.html, validationDir=blocks/header/navigation-validation
+[2026-03-05T00:47:49.021Z] ✅ [SCRIPT:validate-nav-content] [PASS] PASSED — 3 requirement(s), 21 ref(s), 21 on disk (exist + size>0)

@@ -1,0 +1,29 @@
+{
+  "items": [
+    {
+      "id": "row-0",
+      "label": "Row 0",
+      "status": "validated",
+      "sourceMatch": true
+    },
+    {
+      "id": "megamenu",
+      "label": "Megamenu",
+      "status": "validated",
+      "sourceMatch": true
+    },
+    {
+      "id": "megamenu-column-0",
+      "label": "Megamenu column 0",
+      "status": "validated",
+      "sourceMatch": true
+    },
+    {
+      "id": "megamenu-column-1",
+      "label": "Megamenu column 1",
+      "status": "validated",
+      "sourceMatch": true
+    }
+  ],
+  "allValidated": true
+}

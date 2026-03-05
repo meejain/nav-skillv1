@@ -1,0 +1,1383 @@
+{
+  "items": [
+    {
+      "id": "trigger-0",
+      "label": "Proprietários",
+      "type": "nav-trigger",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-panel-layout",
+      "label": "Panel layout (Proprietários)",
+      "type": "panel-layout",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "sourceDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\"}",
+        "migratedDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\",\"viewportsTested\":[{\"viewportWidth\":1440,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1440,\"contained\":true},{\"viewportWidth\":1920,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1920,\"contained\":true},{\"viewportWidth\":1366,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1366,\"contained\":true},{\"viewportWidth\":1280,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1280,\"contained\":true},{\"viewportWidth\":1024,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1024,\"contained\":true}]}"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-0",
+      "label": "Bluelink",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-1",
+      "label": "Assistência 24H",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-2",
+      "label": "Programa Meu Hyundai",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-3",
+      "label": "Acessórios HB20",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-4",
+      "label": "Garantia",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-5",
+      "label": "Acessórios CRETA",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-6",
+      "label": "Manuais",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-7",
+      "label": "Agendamento de Serviço",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-0-item-8",
+      "label": "Proconve",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-1",
+      "label": "Serviços",
+      "type": "nav-trigger",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-1-panel-layout",
+      "label": "Panel layout (Serviços)",
+      "type": "panel-layout",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "sourceDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\"}",
+        "migratedDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\",\"viewportsTested\":[{\"viewportWidth\":1440,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1440,\"contained\":true},{\"viewportWidth\":1920,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1920,\"contained\":true},{\"viewportWidth\":1366,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1366,\"contained\":true},{\"viewportWidth\":1280,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1280,\"contained\":true},{\"viewportWidth\":1024,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1024,\"contained\":true}]}"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-1-item-0",
+      "label": "Planos de Manutenção",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-1-item-1",
+      "label": "myHyundaiCare Revisões Planejadas",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-1-item-2",
+      "label": "Recall",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2",
+      "label": "Veículos",
+      "type": "nav-trigger",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-panel-layout",
+      "label": "Panel layout (Veículos)",
+      "type": "panel-layout",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "sourceDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\"}",
+        "migratedDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\",\"viewportsTested\":[{\"viewportWidth\":1440,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1440,\"contained\":true},{\"viewportWidth\":1920,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1920,\"contained\":true},{\"viewportWidth\":1366,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1366,\"contained\":true},{\"viewportWidth\":1280,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1280,\"contained\":true},{\"viewportWidth\":1024,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1024,\"contained\":true}]}"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-0",
+      "label": "Novo CRETA",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-1",
+      "label": "HB20",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-2",
+      "label": "Novo CRETA N Line",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-3",
+      "label": "HB20S",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-4",
+      "label": "Tucson",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-5",
+      "label": "KONA Híbrido",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-6",
+      "label": "Palisade",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-7",
+      "label": "IONIQ 5",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-item-8",
+      "label": "HR",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-tab-0",
+      "label": "Todos (9)",
+      "type": "category-tab",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-tab-1",
+      "label": "SUV (6)",
+      "type": "category-tab",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-tab-2",
+      "label": "Hatchback (1)",
+      "type": "category-tab",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-tab-3",
+      "label": "Sedan (1)",
+      "type": "category-tab",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-2-tab-4",
+      "label": "Utilitario (1)",
+      "type": "category-tab",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-3",
+      "label": "Concessionárias",
+      "type": "nav-trigger",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-3-panel-layout",
+      "label": "Panel layout (Concessionárias)",
+      "type": "panel-layout",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "sourceDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\"}",
+        "migratedDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\",\"viewportsTested\":[{\"viewportWidth\":1440,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1440,\"contained\":true},{\"viewportWidth\":1920,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1920,\"contained\":true},{\"viewportWidth\":1366,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1366,\"contained\":true},{\"viewportWidth\":1280,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1280,\"contained\":true},{\"viewportWidth\":1024,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1024,\"contained\":true}]}"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-3-item-0",
+      "label": "Agendamento de Serviço",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-3-item-1",
+      "label": "Test Drive",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-3-item-2",
+      "label": "Busque uma concessionária",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4",
+      "label": "Comprar",
+      "type": "nav-trigger",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-panel-layout",
+      "label": "Panel layout (Comprar)",
+      "type": "panel-layout",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "sourceDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\"}",
+        "migratedDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\",\"viewportsTested\":[{\"viewportWidth\":1440,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1440,\"contained\":true},{\"viewportWidth\":1920,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1920,\"contained\":true},{\"viewportWidth\":1366,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1366,\"contained\":true},{\"viewportWidth\":1280,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1280,\"contained\":true},{\"viewportWidth\":1024,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1024,\"contained\":true}]}"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-0",
+      "label": "Ofertas",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-1",
+      "label": "Estoque - Pronta Entrega",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-2",
+      "label": "Click to Buy",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-3",
+      "label": "Hyundai Semprenovos",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-4",
+      "label": "Monte o seu",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-5",
+      "label": "Vendas Diretas e PcD",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-6",
+      "label": "Test Drive",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-7",
+      "label": "Financiamentos",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-4-item-8",
+      "label": "Compare seu Hyundai",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5",
+      "label": "Hamburger Menu",
+      "type": "nav-trigger",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-panel-layout",
+      "label": "Panel layout (Hamburger Menu)",
+      "type": "panel-layout",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "N/A",
+        "migratedDescription": "N/A"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "sourceDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\"}",
+        "migratedDescription": "{\"measuredLeft\":0,\"measuredRight\":1440,\"viewportWidth\":1440,\"viewportContained\":true,\"cssPosition\":\"absolute\",\"cssLeft\":\"0px\",\"cssWidth\":\"1440px\",\"viewportsTested\":[{\"viewportWidth\":1440,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1440,\"contained\":true},{\"viewportWidth\":1920,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1920,\"contained\":true},{\"viewportWidth\":1366,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1366,\"contained\":true},{\"viewportWidth\":1280,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1280,\"contained\":true},{\"viewportWidth\":1024,\"viewportHeight\":900,\"measuredLeft\":0,\"measuredRight\":1024,\"contained\":true}]}"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-0",
+      "label": "A Hyundai",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-1",
+      "label": "Universo Hyundai",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-2",
+      "label": "Hyundai Financiamentos",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-3",
+      "label": "Fale com a Hyundai",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": true,
+          "migrated": true
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-4",
+      "label": "Sobre N Line",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-5",
+      "label": "Copa Hyundai HB20",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-6",
+      "label": "Conmebol Libertadores",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-7",
+      "label": "ESG",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-8",
+      "label": "Ética e Compliance",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-9",
+      "label": "Fã Clubes",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-10",
+      "label": "Etiquetas de Segurança",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    },
+    {
+      "id": "trigger-5-item-11",
+      "label": "Trabalhe Conosco",
+      "type": "panel-item",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no effect",
+        "migratedDescription": "no effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "no action",
+        "migratedDescription": "no action"
+      },
+      "stylingMatch": {
+        "matches": true,
+        "hasImage": {
+          "source": false,
+          "migrated": false
+        }
+      },
+      "status": "validated"
+    }
+  ],
+  "summary": {
+    "totalItems": 62,
+    "hoverMatches": 62,
+    "clickMatches": 62,
+    "stylingMatches": 62,
+    "totalValidated": 62,
+    "totalFailed": 0
+  },
+  "allValidated": true
+}

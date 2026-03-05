@@ -1,0 +1,48 @@
+{
+  "triggerType": "hover",
+  "columnCount": 2,
+  "hasImages": true,
+  "hasHoverBehavior": true,
+  "hasClickBehavior": true,
+  "hasBlockStructure": true,
+  "nestedLevels": 1,
+  "animationType": "fade-slide",
+  "hoverOutBehavior": "closes-dropdown-on-mouse-leave",
+  "clickOutBehavior": "closes-dropdown",
+  "promotionalBlocks": [],
+  "gridStructure": "full-width-panel",
+  "hasSearchForm": true,
+  "searchFormDetails": {
+    "location": "Concessionárias dropdown",
+    "type": "dealer-search-form",
+    "hasRadioButtons": true,
+    "hasTextInput": true,
+    "radioOptions": ["Minha localização", "Buscar por nome", "Buscar por CEP"]
+  },
+  "hasLocaleSelector": false,
+  "localeSelectorDetails": null,
+  "overlayBehavior": {
+    "hasOverlay": false,
+    "overlayType": "none",
+    "overlayOpacity": "0",
+    "overlayDismisses": false
+  },
+  "columns": [
+    { "columnIndex": 0, "hasImages": true, "label": "Icon cards area (2 cards per dropdown)" },
+    { "columnIndex": 1, "hasImages": false, "label": "Text links area (in 2-column grid)" }
+  ],
+  "dropdownPanels": {
+    "count": 6,
+    "types": [
+      "Proprietários: 2 icon cards + 7 text links",
+      "Serviços: 2 icon cards + 1 text link",
+      "Veículos: large megamenu with featured area + category tabs + vehicle carousel (9 vehicles)",
+      "Concessionárias: 2 icon cards + dealer search form",
+      "Comprar: 2 icon cards + 7 text links",
+      "Hamburger: 4 icon cards + 8 text links"
+    ]
+  },
+  "confidence": 0.95,
+  "uncertainty": false,
+  "notes": "All 5 nav dropdowns + hamburger panel follow a consistent 2-section layout: LEFT has icon cards (image+text), RIGHT has text links in 2-column grid. Exception: Veículos has a large megamenu with left featured vehicle area (image+specs, updates on carousel hover) and right section with category filter tabs + vehicle thumbnail carousel. Concessionárias also has a dealer search form with radio buttons. No overlay/backdrop. All panels are full-width (1440px). Header background changes to solid white when any panel is open."
+}

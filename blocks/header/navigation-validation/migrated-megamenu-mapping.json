@@ -1,0 +1,210 @@
+{
+  "totalItemsAnalyzed": 62,
+  "navTriggers": [
+    {
+      "index": 0,
+      "label": "Proprietários",
+      "triggerType": "hover",
+      "url": "/proprietarios.html",
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "absolute",
+        "cssLeft": "0px",
+        "cssWidth": "1440px",
+        "viewportsTested": [
+          { "viewportWidth": 1440, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1440, "contained": true },
+          { "viewportWidth": 1920, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1920, "contained": true },
+          { "viewportWidth": 1366, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1366, "contained": true },
+          { "viewportWidth": 1280, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1280, "contained": true },
+          { "viewportWidth": 1024, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1024, "contained": true }
+        ]
+      },
+      "panelItems": [
+        { "type": "icon-card", "label": "Bluelink", "url": "/bluelink.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates to bluelink page" },
+        { "type": "icon-card", "label": "Assistência 24H", "url": "/proprietarios.html?anchor=Assistencia24hrs", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates to assistência page" },
+        { "type": "text-link", "label": "Programa Meu Hyundai", "url": "https://www.meuhyundai.com.br/", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates to external site" },
+        { "type": "text-link", "label": "Acessórios HB20", "url": "https://bit.ly/acessorios-novo-hb20", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates to external site" },
+        { "type": "text-link", "label": "Garantia", "url": "/proprietarios.html?anchor=Garantia", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Acessórios CRETA", "url": "https://hyundaimobis.com.br/categorias-de-produto/acessorios-novo-creta/", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates to external site" },
+        { "type": "text-link", "label": "Manuais", "url": "/proprietarios.html?anchor=Manuais", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Agendamento de Serviço", "url": "/servicos.html#Agendamento_de_servicos", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Proconve", "url": "/proprietarios/proconve", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" }
+      ]
+    },
+    {
+      "index": 1,
+      "label": "Serviços",
+      "triggerType": "hover",
+      "url": null,
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "absolute",
+        "cssLeft": "0px",
+        "cssWidth": "1440px",
+        "viewportsTested": [
+          { "viewportWidth": 1440, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1440, "contained": true },
+          { "viewportWidth": 1920, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1920, "contained": true },
+          { "viewportWidth": 1366, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1366, "contained": true },
+          { "viewportWidth": 1280, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1280, "contained": true },
+          { "viewportWidth": 1024, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1024, "contained": true }
+        ]
+      },
+      "panelItems": [
+        { "type": "icon-card", "label": "Planos de Manutenção", "url": "/manutencao.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "icon-card", "label": "myHyundaiCare Revisões Planejadas", "url": "/revisoes-planejadas.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Recall", "url": "/proprietarios.html?anchor=anchor_recall_owners", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" }
+      ]
+    },
+    {
+      "index": 2,
+      "label": "Veículos",
+      "triggerType": "hover",
+      "url": null,
+      "isMegamenu": true,
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "absolute",
+        "cssLeft": "0px",
+        "cssWidth": "1440px",
+        "viewportsTested": [
+          { "viewportWidth": 1440, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1440, "contained": true },
+          { "viewportWidth": 1920, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1920, "contained": true },
+          { "viewportWidth": 1366, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1366, "contained": true },
+          { "viewportWidth": 1280, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1280, "contained": true },
+          { "viewportWidth": 1024, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1024, "contained": true }
+        ]
+      },
+      "featuredArea": {
+        "type": "vehicle-featured",
+        "updatesOnHover": true,
+        "showsImage": true,
+        "showsSpecs": true,
+        "specFields": ["motor", "transmissao", "potencia", "torque"],
+        "defaultVehicle": "Novo CRETA"
+      },
+      "categoryTabs": [
+        { "label": "Todos (9)", "count": 9, "clickBehavior": "shows all 9 vehicles" },
+        { "label": "Suv (6)", "count": 6, "clickBehavior": "filters to SUVs: Novo CRETA, Novo CRETA N Line, Tucson, KONA Híbrido, Palisade, IONIQ 5" },
+        { "label": "Hatchback (1)", "count": 1, "clickBehavior": "filters to: HB20" },
+        { "label": "Sedan (1)", "count": 1, "clickBehavior": "filters to: HB20S" },
+        { "label": "Utilitario (1)", "count": 1, "clickBehavior": "filters to: HR" }
+      ],
+      "panelItems": [
+        { "type": "vehicle-card", "label": "Novo CRETA", "url": "/veiculos/novo-hyundai-creta.html", "hasImage": true, "category": "suv", "hoverBehavior": "updates featured area with vehicle image, title and specs (motor: Gamma 1.6 Turbo GDI Flex, transmissao: Automática de 7 velocidades, potencia: 176 cv @ 5.500 rpm, torque: 27 kgfm @ 1.600 rpm)", "clickBehavior": "navigates to vehicle page" },
+        { "type": "vehicle-card", "label": "HB20", "url": "/veiculos/novo-hyundai-hb20.html", "hasImage": true, "category": "hatchback", "hoverBehavior": "updates featured area with HB20 image and specs (motor: Kappa 1.0 Turbo GDI 12v Flex, transmissao: Automática 6 velocidades, potencia: 120 cv @ 6.000 rpm, torque: 17,5 kgf.m @ 1.500 rpm)", "clickBehavior": "navigates to vehicle page" },
+        { "type": "vehicle-card", "label": "Novo CRETA N Line", "url": "/veiculos/novo-hyundai-creta-n-line.html", "hasImage": true, "category": "suv", "hoverBehavior": "updates featured area", "clickBehavior": "navigates" },
+        { "type": "vehicle-card", "label": "HB20S", "url": "/veiculos/novo-hyundai-hb20s.html", "hasImage": true, "category": "sedan", "hoverBehavior": "updates featured area", "clickBehavior": "navigates" },
+        { "type": "vehicle-card", "label": "Tucson", "url": "/veiculos/tucson.html", "hasImage": true, "category": "suv", "hoverBehavior": "updates featured area", "clickBehavior": "navigates" },
+        { "type": "vehicle-card", "label": "KONA Híbrido", "url": "/veiculos/kona-hibrido.html", "hasImage": true, "category": "suv", "hoverBehavior": "updates featured area", "clickBehavior": "navigates" },
+        { "type": "vehicle-card", "label": "Palisade", "url": "/veiculos/palisade.html", "hasImage": true, "category": "suv", "hoverBehavior": "updates featured area", "clickBehavior": "navigates" },
+        { "type": "vehicle-card", "label": "IONIQ 5", "url": "/veiculos/ioniq-5.html", "hasImage": true, "category": "suv", "hoverBehavior": "updates featured area", "clickBehavior": "navigates" },
+        { "type": "vehicle-card", "label": "HR", "url": "/veiculos/hr.html", "hasImage": true, "category": "utilitario", "hoverBehavior": "updates featured area", "clickBehavior": "navigates" }
+      ]
+    },
+    {
+      "index": 3,
+      "label": "Concessionárias",
+      "triggerType": "hover",
+      "url": "/concessionarias.html",
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "absolute",
+        "cssLeft": "0px",
+        "cssWidth": "1440px",
+        "viewportsTested": [
+          { "viewportWidth": 1440, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1440, "contained": true },
+          { "viewportWidth": 1920, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1920, "contained": true },
+          { "viewportWidth": 1366, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1366, "contained": true },
+          { "viewportWidth": 1280, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1280, "contained": true },
+          { "viewportWidth": 1024, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1024, "contained": true }
+        ]
+      },
+      "panelItems": [
+        { "type": "icon-card", "label": "Agendamento de Serviço", "url": "/servicos.html#Agendamento_de_servicos", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "icon-card", "label": "Test Drive", "url": "/test-drive.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "dealer-search-form", "label": "Busque uma concessionária", "hasSearchForm": true, "formDetails": { "radioOptions": ["Minha localização", "Buscar por nome", "Buscar por CEP"], "defaultRadio": "Buscar por nome", "inputPlaceholder": "NOME DA CONCESSIONÁRIA", "hasSubmitButton": true } }
+      ]
+    },
+    {
+      "index": 4,
+      "label": "Comprar",
+      "triggerType": "hover",
+      "url": "/monte-o-seu.html",
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "absolute",
+        "cssLeft": "0px",
+        "cssWidth": "1440px",
+        "viewportsTested": [
+          { "viewportWidth": 1440, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1440, "contained": true },
+          { "viewportWidth": 1920, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1920, "contained": true },
+          { "viewportWidth": 1366, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1366, "contained": true },
+          { "viewportWidth": 1280, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1280, "contained": true },
+          { "viewportWidth": 1024, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1024, "contained": true }
+        ]
+      },
+      "panelItems": [
+        { "type": "icon-card", "label": "Ofertas", "url": "/ofertas.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "icon-card", "label": "Estoque - Pronta Entrega", "url": "/ver-estoque-concessionarias.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Click to Buy", "url": "/click-to-buy/simulacao.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Hyundai Semprenovos", "url": "/hyundai-semprenovos", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Monte o seu", "url": "/monte-o-seu.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Vendas Diretas e PcD", "url": "/vendas-diretas.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Test Drive", "url": "/test-drive.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Financiamentos", "url": "/financiamentos.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Compare seu Hyundai", "url": "/compare-seu-hyundai", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" }
+      ]
+    },
+    {
+      "index": 5,
+      "label": "Hamburger Menu",
+      "triggerType": "click",
+      "url": null,
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "absolute",
+        "cssLeft": "0px",
+        "cssWidth": "1440px",
+        "viewportsTested": [
+          { "viewportWidth": 1440, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1440, "contained": true },
+          { "viewportWidth": 1920, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1920, "contained": true },
+          { "viewportWidth": 1366, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1366, "contained": true },
+          { "viewportWidth": 1280, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1280, "contained": true },
+          { "viewportWidth": 1024, "viewportHeight": 900, "measuredLeft": 0, "measuredRight": 1024, "contained": true }
+        ]
+      },
+      "panelItems": [
+        { "type": "icon-card", "label": "A Hyundai", "url": "/a-hyundai.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "icon-card", "label": "Universo Hyundai", "url": "/universo-hyundai.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "icon-card", "label": "Hyundai Financiamentos", "url": "/financiamentos.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "icon-card", "label": "Fale com a Hyundai", "url": "/fale-com-a-hyundai.html", "hasImage": true, "hoverBehavior": "card highlight (background-color change)", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Sobre N Line", "url": "/sobre-n.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Copa Hyundai HB20", "url": "/copa-hyundai-hb20-2026.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Conmebol Libertadores", "url": "/conmebol-libertadores.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "ESG", "url": "/esg.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Ética e Compliance", "url": "/a-hyundai/etica-e-compliance.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Fã Clubes", "url": "/clubes.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Etiquetas de Segurança", "url": "/etiquetas-de-seguranca.html", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates" },
+        { "type": "text-link", "label": "Trabalhe Conosco", "url": "https://trabalheconosco.vagas.com.br/hyundai", "hasImage": false, "hoverBehavior": "text color change to #00aad2", "clickBehavior": "navigates to external site" }
+      ]
+    }
+  ]
+}

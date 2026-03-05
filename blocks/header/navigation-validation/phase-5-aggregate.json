@@ -1,0 +1,33 @@
+{
+  "headerStructure": {
+    "rowCount": 1,
+    "height": 60,
+    "position": "fixed",
+    "background": "transparent",
+    "interactionBackground": "solid-white"
+  },
+  "desktopMapping": {
+    "elements": 9,
+    "dropdowns": 5,
+    "hamburger": true,
+    "cta": "Ofertas"
+  },
+  "megamenuMapping": {
+    "totalPanels": 6,
+    "totalItems": 62,
+    "veiculosMegamenu": true,
+    "categoryTabs": 5,
+    "vehicleCount": 9,
+    "dealerSearchForm": true
+  },
+  "mobileMapping": "pending",
+  "validationReport": {
+    "structuralSimilarity": 100,
+    "structuralMismatches": [],
+    "styleSimilarity": null,
+    "megamenuBehavior": "allValidated (62/62)",
+    "rowElementsBehavior": "allValidated (9/9)",
+    "headerAppearance": "allValidated"
+  },
+  "status": "DESKTOP_VALIDATED"
+}

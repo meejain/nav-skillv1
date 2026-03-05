@@ -1,0 +1,23 @@
+{
+  "rowCount": 1,
+  "rows": [
+    {
+      "index": 0,
+      "height": 60,
+      "top": 0,
+      "bottom": 60,
+      "background": "rgba(0, 0, 0, 0)",
+      "position": "fixed",
+      "zIndex": "9999",
+      "selector": ".hyundai-header",
+      "hasImages": true,
+      "description": "Single-row transparent header: hamburger icon, Hyundai logo (SVG), nav links (Proprietários, Serviços, Veículos, Concessionárias, Alugar, Comprar), highlighted Ofertas CTA"
+    }
+  ],
+  "confidence": 0.95,
+  "uncertainty": false,
+  "notes": "React SPA site - header uses div.hyundai-header instead of <header> tag. Single row at 60px. Fixed position with transparent background overlaying hero carousel. detect-header-rows.js failed because no <header> element exists; row detection performed manually via page.evaluate() and DOM inspection at 1440x900 viewport.",
+  "scriptFailed": true,
+  "manualOverride": true,
+  "viewport": { "width": 1440, "height": 900 }
+}

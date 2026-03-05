@@ -1,0 +1,37 @@
+{
+  "hasChanges": true,
+  "headerBackgroundBehavior": {
+    "defaultState": "transparent",
+    "interactionState": "solid-white",
+    "classToggle": {
+      "openClass": "is-open",
+      "closedClass": ""
+    },
+    "requiresBodyPaddingTop": false,
+    "textColorInversion": true,
+    "details": {
+      "defaultBackground": "rgba(0, 0, 0, 0)",
+      "interactionBackground": "rgb(255, 255, 255)",
+      "defaultTextColor": "rgb(255, 255, 255)",
+      "interactionTextColor": "rgb(0, 44, 95)",
+      "defaultLogoColor": "white",
+      "interactionLogoColor": "dark-navy",
+      "position": "fixed",
+      "zIndex": "9999",
+      "headerHeight": "60px",
+      "blurEffect": "none"
+    }
+  },
+  "triggers": [
+    {
+      "trigger": "hover-nav-item-with-dropdown",
+      "effect": "Header background transitions to solid white. All text and logo colors invert from white to dark navy. Active nav item gets teal/cyan bottom border.",
+      "affectedElements": ["header-background", "logo-color", "nav-text-color", "hamburger-bars-color"]
+    },
+    {
+      "trigger": "click-hamburger",
+      "effect": "Header background becomes solid white. Hamburger icon morphs to × cross. Nav items hidden, replaced by hamburger panel content.",
+      "affectedElements": ["header-background", "hamburger-icon", "nav-visibility"]
+    }
+  ]
+}

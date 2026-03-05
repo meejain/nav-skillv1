@@ -1,53 +1,36 @@
-
-/* header and nav layout */
+/* header and nav layout — transparent header template */
 header .nav-wrapper {
-  background-color: var(--background-color);
-  width: 100%;
-  z-index: 2;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+header .nav-wrapper.is-open {
+  background-color: #fff;
 }
 
 header nav {
-  box-sizing: border-box;
-  display: grid;
-  grid-template:
-    'hamburger brand tools' var(--nav-height)
-    'sections sections sections' 1fr / auto 1fr auto;
+  display: flex;
   align-items: center;
-  gap: 0 24px;
-  margin: auto;
-  max-width: 1248px;
-  height: var(--nav-height);
+  height: 60px;
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 0 24px;
-  font-family: var(--body-font-family);
+  color: #fff;
+  transition: color 0.3s ease;
+  font-family: var(--body-font-family, 'Helvetica Neue', Arial, sans-serif);
 }
 
-header nav[aria-expanded='true'] {
-  grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
-  overflow-y: auto;
-  min-height: 100dvh;
+header .nav-wrapper.is-open nav {
+  color: #002c5f;
 }
 
-@media (width >= 900px) {
-  header .nav-wrapper {
-    position: relative;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 32px;
-    max-width: 1264px;
-    padding: 0 32px;
-  }
-
-  header nav[aria-expanded='true'] {
-    min-height: 0;
-    overflow: visible;
-  }
+header nav a:any-link {
+  color: currentcolor;
 }
 
 header nav p {
@@ -55,219 +38,468 @@ header nav p {
   line-height: 1;
 }
 
-header nav a:any-link {
-  color: currentcolor;
+/* hamburger icon */
+header .nav-hamburger {
+  flex: 0 0 auto;
+  margin-right: 16px;
+  cursor: pointer;
 }
 
-/* hamburger */
-header nav .nav-hamburger {
-  grid-area: hamburger;
-  height: 22px;
+header .nav-hamburger button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+header .hamburger-bar {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: currentcolor;
+  border-radius: 1px;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+/* hamburger → cross animation */
+header .nav-hamburger.is-active .hamburger-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+header .nav-hamburger.is-active .hamburger-bar:nth-child(2) {
+  opacity: 0;
+}
+
+header .nav-hamburger.is-active .hamburger-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* brand / logo */
+header .nav-brand {
+  flex: 0 0 auto;
+  margin-right: 32px;
+}
+
+header .nav-brand-link {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
+
+/* nav sections — horizontal nav items */
+header .nav-sections {
+  flex: 1;
+  display: none;
+  align-items: center;
+  gap: 0;
+}
+
+@media (width >= 900px) {
+  header .nav-sections {
+    display: flex;
+  }
+}
+
+/* individual nav items */
+header .nav-item {
+  position: static;
+}
+
+header .nav-item-trigger {
   display: flex;
   align-items: center;
-}
-
-header nav .nav-hamburger button {
-  height: 22px;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  background-color: var(--background-color);
+  padding: 0 14px;
+  height: 60px;
   color: inherit;
-  overflow: initial;
-  text-overflow: initial;
-  white-space: initial;
-}
-
-header nav .nav-hamburger-icon,
-header nav .nav-hamburger-icon::before,
-header nav .nav-hamburger-icon::after {
-  box-sizing: border-box;
-  display: block;
-  position: relative;
-  width: 20px;
-}
-
-header nav .nav-hamburger-icon::before,
-header nav .nav-hamburger-icon::after {
-  content: '';
-  position: absolute;
-  background: currentcolor;
-}
-
-header nav[aria-expanded='false'] .nav-hamburger-icon,
-header nav[aria-expanded='false'] .nav-hamburger-icon::before,
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
-  background: currentcolor;
-}
-
-header nav[aria-expanded='false'] .nav-hamburger-icon::before {
-  top: -6px;
-}
-
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  top: 6px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon {
-  height: 22px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon::before,
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: 3px;
-  left: 1px;
-  transform: rotate(45deg);
-  transform-origin: 2px 1px;
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
-}
-
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: unset;
-  bottom: 3px;
-  transform: rotate(-45deg);
-}
-
-@media (width >= 900px) {
-  header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
-  }
-}
-
-/* brand */
-header .nav-brand {
-  grid-area: brand;
-  flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
-  font-weight: 700;
-  line-height: 1;
-}
-
-header nav .nav-brand img {
-  width: 128px;
-  height: auto;
-}
-
-/* sections */
-header nav .nav-sections {
-  grid-area: sections;
-  flex: 1 1 auto;
-  display: none;
-  visibility: hidden;
-}
-
-header nav[aria-expanded='true'] .nav-sections {
-  display: block;
-  visibility: visible;
-  align-self: start;
-}
-
-header nav .nav-sections ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: var(--body-font-size-s);
-}
-
-header nav .nav-sections ul > li {
+  text-decoration: none;
+  font-size: 14px;
   font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
-header nav .nav-sections ul > li > ul {
-  margin-top: 0;
+/* CTA button (Ofertas) */
+header .nav-cta {
+  margin-left: auto;
 }
 
-header nav .nav-sections ul > li > ul > li {
+header .nav-cta .nav-item-trigger {
+  background-color: #00aad2;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 24px;
+  height: auto;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: none;
+  transition: background-color 0.2s ease;
+}
+
+header .nav-cta .nav-item-trigger:hover {
+  background-color: #0090b3;
+}
+
+/* active nav item indicator */
+header .nav-item[aria-expanded='true'] .nav-item-trigger {
+  border-bottom-color: #00aad2;
+}
+
+/* dropdown panels — full-width containers */
+header .dropdown-panel {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
+  z-index: 100;
+}
+
+header .nav-item[aria-expanded='true'] > .dropdown-panel {
+  display: block;
+}
+
+/* standard panel layout — two columns: icon cards + text links */
+header .standard-layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 48px;
+  gap: 32px;
+}
+
+header .panel-left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 0 0 280px;
+  padding-right: 32px;
+  border-right: 1px solid #eee;
+}
+
+header .panel-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px 24px;
+  align-content: start;
+}
+
+/* icon cards */
+header .icon-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #002c5f;
+  transition: background-color 0.2s ease;
+}
+
+header .icon-card:hover {
+  background-color: #f5f5f5;
+}
+
+header .icon-card-img {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+header .icon-card-img img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+header .icon-card-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+/* panel text links */
+header .panel-link {
+  display: block;
+  padding: 10px 0;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
   font-weight: 400;
+  transition: color 0.2s ease;
 }
 
-@media (width >= 900px) {
-  header nav .nav-sections {
-    display: block;
-    visibility: visible;
-    white-space: nowrap;
-  }
+header .panel-link:hover {
+  color: #00aad2;
+}
 
-  header nav[aria-expanded='true'] .nav-sections {
-    align-self: unset;
-  }
+/* megamenu layout — featured vehicle + category tabs + vehicle grid */
+header .megamenu-layout {
+  display: flex;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 32px 48px;
+  gap: 32px;
+}
 
-  header nav .nav-sections .nav-drop {
-    position: relative;
-    padding-right: 16px;
-    cursor: pointer;
-  }
+header .megamenu-featured {
+  flex: 0 0 380px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 32px;
+  border-right: 1px solid #eee;
+}
 
-  header nav .nav-sections .nav-drop::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0.5em;
-    right: 2px;
-    transform: rotate(135deg);
-    width: 6px;
-    height: 6px;
-    border: 2px solid currentcolor;
-    border-radius: 0 1px 0 0;
-    border-width: 2px 2px 0 0;
-  }
+header .megamenu-featured-img {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
 
-  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
-    transform: rotate(315deg);
-  }
+header .megamenu-featured-img img {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
-  header nav .nav-sections ul {
-    display: flex;
-    gap: 24px;
-    margin: 0;
-  }
+header .megamenu-featured-info {
+  width: 100%;
+  margin-top: 16px;
+}
 
-  header nav .nav-sections .default-content-wrapper > ul > li {
-    flex: 0 1 auto;
-    position: relative;
-  }
+header .megamenu-featured-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #002c5f;
+  margin: 0 0 12px;
+}
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul {
+header .megamenu-featured-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header .megamenu-featured-specs li {
+  display: flex;
+  gap: 8px;
+  font-size: 12px;
+  color: #666;
+  padding: 4px 0;
+}
+
+header .spec-label {
+  font-weight: 600;
+  color: #002c5f;
+  text-transform: capitalize;
+  min-width: 80px;
+}
+
+header .spec-value {
+  color: #555;
+}
+
+/* megamenu right side */
+header .megamenu-right {
+  flex: 1;
+  min-width: 0;
+}
+
+/* category tabs */
+header .megamenu-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+header .megamenu-tab {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background: transparent;
+  color: #333;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+header .megamenu-tab:hover,
+header .megamenu-tab.active {
+  background: #002c5f;
+  border-color: #002c5f;
+  color: #fff;
+}
+
+/* vehicle grid */
+header .megamenu-vehicle-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+header .vehicle-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #002c5f;
+  padding: 12px 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+header .vehicle-card:hover {
+  background-color: #f5f5f5;
+}
+
+header .vehicle-card-img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .vehicle-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+header .vehicle-card-label {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* tools panel (hamburger dropdown) */
+header .nav-tools-panel {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 8%);
+  z-index: 100;
+}
+
+header .nav-tools-panel[aria-hidden='false'] {
+  display: block;
+}
+
+header .nav-tools-panel .standard-layout {
+  display: flex;
+}
+
+/* dealer search form */
+header .panel-dealer-search {
+  grid-column: 1 / -1;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+header .panel-dealer-search h4 {
+  font-size: 15px;
+  color: #002c5f;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+header .panel-dealer-search form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+header .panel-dealer-search label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+}
+
+header .panel-dealer-search input[type='radio'] {
+  accent-color: #00aad2;
+}
+
+header .panel-dealer-search input[type='text'] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+header .panel-dealer-search input[type='text']:focus {
+  outline: none;
+  border-color: #00aad2;
+}
+
+header .panel-dealer-search button[type='submit'] {
+  background: #002c5f;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background-color 0.2s ease;
+}
+
+header .panel-dealer-search button[type='submit']:hover {
+  background: #001d3f;
+}
+
+/* mobile layout (< 900px) */
+@media (width < 900px) {
+  header .nav-sections {
     display: none;
-    position: relative;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
-    display: block;
-    position: absolute;
-    left: -24px;
-    width: 200px;
-    top: 150%;
-    padding: 16px;
-    background-color: var(--light-color);
-    white-space: initial;
+  header .nav-cta {
+    display: none;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+  header nav {
+    justify-content: space-between;
   }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
-  }
-}
-
-/* tools */
-header nav .nav-tools {
-  grid-area: tools;
 }

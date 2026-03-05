@@ -1,0 +1,36 @@
+{
+  "rowCount": 1,
+  "rows": [
+    {
+      "index": 0,
+      "hasImages": true,
+      "elementCount": 9,
+      "elements": ["hamburger", "logo", "nav-proprietarios", "nav-servicos", "nav-veiculos", "nav-concessionarias", "nav-alugar", "nav-comprar", "nav-ofertas-cta"]
+    }
+  ],
+  "megamenu": {
+    "columnCount": 2,
+    "hasImages": true,
+    "columns": [
+      { "columnIndex": 0, "hasImages": true, "label": "Icon cards area (2 cards per dropdown)" },
+      { "columnIndex": 1, "hasImages": false, "label": "Text links area (in 2-column grid)" }
+    ],
+    "vehicleCards": 9,
+    "categoryTabs": 5,
+    "hasFeaturedArea": true,
+    "hasDealerSearch": true
+  },
+  "dropdownPanels": 5,
+  "toolsPanel": {
+    "iconCards": 4,
+    "textLinks": 8,
+    "totalItems": 12
+  },
+  "totalItems": {
+    "iconCards": 12,
+    "textLinks": 23,
+    "vehicleCards": 9,
+    "dealerSearchForm": 1,
+    "total": 45
+  }
+}

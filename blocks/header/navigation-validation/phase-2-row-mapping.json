@@ -1,0 +1,145 @@
+{
+  "rows": [
+    {
+      "index": 0,
+      "height": 60,
+      "alignmentGroups": [
+        { "name": "left", "elements": ["hamburger", "logo"] },
+        { "name": "center-right", "elements": ["nav-links"] },
+        { "name": "right-cta", "elements": ["ofertas-cta"] }
+      ],
+      "spacing": "auto-distributed",
+      "backgroundDifference": false,
+      "hasImages": true,
+      "hasHoverBehavior": true,
+      "hasClickBehavior": true,
+      "hasMegamenuInRow": true,
+      "hasSearchForm": false,
+      "hasLocaleSelector": false,
+      "elements": [
+        {
+          "id": "hamburger",
+          "type": "hamburger-icon",
+          "label": "☰ (3 bars)",
+          "position": { "left": 120, "top": 13, "width": 35, "height": 35 },
+          "hasImages": false,
+          "hasHoverBehavior": false,
+          "hasClickBehavior": true,
+          "clickBehavior": "Opens full-width panel with 4 icon cards (A Hyundai, Universo Hyundai, Hyundai Financiamentos, Fale com a Hyundai) and 8 text links (Sobre N Line, Copa Hyundai HB20, Conmebol Libertadores, ESG, Ética e Compliance, Fã Clubes, Etiquetas de Segurança, Trabalhe Conosco). Header becomes solid white, nav items hidden.",
+          "hoverBehavior": null
+        },
+        {
+          "id": "logo",
+          "type": "logo-svg",
+          "label": "Hyundai Logo",
+          "position": { "left": 169, "top": 21, "width": 124, "height": 16 },
+          "url": "/content/hmb/br",
+          "hasImages": true,
+          "hasHoverBehavior": false,
+          "hasClickBehavior": true,
+          "clickBehavior": "Navigates to homepage",
+          "hoverBehavior": null
+        },
+        {
+          "id": "nav-proprietarios",
+          "type": "nav-link-with-dropdown",
+          "label": "Proprietários",
+          "position": { "left": 365, "top": 0, "width": 139, "height": 60 },
+          "url": "/content/hmb/br/proprietarios.html",
+          "hasImages": false,
+          "hasHoverBehavior": true,
+          "hasClickBehavior": true,
+          "hoverBehavior": "Opens dropdown panel: 2 icon cards (Bluelink, Assistência 24H) + 7 text links in 2 columns (Programa Meu Hyundai, Acessórios HB20, Garantia, Acessórios CRETA, Manuais, Agendamento de Serviço, Proconve). Header turns solid white. Teal underline under text.",
+          "clickBehavior": "Navigates to /content/hmb/br/proprietarios.html"
+        },
+        {
+          "id": "nav-servicos",
+          "type": "nav-button-with-dropdown",
+          "label": "Serviços",
+          "position": { "left": 542, "top": 0, "width": 105, "height": 60 },
+          "hasImages": false,
+          "hasHoverBehavior": true,
+          "hasClickBehavior": false,
+          "hoverBehavior": "Opens dropdown panel: 2 icon cards (Planos de Manutenção, myHyundaiCare Revisões Planejadas) + 1 text link (Recall). Header turns solid white. Teal underline under text.",
+          "clickBehavior": "No navigation (button element)"
+        },
+        {
+          "id": "nav-veiculos",
+          "type": "nav-button-with-megamenu",
+          "label": "Veículos",
+          "position": { "left": 684, "top": 0, "width": 104, "height": 60 },
+          "hasImages": false,
+          "hasHoverBehavior": true,
+          "hasClickBehavior": false,
+          "hoverBehavior": "Opens large megamenu: LEFT featured area with large vehicle image + specs (Motor, Transmissão, Potência, Torque). RIGHT: category tabs (Todos 9, SUV 6, Hatchback 1, Sedan 1, Utilitario 1) + vehicle thumbnails in carousel with arrows. Header turns solid white. Teal underline.",
+          "clickBehavior": "No navigation (button element)"
+        },
+        {
+          "id": "nav-concessionarias",
+          "type": "nav-link-with-dropdown",
+          "label": "Concessionárias",
+          "position": { "left": 788, "top": 0, "width": 167, "height": 60 },
+          "url": "/content/hmb/br/concessionarias.html",
+          "hasImages": false,
+          "hasHoverBehavior": true,
+          "hasClickBehavior": true,
+          "hoverBehavior": "Opens dropdown panel: 2 icon cards (Agendamento de Serviço, Test Drive) + dealer search form with radio buttons (Minha localização, Buscar por nome, Buscar por CEP) and text input. Header turns solid white. Teal underline.",
+          "clickBehavior": "Navigates to /content/hmb/br/concessionarias.html"
+        },
+        {
+          "id": "nav-alugar",
+          "type": "nav-link",
+          "label": "Alugar",
+          "position": { "left": 955, "top": 0, "width": 91, "height": 60 },
+          "url": "/content/hmb/br/hyundai-assina.html",
+          "hasImages": false,
+          "hasHoverBehavior": false,
+          "hasClickBehavior": true,
+          "hoverBehavior": null,
+          "clickBehavior": "Navigates to /content/hmb/br/hyundai-assina.html"
+        },
+        {
+          "id": "nav-comprar",
+          "type": "nav-link-with-dropdown",
+          "label": "Comprar",
+          "position": { "left": 1046, "top": 0, "width": 108, "height": 60 },
+          "url": "/content/hmb/br/monte-o-seu.html",
+          "hasImages": false,
+          "hasHoverBehavior": true,
+          "hasClickBehavior": true,
+          "hoverBehavior": "Opens dropdown panel: 2 icon cards (Ofertas, Estoque - Pronta Entrega) + 7 text links in 2 columns (Click to Buy, Hyundai Semprenovos, Monte o seu, Vendas Diretas e PcD, Test Drive, Financiamentos, Compare seu Hyundai). Header turns solid white. Teal underline.",
+          "clickBehavior": "Navigates to /content/hmb/br/monte-o-seu.html"
+        },
+        {
+          "id": "nav-ofertas-cta",
+          "type": "cta-button",
+          "label": "Ofertas",
+          "position": { "left": 1154, "top": 0, "width": 166, "height": 60 },
+          "url": "/content/hmb/br/ofertas.html",
+          "hasImages": false,
+          "hasHoverBehavior": false,
+          "hasClickBehavior": true,
+          "hoverBehavior": null,
+          "clickBehavior": "Navigates to /content/hmb/br/ofertas.html",
+          "styling": { "backgroundColor": "rgb(0, 170, 210)", "color": "rgb(255, 255, 255)" }
+        }
+      ],
+      "hasHamburgerIcon": true,
+      "hamburgerIconSelector": ".hamburger",
+      "hamburgerClickBehavior": "Opens full-width panel with institutional links (A Hyundai, Universo Hyundai, etc.). Replaces nav items. Header turns solid white.",
+      "hamburgerHoverEffect": null,
+      "hamburgerAnimation": {
+        "type": "morph-to-cross",
+        "method": "css-transform",
+        "transition": "0.3s ease-out",
+        "details": "3 bars (mh-first, mh-middle, mh-end). mh-first rotates to form top arm of ×. mh-middle scales to 0 (disappears). mh-end rotates to form bottom arm of ×. The third bar is shorter (12px vs 18px) in closed state.",
+        "containerTransition": "0.5s ease-out"
+      },
+      "searchFormDetails": null,
+      "localeSelectorDetails": null
+    }
+  ],
+  "confidence": 0.95,
+  "uncertainty": false,
+  "notes": "Single row transparent header with hamburger, logo, 7 nav items (5 with dropdowns, 2 direct links), and 1 CTA. Dropdowns open on hover. Header background changes from transparent to solid white on dropdown open. All text changes from white to dark. No search form in header row (dealer search is inside Concessionárias dropdown). No locale/language selector."
+}
