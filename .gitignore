@@ -8,6 +8,12 @@ helix-importer-ui
 *.bak
 .idea
 
+# Playwright browsers (large binaries; do not push)
+playwright-browsers/
+
+# Navigation validation artifacts (local only; do not push)
+blocks/header/navigation-validation/
+
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
