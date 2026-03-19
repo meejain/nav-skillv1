@@ -1,0 +1,168 @@
+{
+  "items": [
+    {
+      "id": "row-0-hamburger",
+      "label": "Hamburger icon",
+      "type": "hamburger",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no hover effect on desktop",
+        "migratedDescription": "hamburger is display:none on desktop, not visible"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "toggles is-open class on desktop but A Hyundai panel is display:none (mobile-only). Opens slide-in menu on mobile.",
+        "migratedDescription": "hamburger is display:none on desktop, not clickable. Present in DOM (.nav-hamburger) but hidden via CSS."
+      },
+      "status": "validated"
+    },
+    {
+      "id": "row-0-logo",
+      "label": "Hyundai logo",
+      "type": "logo",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "no hover effect",
+        "migratedDescription": "no hover effect"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "navigates to homepage",
+        "migratedDescription": "navigates to homepage",
+        "sourceUrl": "/content/hmb/br",
+        "migratedUrl": "/content/hmb/br"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "row-0-nav-proprietarios",
+      "label": "Proprietários",
+      "type": "nav-link",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "opens dropdown panel with icon cards (Bluelink, Assistência 24H) and text links, header turns white, teal underline",
+        "migratedDescription": "opens dropdown panel with icon cards (Bluelink, Assistência 24H) and text links (7 items), header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "navigates to proprietarios page",
+        "migratedDescription": "navigates to proprietarios page",
+        "sourceUrl": "/content/hmb/br/proprietarios.html",
+        "migratedUrl": "/content/hmb/br/proprietarios.html"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "row-0-nav-servicos",
+      "label": "Serviços",
+      "type": "nav-button",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "opens dropdown panel with icon cards (Planos de Manutenção, myHyundaiCare) and text link (Recall), header turns white, teal underline",
+        "migratedDescription": "opens dropdown panel with icon cards (Planos de Manutenção, myHyundaiCare) and text link (Recall), header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "opens same dropdown panel",
+        "migratedDescription": "opens same dropdown panel, href is # so no page navigation"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "row-0-nav-veiculos",
+      "label": "Veículos",
+      "type": "nav-button",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "opens megamenu with featured vehicle card on left, category tabs and vehicle thumbnails carousel on right, header turns white, teal underline",
+        "migratedDescription": "opens megamenu with featured vehicle card (Novo CRETA with specs) on left, category tabs (Todos, SUV, Hatchback, Sedan, Utilitario) and vehicle thumbnails on right, header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "opens same megamenu panel",
+        "migratedDescription": "opens same megamenu panel, href is # so no page navigation"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "row-0-nav-concessionarias",
+      "label": "Concessionárias",
+      "type": "nav-link",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "opens dropdown with icon cards (Agendamento de Serviço, Test Drive) and dealer search form, header turns white, teal underline",
+        "migratedDescription": "opens dropdown with icon cards (Agendamento de Serviço, Test Drive) and dealer search form with radio buttons and text input, header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "navigates to concessionarias page",
+        "migratedDescription": "navigates to concessionarias page",
+        "sourceUrl": "/content/hmb/br/concessionarias.html",
+        "migratedUrl": "/content/hmb/br/concessionarias.html"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "row-0-nav-alugar",
+      "label": "Alugar",
+      "type": "nav-link",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "text underline highlight effect, teal underline",
+        "migratedDescription": "text underline highlight effect, teal underline"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "navigates to hyundai-assina page",
+        "migratedDescription": "navigates to hyundai-assina page",
+        "sourceUrl": "/content/hmb/br/hyundai-assina.html",
+        "migratedUrl": "/content/hmb/br/hyundai-assina.html"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "row-0-nav-comprar",
+      "label": "Comprar",
+      "type": "nav-link",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "opens dropdown panel with icon cards (Ofertas, Estoque - Pronta Entrega) and text links (7 items), header background turns white, teal underline",
+        "migratedDescription": "opens dropdown panel with icon cards (Ofertas, Estoque - Pronta Entrega) and text links (7 items), header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "navigates to monte-o-seu page",
+        "migratedDescription": "navigates to monte-o-seu page",
+        "sourceUrl": "/content/hmb/br/monte-o-seu.html",
+        "migratedUrl": "/content/hmb/br/monte-o-seu.html"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "row-0-cta",
+      "label": "Ofertas CTA",
+      "type": "cta-button",
+      "hoverMatch": {
+        "matches": true,
+        "sourceDescription": "darker teal background on hover, changes from teal to darker teal",
+        "migratedDescription": "darker teal background on hover, changes from rgb(0,170,210) to rgb(0,144,181)"
+      },
+      "clickMatch": {
+        "matches": true,
+        "sourceDescription": "navigates to ofertas page",
+        "migratedDescription": "navigates to ofertas page",
+        "sourceUrl": "/content/hmb/br/ofertas.html",
+        "migratedUrl": "/content/hmb/br/ofertas.html"
+      },
+      "status": "validated"
+    }
+  ],
+  "summary": {
+    "totalItems": 9,
+    "hoverMatches": 9,
+    "clickMatches": 9,
+    "totalValidated": 9,
+    "totalFailed": 0
+  },
+  "allValidated": true
+}

@@ -1,0 +1,82 @@
+{
+  "allValidated": true,
+  "components": [
+    {
+      "id": "key-critique-mobile-header-bar",
+      "label": "Mobile header bar (hamburger, logo)",
+      "viewport": "375x812",
+      "status": "validated",
+      "lastSimilarity": 98.83,
+      "critiqueReportPath": "blocks/header/navigation-validation/mobile/critique/key-critique-mobile-header-bar/critique-report.json",
+      "critiqueIterations": 3,
+      "screenshotSourcePath": "blocks/header/navigation-validation/mobile/critique/key-critique-mobile-header-bar/source.png",
+      "screenshotMigratedPath": "blocks/header/navigation-validation/mobile/critique/key-critique-mobile-header-bar/migrated.png",
+      "notes": "98.83% similarity achieved by isolating header with solid background. Previous 92% was due to hero content differences behind transparent header, not CSS issues."
+    },
+    {
+      "id": "key-critique-mobile-menu-root-panel",
+      "label": "Mobile menu root panel (ofertas CTA, nav items, institutional, extra links)",
+      "viewport": "375x812",
+      "status": "validated",
+      "lastSimilarity": 99.4,
+      "critiqueReportPath": "blocks/header/navigation-validation/mobile/critique/key-critique-mobile-menu-root-panel/critique-report.json",
+      "critiqueIterations": 1,
+      "screenshotSourcePath": "blocks/header/navigation-validation/mobile/critique/key-critique-mobile-menu-root-panel/source.png",
+      "screenshotMigratedPath": "blocks/header/navigation-validation/mobile/critique/key-critique-mobile-menu-root-panel/migrated.png"
+    },
+    {
+      "id": "mobile-hamburger-icon",
+      "label": "Hamburger icon and cross animation",
+      "viewport": "375x812",
+      "status": "skipped"
+    },
+    {
+      "id": "mobile-ofertas-cta",
+      "label": "Ofertas CTA teal bar",
+      "viewport": "375x812",
+      "status": "skipped"
+    },
+    {
+      "id": "mobile-nav-heading-proprietarios",
+      "label": "Proprietários slide-in panel",
+      "viewport": "375x812",
+      "status": "skipped"
+    },
+    {
+      "id": "mobile-nav-heading-servicos",
+      "label": "Serviços slide-in panel",
+      "viewport": "375x812",
+      "status": "skipped"
+    },
+    {
+      "id": "mobile-nav-heading-veiculos",
+      "label": "Veículos slide-in panel",
+      "viewport": "375x812",
+      "status": "skipped"
+    },
+    {
+      "id": "mobile-nav-heading-concessionarias",
+      "label": "Concessionárias slide-in panel",
+      "viewport": "375x812",
+      "status": "skipped"
+    },
+    {
+      "id": "mobile-nav-heading-comprar",
+      "label": "Comprar slide-in panel",
+      "viewport": "375x812",
+      "status": "skipped"
+    },
+    {
+      "id": "mobile-institutional-section",
+      "label": "Institutional icon cards section",
+      "viewport": "375x812",
+      "status": "skipped"
+    },
+    {
+      "id": "mobile-extra-links-section",
+      "label": "Extra links section",
+      "viewport": "375x812",
+      "status": "skipped"
+    }
+  ]
+}

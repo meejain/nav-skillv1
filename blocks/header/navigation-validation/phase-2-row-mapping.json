@@ -1,0 +1,153 @@
+{
+  "rows": [
+    {
+      "index": 0,
+      "top": 0,
+      "height": 60,
+      "width": 1440,
+      "selector": ".hyundai-header-container",
+      "backgroundDifference": false,
+      "hasImages": true,
+      "hasHoverBehavior": true,
+      "hasClickBehavior": true,
+      "hasMegamenuInRow": true,
+      "hasSearchForm": true,
+      "searchFormDetails": {
+        "formType": "dropdown-panel",
+        "inputPlaceholder": "NOME DA CONCESSIONÁRIA",
+        "hasSubmitButton": true,
+        "hasAutocomplete": false,
+        "position": "inside Concessionárias dropdown panel"
+      },
+      "hasLocaleSelector": false,
+      "alignmentGroups": [
+        {
+          "position": "left",
+          "elements": [
+            {
+              "id": "hamburger-icon",
+              "type": "hamburger",
+              "selector": ".hamburger .mh-icon",
+              "width": 34,
+              "height": 35,
+              "description": "Hamburger menu icon (3-line). On desktop: toggles is-open class but A Hyundai panel is display:none (mobile-only). On mobile: opens slide-in menu."
+            },
+            {
+              "id": "hyundai-logo",
+              "type": "logo",
+              "selector": ".logo a",
+              "width": 124,
+              "height": 18,
+              "isSvg": true,
+              "href": "/content/hmb/br",
+              "ariaLabel": "Hyundai Logo",
+              "description": "Hyundai logo as inline SVG with wordmark"
+            }
+          ]
+        },
+        {
+          "position": "right",
+          "elements": [
+            {
+              "id": "nav-proprietarios",
+              "type": "nav-link",
+              "selector": "#hh_owners",
+              "text": "Proprietários",
+              "href": "/content/hmb/br/proprietarios.html",
+              "hasDropdown": true,
+              "hoverBehavior": "opens dropdown panel with icon cards (Bluelink, Assistência 24H) and text links (7 items)",
+              "clickBehavior": "navigates to /content/hmb/br/proprietarios.html"
+            },
+            {
+              "id": "nav-servicos",
+              "type": "nav-button",
+              "selector": "#hh_schedule_service",
+              "text": "Serviços",
+              "hasDropdown": true,
+              "hoverBehavior": "opens dropdown panel with icon cards (Planos de Manutenção, myHyundaiCare) and text link (Recall)",
+              "clickBehavior": "opens same dropdown panel"
+            },
+            {
+              "id": "nav-veiculos",
+              "type": "nav-button",
+              "selector": "#hh_vehicles",
+              "text": "Veículos",
+              "hasDropdown": true,
+              "hoverBehavior": "opens megamenu with featured vehicle card (specs) on left, category tabs + vehicle thumbnails carousel on right",
+              "clickBehavior": "opens same megamenu panel"
+            },
+            {
+              "id": "nav-concessionarias",
+              "type": "nav-link",
+              "selector": "#hh_dealer",
+              "text": "Concessionárias",
+              "href": "/content/hmb/br/concessionarias.html",
+              "hasDropdown": true,
+              "hoverBehavior": "opens dropdown with icon cards (Agendamento de Serviço, Test Drive) and dealer search form",
+              "clickBehavior": "navigates to /content/hmb/br/concessionarias.html"
+            },
+            {
+              "id": "nav-alugar",
+              "type": "nav-link",
+              "selector": "#hh_rent",
+              "text": "Alugar",
+              "href": "/content/hmb/br/hyundai-assina.html",
+              "hasDropdown": false,
+              "hoverBehavior": "text underline/highlight effect",
+              "clickBehavior": "navigates to /content/hmb/br/hyundai-assina.html"
+            },
+            {
+              "id": "nav-comprar",
+              "type": "nav-link",
+              "selector": "#hh_buy",
+              "text": "Comprar",
+              "href": "/content/hmb/br/monte-o-seu.html",
+              "hasDropdown": true,
+              "hoverBehavior": "opens dropdown panel with icon cards (Ofertas, Estoque) and text links (7 items)",
+              "clickBehavior": "navigates to /content/hmb/br/monte-o-seu.html"
+            },
+            {
+              "id": "nav-ofertas-cta",
+              "type": "cta-button",
+              "selector": "#hh_offers",
+              "text": "Ofertas",
+              "href": "/content/hmb/br/ofertas.html",
+              "hasDropdown": false,
+              "backgroundColor": "rgb(0, 170, 210)",
+              "textColor": "rgb(255, 255, 255)",
+              "hoverBehavior": "background color may darken slightly",
+              "clickBehavior": "navigates to /content/hmb/br/ofertas.html"
+            }
+          ]
+        }
+      ],
+      "spacing": {
+        "containerLeft": 120,
+        "containerWidth": 1200,
+        "containerDisplay": "flex",
+        "containerJustifyContent": "space-between",
+        "containerAlignItems": "center"
+      },
+      "typography": {
+        "fontFamily": "HyundaiSansHead-Bold",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "color": "rgb(0, 0, 0)",
+        "letterSpacing": "normal",
+        "textTransform": "none"
+      },
+      "hasHamburgerIcon": true,
+      "hamburgerIconSelector": ".hamburger .mh-icon",
+      "hamburgerClickBehavior": "on desktop: toggles is-open class but menu panel stays display:none (A Hyundai links only on mobile). On mobile: opens slide-in menu with full navigation.",
+      "hamburgerHoverEffect": null,
+      "hamburgerAnimation": {
+        "type": "class-toggle",
+        "description": "Toggles classes: hamburger gains 'is-open', mh-icon gains 'active'. On mobile the icon morphs to cross. On desktop no visible change to panel.",
+        "cssTransition": "transform-based morph to cross on mobile"
+      }
+    }
+  ],
+  "confidence": 0.95,
+  "uncertainty": false,
+  "notes": "Single row header with hamburger + logo on left, 7 nav items on right (6 text links/buttons + 1 CTA). 5 items have dropdown panels on hover. Veículos has the richest megamenu with vehicle images. Search form is inside Concessionárias dropdown (dealer search). No locale selector detected. Hamburger A Hyundai menu is mobile-only on desktop."
+}

@@ -1,0 +1,30 @@
+{
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "url": "http://localhost:3000/content/index",
+  "timestamp": "2026-03-19T16:30:00.000Z",
+  "rowCount": 2,
+  "rows": [
+    {
+      "index": 0,
+      "itemCount": 2,
+      "hasImages": true
+    },
+    {
+      "index": 1,
+      "itemCount": 6,
+      "hasImages": true
+    }
+  ],
+  "headerBarRowCount": 1,
+  "topLevelMenuItemCount": 6,
+  "notes": [
+    "Header bar (closed): 1 row(s), items: hamburger button + Hyundai logo (with image)",
+    "Menu open: 6 top-level items (Proprietários, Serviços, Veículos, Concessionárias [buttons], Alugar [link], Comprar [button])",
+    "Additional sections: mobile-ofertas-cta, mobile-institutional (4 icon cards), mobile-extra-links (8 links)",
+    "5 sub-panels with slide-in behavior for Proprietários, Serviços, Veículos, Concessionárias, Comprar",
+    "24 images total in menu (vehicle thumbnails, icon cards, institutional icons, etc.)"
+  ]
+}

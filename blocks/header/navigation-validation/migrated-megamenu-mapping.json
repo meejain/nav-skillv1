@@ -1,0 +1,181 @@
+{
+  "totalItemsAnalyzed": 44,
+  "triggers": 5,
+  "vehicleMegamenu": true,
+  "dealerSearchForm": true,
+  "hamburgerMenuMobileOnly": true,
+  "noOverlay": true,
+  "navTriggers": [
+    {
+      "label": "Proprietários",
+      "index": 0,
+      "hoverBehavior": { "hasEffect": true, "opensPanel": true, "description": "opens panel with icon-cards-left and text-links-right" },
+      "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/proprietarios.html" },
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "fixed",
+        "cssLeft": "0px",
+        "cssWidth": "1440px"
+      },
+      "panelItems": [
+        { "label": "Bluelink", "type": "icon-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "card highlight" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/bluelink.html" } },
+        { "label": "Assistência 24H", "type": "icon-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "card highlight" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/proprietarios.html?anchor=Assistencia24hrs" } },
+        { "label": "Programa Meu Hyundai", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "https://www.meuhyundai.com.br/" } },
+        { "label": "Acessórios HB20", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "https://bit.ly/acessorios-novo-hb20" } },
+        { "label": "Garantia", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/proprietarios.html?anchor=Garantia" } },
+        { "label": "Acessórios CRETA", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "https://hyundaimobis.com.br/categorias-de-produto/acessorios-novo-creta/" } },
+        { "label": "Manuais", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/proprietarios.html?anchor=Manuais" } },
+        { "label": "Agendamento de Serviço", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/servicos.html#Agendamento_de_servicos" } },
+        { "label": "Proconve", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/proprietarios/proconve" } }
+      ]
+    },
+    {
+      "label": "Serviços",
+      "index": 1,
+      "hoverBehavior": { "hasEffect": true, "opensPanel": true, "description": "opens panel with icon-cards-left and text-links-right" },
+      "clickBehavior": { "navigates": false, "description": "no action", "url": "#" },
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "fixed",
+        "cssLeft": "0px",
+        "cssWidth": "1440px"
+      },
+      "panelItems": [
+        { "label": "Planos de Manutenção", "type": "icon-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "card highlight" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/manutencao.html" } },
+        { "label": "myHyundaiCare Revisões Planejadas", "type": "icon-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "card highlight" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/revisoes-planejadas.html" } },
+        { "label": "Recall", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/proprietarios.html?anchor=anchor_recall_owners" } }
+      ]
+    },
+    {
+      "label": "Veículos",
+      "index": 2,
+      "hoverBehavior": { "hasEffect": true, "opensPanel": true, "description": "opens vehicle megamenu panel" },
+      "clickBehavior": { "navigates": false, "description": "no action", "url": "#" },
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "fixed",
+        "cssLeft": "0px",
+        "cssWidth": "1440px"
+      },
+      "featuredArea": {
+        "exists": true,
+        "type": "vehicle-featured-card",
+        "updatesOnHover": true,
+        "defaultVehicle": "Novo CRETA",
+        "description": "Large vehicle image with specs (Motor, Transmissão, Potência, Torque). Updates when hovering vehicle thumbnails."
+      },
+      "specDetails": {
+        "exists": true,
+        "fields": ["Motor", "Transmissão", "Potência máxima", "Torque máxima"],
+        "updatesOnHover": true
+      },
+      "categoryTabs": [
+        { "label": "Todos (9)", "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "filtersContent": true, "description": "filter to show all vehicles" } },
+        { "label": "SUV (6)", "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "filtersContent": true, "description": "filter to SUV only" } },
+        { "label": "Hatchback (1)", "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "filtersContent": true, "description": "filter to hatchback only" } },
+        { "label": "Sedan (1)", "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "filtersContent": true, "description": "filter to sedan only" } },
+        { "label": "Utilitario (1)", "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "filtersContent": true, "description": "filter to utilitario only" } }
+      ],
+      "panelItems": [
+        { "label": "Featured Vehicle Card (Novo CRETA default)", "type": "featured-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured area with hovered vehicle details", "description": "updates featured area with hovered vehicle details" }, "clickBehavior": { "navigates": true, "description": "navigate to vehicle page", "url": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html" } },
+        { "label": "Todos (9)", "type": "category-tab", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "navigates": false, "description": "filter to show all vehicles" } },
+        { "label": "SUV (6)", "type": "category-tab", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "navigates": false, "description": "filter to SUV only" } },
+        { "label": "Hatchback (1)", "type": "category-tab", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "navigates": false, "description": "filter to hatchback only" } },
+        { "label": "Sedan (1)", "type": "category-tab", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "navigates": false, "description": "filter to sedan only" } },
+        { "label": "Utilitario (1)", "type": "category-tab", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "tab highlight" }, "clickBehavior": { "navigates": false, "description": "filter to utilitario only" } },
+        { "label": "Novo CRETA", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card with CRETA specs", "description": "updates featured vehicle card with CRETA specs" }, "clickBehavior": { "navigates": true, "description": "navigate to vehicle page", "url": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html" } },
+        { "label": "HB20", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card", "description": "updates featured vehicle card" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/veiculos/novo-hyundai-hb20.html" } },
+        { "label": "Novo CRETA N Line", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card", "description": "updates featured vehicle card" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta-n-line.html" } },
+        { "label": "HB20S", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card", "description": "updates featured vehicle card" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/veiculos/novo-hyundai-hb20s.html" } },
+        { "label": "Tucson", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card", "description": "updates featured vehicle card" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/veiculos/tucson.html" } },
+        { "label": "KONA Híbrido", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card", "description": "updates featured vehicle card" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/veiculos/kona-hibrido.html" } },
+        { "label": "Palisade", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card", "description": "updates featured vehicle card" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/veiculos/palisade.html" } },
+        { "label": "IONIQ 5", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card", "description": "updates featured vehicle card" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/veiculos/ioniq-5.html" } },
+        { "label": "HR", "type": "vehicle-thumbnail", "hasImage": true, "hoverBehavior": { "hasEffect": true, "affectsOtherElements": true, "affectedElementDescription": "updates featured vehicle card", "description": "updates featured vehicle card" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/veiculos/hr.html" } },
+        { "label": "Previous arrow", "type": "carousel-nav", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "arrow highlight" }, "clickBehavior": { "navigates": false, "description": "scroll vehicle carousel left" } },
+        { "label": "Next arrow", "type": "carousel-nav", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "arrow highlight" }, "clickBehavior": { "navigates": false, "description": "scroll vehicle carousel right" } }
+      ]
+    },
+    {
+      "label": "Concessionárias",
+      "index": 3,
+      "hoverBehavior": { "hasEffect": true, "opensPanel": true, "description": "opens panel with icon-cards-left and dealer-search-right" },
+      "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/concessionarias.html" },
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "fixed",
+        "cssLeft": "0px",
+        "cssWidth": "1440px"
+      },
+      "panelItems": [
+        { "label": "Agendamento de Serviço", "type": "icon-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "card highlight" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/servicos.html#Agendamento_de_servicos" } },
+        { "label": "Test Drive", "type": "icon-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "card highlight" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/test-drive.html" } },
+        { "label": "Busque uma concessionária", "type": "search-title", "hasImage": false, "hoverBehavior": { "hasEffect": false }, "clickBehavior": { "navigates": false, "description": "no action" } },
+        { "label": "Minha localização", "type": "radio-button", "hasImage": false, "hoverBehavior": { "hasEffect": false }, "clickBehavior": { "navigates": false, "description": "switch to geolocation search" } },
+        { "label": "Buscar por nome", "type": "radio-button", "hasImage": false, "hoverBehavior": { "hasEffect": false }, "clickBehavior": { "navigates": false, "description": "switch to name search (default)" } },
+        { "label": "Buscar por CEP", "type": "radio-button", "hasImage": false, "hoverBehavior": { "hasEffect": false }, "clickBehavior": { "navigates": false, "description": "switch to ZIP code search" } },
+        { "label": "NOME DA CONCESSIONÁRIA", "type": "search-input", "hasImage": false, "hoverBehavior": { "hasEffect": false }, "clickBehavior": { "navigates": false, "description": "focus input" } },
+        { "label": "Search button", "type": "search-submit", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "button highlight" }, "clickBehavior": { "navigates": false, "description": "submit search" } }
+      ]
+    },
+    {
+      "label": "Comprar",
+      "index": 4,
+      "hoverBehavior": { "hasEffect": true, "opensPanel": true, "description": "opens panel with icon-cards-left and text-links-right" },
+      "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/monte-o-seu.html" },
+      "panelLayoutDetails": {
+        "measuredLeft": 0,
+        "measuredRight": 1440,
+        "viewportWidth": 1440,
+        "viewportContained": true,
+        "cssPosition": "fixed",
+        "cssLeft": "0px",
+        "cssWidth": "1440px"
+      },
+      "panelItems": [
+        { "label": "Ofertas", "type": "icon-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "card highlight" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/ofertas.html" } },
+        { "label": "Estoque - Pronta Entrega", "type": "icon-card", "hasImage": true, "hoverBehavior": { "hasEffect": true, "description": "card highlight" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/ver-estoque-concessionarias.html" } },
+        { "label": "Click to Buy", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/click-to-buy/simulacao.html" } },
+        { "label": "Hyundai Semprenovos", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/hyundai-semprenovos" } },
+        { "label": "Monte o seu", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/monte-o-seu.html" } },
+        { "label": "Vendas Diretas e PcD", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/vendas-diretas.html" } },
+        { "label": "Test Drive", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/test-drive.html" } },
+        { "label": "Financiamentos", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/financiamentos.html" } },
+        { "label": "Compare seu Hyundai", "type": "text-link", "hasImage": false, "hoverBehavior": { "hasEffect": true, "description": "underline" }, "clickBehavior": { "navigates": true, "description": "navigate", "url": "/content/hmb/br/compare-seu-hyundai" } }
+      ]
+    }
+  ],
+  "imageVerification": {
+    "allHighlightCardImagesLoaded": true,
+    "totalHighlightCardImages": 8,
+    "allVehicleCardImagesLoaded": true,
+    "totalVehicleCardImages": 9
+  },
+  "interactionTests": {
+    "proprietariosHoverOpensPanel": true,
+    "servicosHoverOpensPanel": true,
+    "veiculosHoverOpensPanel": true,
+    "concessionariasHoverOpensPanel": true,
+    "comprarHoverOpensPanel": true,
+    "vehicleCardHoverUpdatesFeatured": true,
+    "vehicleTabFilterWorks": true,
+    "suvTabFilteredCorrectly": true,
+    "todosTabResetsFilter": true
+  },
+  "differences": {
+    "cssPositionChange": "Original uses position:absolute, migrated uses position:fixed",
+    "localImagePaths": "Migrated version uses local relative image paths instead of absolute hyundai.com.br URLs"
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "gate": "mobile-dimensional-gate",
+  "viewport": 375,
+  "timestamp": "2026-03-19T16:05:28.500Z",
+  "checks": [
+    {
+      "id": "menu-list-width",
+      "label": "Menu list (div.mobile-nav-items) width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "menu-item-width-0",
+      "label": "Menu item \"item-0\" width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "menu-item-width-1",
+      "label": "Menu item \"item-1\" width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "menu-item-width-2",
+      "label": "Menu item \"item-2\" width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "menu-item-width-3",
+      "label": "Menu item \"item-3\" width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "menu-item-width-4",
+      "label": "Menu item \"Alugar›\" width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "menu-item-width-5",
+      "label": "Menu item \"item-5\" width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "items-left-edge",
+      "label": "First menu item starts at left edge (x=0)",
+      "expected": "0px (±2px)",
+      "actual": "0px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "items-right-edge",
+      "label": "Menu items extend to right edge",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "chevron-alignment-4",
+      "label": "Chevron for \"Alugar›\" near right edge",
+      "expected": "gap < 40px from right edge",
+      "actual": "20px from right edge",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "container-width-div_mobile-nav-items",
+      "label": "Container div.mobile-nav-items width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "container-width-div_mobile-main-panel",
+      "label": "Container div.mobile-main-panel width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "container-width-div_mobile-menu-container",
+      "label": "Container div.mobile-menu-container width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "container-width-nav_nav",
+      "label": "Container nav#nav width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "container-width-div_nav-wrapper",
+      "label": "Container div.nav-wrapper width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    },
+    {
+      "id": "container-width-div_header_block",
+      "label": "Container div.header.block width equals viewport",
+      "expected": "375px (±2px)",
+      "actual": "375px",
+      "pass": true,
+      "note": ""
+    }
+  ],
+  "passed": true,
+  "summary": "PASS — all 16 dimensional checks passed",
+  "detectedSelectors": {
+    "menuList": "auto-detected: div.mobile-nav-items"
+  }
+}

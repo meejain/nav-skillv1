@@ -1,0 +1,132 @@
+{
+  "rows": [
+    {
+      "rowIndex": 0,
+      "elements": [
+        {
+          "id": "row-0-hamburger",
+          "label": "Hamburger icon",
+          "type": "hamburger",
+          "hoverBehavior": {
+            "hasEffect": false,
+            "description": "no hover effect on desktop"
+          },
+          "clickBehavior": {
+            "navigates": false,
+            "description": "toggles is-open class on desktop but A Hyundai panel is display:none (mobile-only). Opens slide-in menu on mobile."
+          }
+        },
+        {
+          "id": "row-0-logo",
+          "label": "Hyundai logo",
+          "type": "logo",
+          "hoverBehavior": {
+            "hasEffect": false,
+            "description": "no hover effect"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to homepage",
+            "url": "/content/hmb/br"
+          }
+        },
+        {
+          "id": "row-0-nav-proprietarios",
+          "label": "Proprietários",
+          "type": "nav-link",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens dropdown panel with icon cards (Bluelink, Assistência 24H) and text links, header turns white, teal underline"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to proprietarios page",
+            "url": "/content/hmb/br/proprietarios.html"
+          }
+        },
+        {
+          "id": "row-0-nav-servicos",
+          "label": "Serviços",
+          "type": "nav-button",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens dropdown panel with icon cards (Planos de Manutenção, myHyundaiCare) and text link (Recall), header turns white, teal underline"
+          },
+          "clickBehavior": {
+            "navigates": false,
+            "description": "opens same dropdown panel"
+          }
+        },
+        {
+          "id": "row-0-nav-veiculos",
+          "label": "Veículos",
+          "type": "nav-button",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens megamenu with featured vehicle card on left, category tabs and vehicle thumbnails carousel on right, header turns white, teal underline"
+          },
+          "clickBehavior": {
+            "navigates": false,
+            "description": "opens same megamenu panel"
+          }
+        },
+        {
+          "id": "row-0-nav-concessionarias",
+          "label": "Concessionárias",
+          "type": "nav-link",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens dropdown with icon cards (Agendamento de Serviço, Test Drive) and dealer search form, header turns white, teal underline"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to concessionarias page",
+            "url": "/content/hmb/br/concessionarias.html"
+          }
+        },
+        {
+          "id": "row-0-nav-alugar",
+          "label": "Alugar",
+          "type": "nav-link",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "text underline highlight effect, teal underline"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to hyundai-assina page",
+            "url": "/content/hmb/br/hyundai-assina.html"
+          }
+        },
+        {
+          "id": "row-0-nav-comprar",
+          "label": "Comprar",
+          "type": "nav-link",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens dropdown panel with icon cards (Ofertas, Estoque - Pronta Entrega) and text links (7 items), header background turns white, teal underline"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to monte-o-seu page",
+            "url": "/content/hmb/br/monte-o-seu.html"
+          }
+        },
+        {
+          "id": "row-0-cta",
+          "label": "Ofertas CTA",
+          "type": "cta-button",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "darker teal background on hover, changes from teal to darker teal"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to ofertas page",
+            "url": "/content/hmb/br/ofertas.html"
+          }
+        }
+      ]
+    }
+  ]
+}

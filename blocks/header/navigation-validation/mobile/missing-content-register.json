@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "location": "Comprar sub-panel",
+      "description": "Solicite Cotação com nossa IA — icon card with icon_IA.svg, links to https://ia.hyundai.com.br/",
+      "resolved": true,
+      "resolution": "Added to nav.plain.html Comprar section as .mobile-only highlight-card"
+    },
+    {
+      "location": "Mobile menu top",
+      "description": "Ofertas CTA bar with teal background and ico_ofertas_branco.avif icon",
+      "resolved": true,
+      "resolution": "Added to nav.plain.html hamburger-menu section as .mobile-ofertas-cta"
+    },
+    {
+      "location": "A Hyundai institutional section",
+      "description": "Icon cards for A Hyundai (icon_a_hyundai.svg), Universo Hyundai (icon_mundo_hyundai.svg), Hyundai Financiamentos (icon_h_financiamentos.svg), Fale com a Hyundai (icon_fale_hyundai.svg)",
+      "resolved": true,
+      "resolution": "Added icon images to nav.plain.html hamburger-menu .mobile-institutional section"
+    },
+    {
+      "location": "Extra links section",
+      "description": "Conmebol Libertadores, ESG, Trabalhe Conosco — text links only on mobile",
+      "resolved": true,
+      "resolution": "Already present in nav.plain.html hamburger-menu section"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "headerStructure": {
+    "rowCount": 1,
+    "position": "fixed",
+    "background": "transparent",
+    "height": 60,
+    "zIndex": 9999
+  },
+  "desktopMapping": {
+    "rows": 1,
+    "elements": ["hamburger", "logo", "Proprietários", "Serviços", "Veículos", "Concessionárias", "Alugar", "Comprar", "Ofertas CTA"],
+    "dropdowns": 5,
+    "hasImages": true,
+    "hasSearchForm": true,
+    "hasLocaleSelector": false
+  },
+  "megamenuMapping": {
+    "totalItemsAnalyzed": 57,
+    "triggers": 5,
+    "vehicleMegamenu": true,
+    "dealerSearchForm": true,
+    "hamburgerMenuMobileOnly": true,
+    "noOverlay": true
+  },
+  "mobileMapping": {
+    "breakpointPx": 768,
+    "openBehavior": "slide-in-panel",
+    "hamburgerAnimation": "morph-to-cross-css-transform",
+    "menuItemsWidthLayout": "full-width-flush",
+    "topLevelMenuItemCount": 6,
+    "hasInstitutionalSection": true,
+    "hasExtraLinksSection": true,
+    "mobileOnlyContent": ["Solicite Cotação com IA", "Ofertas CTA bar"],
+    "hasSearchForm": false,
+    "hasLocaleSelector": false
+  },
+  "validationReport": {
+    "structuralSimilarity": null,
+    "structuralMismatches": [],
+    "status": "pending-implementation"
+  },
+  "status": "PENDING"
+}

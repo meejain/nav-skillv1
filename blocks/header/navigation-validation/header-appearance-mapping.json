@@ -1,0 +1,31 @@
+{
+  "hasChanges": true,
+  "headerBackgroundBehavior": {
+    "defaultState": "transparent",
+    "interactionState": "solid-white",
+    "classToggle": {
+      "openClass": "header-blur",
+      "closedClass": "header-blur"
+    },
+    "requiresBodyPaddingTop": false,
+    "textColorInversion": {
+      "defaultTextColor": "rgb(255, 255, 255)",
+      "interactionTextColor": "rgb(0, 0, 0)",
+      "description": "On transparent/default state, nav text is white to contrast with hero. When dropdown opens, header becomes solid white and text changes to black."
+    }
+  },
+  "triggers": [
+    {
+      "trigger": "hover-nav-item",
+      "description": "Hovering any nav item with a dropdown causes header to transition to solid white background. Active nav item gets a teal underline indicator.",
+      "headerEffect": "solid-white background, box-shadow or subtle border may appear",
+      "textEffect": "nav text color changes from white to black"
+    },
+    {
+      "trigger": "dropdown-open",
+      "description": "When any dropdown/megamenu panel is open, header stays solid white",
+      "headerEffect": "solid-white background persists while panel is open"
+    }
+  ],
+  "notes": "The header is transparent by default (overlaps hero), transitions to solid white when any dropdown is hovered/opened. Text color inverts from white to black. No body padding-top since content sits behind the transparent header. The .header-blur class is always present but the background changes via inline styles or additional classes when interaction occurs."
+}

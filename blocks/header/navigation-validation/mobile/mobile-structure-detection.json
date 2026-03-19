@@ -1,0 +1,27 @@
+{
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "url": "https://www.hyundai.com.br/",
+  "timestamp": "2026-03-19T15:45:14.810Z",
+  "rowCount": 2,
+  "rows": [
+    {
+      "index": 0,
+      "itemCount": 2,
+      "hasImages": true
+    },
+    {
+      "index": 1,
+      "itemCount": 6,
+      "hasImages": true
+    }
+  ],
+  "headerBarRowCount": 1,
+  "topLevelMenuItemCount": 6,
+  "notes": [
+    "Header bar (closed): 1 row(s), items per row: 2",
+    "Menu open: 6 top-level item(s)"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "triggerType": "hover",
+  "columnCount": 2,
+  "hasImages": true,
+  "hasHoverBehavior": true,
+  "hasClickBehavior": true,
+  "hasBlockStructure": true,
+  "nestedLevels": 1,
+  "animationType": "fade-in",
+  "hoverOutBehavior": "panel closes when mouse leaves header area",
+  "clickOutBehavior": "panel closes on click outside",
+  "overlayBehavior": {
+    "hasOverlay": false,
+    "overlayType": "none",
+    "overlayOpacity": "0",
+    "overlayDismisses": false
+  },
+  "promotionalBlocks": [],
+  "gridStructure": "full-width panel (1440px), position: absolute, top: 60px. Pattern: icon-cards column (left) + text-links or form column (right). Veículos has a unique layout: featured vehicle card (left) + category tabs + vehicle carousel (right).",
+  "hasSearchForm": true,
+  "searchFormDetails": {
+    "position": "inside Concessionárias dropdown panel",
+    "scope": "dealer search by name or CEP"
+  },
+  "hasLocaleSelector": false,
+  "columns": [
+    {
+      "columnIndex": 0,
+      "hasImages": true,
+      "label": "Icon cards / featured section (left)"
+    },
+    {
+      "columnIndex": 1,
+      "hasImages": false,
+      "label": "Text links / search form (right)"
+    }
+  ],
+  "panelDetails": {
+    "proprietarios": {
+      "panelId": "hh_owners",
+      "layout": "icon-cards-left + text-links-right",
+      "iconCards": ["Bluelink", "Assistência 24H"],
+      "textLinks": ["Programa Meu Hyundai", "Acessórios HB20", "Garantia", "Acessórios CRETA", "Manuais", "Agendamento de Serviço", "Proconve"],
+      "hasImages": true,
+      "imageCount": 2
+    },
+    "servicos": {
+      "panelId": "hh_schedule_service",
+      "layout": "icon-cards-left + text-links-right",
+      "iconCards": ["Planos de Manutenção", "myHyundaiCare Revisões Planejadas"],
+      "textLinks": ["Recall"],
+      "hasImages": true,
+      "imageCount": 2
+    },
+    "veiculos": {
+      "panelId": "hh_vehicles",
+      "layout": "featured-vehicle-left + category-tabs-vehicle-carousel-right",
+      "featuredVehicle": {
+        "defaultVehicle": "Novo CRETA",
+        "specs": ["Motor: Gamma 1.6 Turbo GDI Flex", "Transmissão: Automática de 7 velocidades", "Potência máxima: 176 cv @ 5.500 rpm", "Torque máxima: 27 kgfm @ 1.600 rpm"],
+        "hasLargeImage": true,
+        "updatesOnHover": true
+      },
+      "categoryTabs": ["Todos (9)", "SUV (6)", "Hatchback (1)", "Sedan (1)", "Utilitario (1)"],
+      "vehicles": [
+        {"name": "Novo CRETA", "hasImage": true, "href": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html"},
+        {"name": "HB20", "hasImage": true, "href": "/content/hmb/br/veiculos/novo-hyundai-hb20.html"},
+        {"name": "Novo CRETA N Line", "hasImage": true, "href": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta-n-line.html"},
+        {"name": "HB20S", "hasImage": true, "href": "/content/hmb/br/veiculos/novo-hyundai-hb20s.html"},
+        {"name": "Tucson", "hasImage": true, "href": "/content/hmb/br/veiculos/tucson.html"},
+        {"name": "KONA Híbrido", "hasImage": true, "href": "/content/hmb/br/veiculos/kona-hibrido.html"},
+        {"name": "Palisade", "hasImage": true, "href": "/content/hmb/br/veiculos/palisade.html"},
+        {"name": "IONIQ 5", "hasImage": true, "href": "/content/hmb/br/veiculos/ioniq-5.html"},
+        {"name": "HR", "hasImage": true, "href": "/content/hmb/br/veiculos/hr.html"}
+      ],
+      "hasCarouselNavigation": true,
+      "hasImages": true,
+      "imageCount": 10
+    },
+    "concessionarias": {
+      "panelId": "hh_dealer",
+      "layout": "icon-cards-left + search-form-right",
+      "iconCards": ["Agendamento de Serviço", "Test Drive"],
+      "searchForm": {
+        "title": "Busque uma concessionária",
+        "radioOptions": ["Minha localização", "Buscar por nome", "Buscar por CEP"],
+        "defaultOption": "Buscar por nome",
+        "inputPlaceholder": "NOME DA CONCESSIONÁRIA",
+        "hasSubmitButton": true
+      },
+      "hasImages": true,
+      "imageCount": 2
+    },
+    "comprar": {
+      "panelId": "hh_buy",
+      "layout": "icon-cards-left + text-links-right",
+      "iconCards": ["Ofertas", "Estoque - Pronta Entrega"],
+      "textLinks": ["Click to Buy", "Hyundai Semprenovos", "Monte o seu", "Vendas Diretas e PcD", "Test Drive", "Financiamentos", "Compare seu Hyundai"],
+      "hasImages": true,
+      "imageCount": 2
+    }
+  },
+  "confidence": 0.95,
+  "uncertainty": false,
+  "notes": "5 dropdown panels triggered on hover. All full-width (1440px). No overlay/backdrop. Consistent pattern: icon cards on left (grey bg), text links or form on right. Veículos is unique with featured vehicle card + specs and vehicle carousel with category filtering. Panel height varies: ~375px for most, ~490px for Veículos. Hamburger 'A Hyundai' section (12 links) only visible on mobile."
+}

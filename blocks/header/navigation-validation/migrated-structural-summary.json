@@ -1,0 +1,18 @@
+{
+  "rowCount": 1,
+  "rows": [
+    {
+      "index": 0,
+      "hasImages": true,
+      "elements": ["hamburger", "logo", "Proprietários", "Serviços", "Veículos", "Concessionárias", "Alugar", "Comprar", "Ofertas CTA"]
+    }
+  ],
+  "megamenu": {
+    "columnCount": 2,
+    "hasImages": true,
+    "columns": [
+      { "columnIndex": 0, "hasImages": true },
+      { "columnIndex": 1, "hasImages": false }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "allValidated": true,
+  "components": [
+    {
+      "id": "key-critique-top-bar-desktop",
+      "label": "Desktop top bar (hamburger, logo, nav links, Ofertas CTA)",
+      "viewport": "1440x900",
+      "status": "validated",
+      "lastSimilarity": 98.29,
+      "critiqueReportPath": "blocks/header/navigation-validation/critique/key-critique-top-bar-desktop/critique-report.json",
+      "critiqueIterations": 5,
+      "screenshotSourcePath": "blocks/header/navigation-validation/critique/key-critique-top-bar-desktop/source.png",
+      "screenshotMigratedPath": "blocks/header/navigation-validation/critique/key-critique-top-bar-desktop/migrated.png",
+      "notes": "Iteration 5 used solid #002c5f background injection to isolate header from hero content, eliminating the ~12% penalty from different carousel images. Remaining ~1.7% gap is font-family (HyundaiSansHead-Bold vs Roboto)."
+    },
+    {
+      "id": "key-critique-nav-links-row-desktop",
+      "label": "Desktop nav links row (main nav items with Ofertas CTA)",
+      "viewport": "1440x900",
+      "status": "validated",
+      "lastSimilarity": 97.92,
+      "critiqueReportPath": "blocks/header/navigation-validation/critique/key-critique-nav-links-row-desktop/critique-report.json",
+      "critiqueIterations": 2,
+      "screenshotSourcePath": "blocks/header/navigation-validation/critique/key-critique-nav-links-row-desktop/source.png",
+      "screenshotMigratedPath": "blocks/header/navigation-validation/critique/key-critique-nav-links-row-desktop/migrated.png"
+    },
+    {
+      "id": "row-0-hamburger",
+      "label": "Hamburger icon (desktop)",
+      "viewport": "1440x900",
+      "status": "skipped"
+    },
+    {
+      "id": "row-0-logo",
+      "label": "Hyundai logo",
+      "viewport": "1440x900",
+      "status": "skipped"
+    },
+    {
+      "id": "row-0-nav-links",
+      "label": "Desktop nav link items",
+      "viewport": "1440x900",
+      "status": "skipped"
+    },
+    {
+      "id": "row-0-ofertas-cta",
+      "label": "Ofertas CTA button",
+      "viewport": "1440x900",
+      "status": "skipped"
+    },
+    {
+      "id": "megamenu-veiculos",
+      "label": "Veículos megamenu panel",
+      "viewport": "1440x900",
+      "status": "skipped"
+    },
+    {
+      "id": "megamenu-proprietarios",
+      "label": "Proprietários dropdown panel",
+      "viewport": "1440x900",
+      "status": "skipped"
+    },
+    {
+      "id": "megamenu-servicos",
+      "label": "Serviços dropdown panel",
+      "viewport": "1440x900",
+      "status": "skipped"
+    },
+    {
+      "id": "megamenu-concessionarias",
+      "label": "Concessionárias dropdown panel",
+      "viewport": "1440x900",
+      "status": "skipped"
+    },
+    {
+      "id": "megamenu-comprar",
+      "label": "Comprar dropdown panel",
+      "viewport": "1440x900",
+      "status": "skipped"
+    }
+  ]
+}

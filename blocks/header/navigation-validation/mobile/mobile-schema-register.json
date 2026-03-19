@@ -1,0 +1,23 @@
+{
+  "items": [
+    {
+      "id": "mobile-row-0",
+      "label": "Mobile row 0",
+      "status": "validated",
+      "sourceMatch": true
+    },
+    {
+      "id": "mobile-row-1",
+      "label": "Mobile row 1",
+      "status": "validated",
+      "sourceMatch": true
+    },
+    {
+      "id": "mobile-menu-items",
+      "label": "Mobile top-level menu items",
+      "status": "validated",
+      "sourceMatch": true
+    }
+  ],
+  "allValidated": true
+}

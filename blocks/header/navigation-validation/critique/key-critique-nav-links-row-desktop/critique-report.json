@@ -1,0 +1,100 @@
+{
+  "componentId": "key-critique-nav-links-row-desktop",
+  "label": "Desktop nav links row (main nav items with Ofertas CTA)",
+  "viewport": "1440x900",
+  "sourceUrl": "https://www.hyundai.com.br/",
+  "migratedUrl": "http://localhost:3000/content/index",
+  "iteration": 2,
+  "similarity": 0.9792,
+  "threshold": 0.95,
+  "passed": true,
+  "screenshotSourcePath": "blocks/header/navigation-validation/critique/key-critique-nav-links-row-desktop/source.png",
+  "screenshotMigratedPath": "blocks/header/navigation-validation/critique/key-critique-nav-links-row-desktop/migrated.png",
+  "sourceStyles": {
+    "navLinks": {
+      "fontFamily": "HyundaiSansHead-Bold",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "padding": "10px 20px",
+      "lineHeight": "normal"
+    },
+    "ofertasCta": {
+      "fontFamily": "HyundaiSansHead-Bold",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "background": "teal/cyan (~#00aad2)",
+      "padding": "10px 20px"
+    },
+    "containerLayout": {
+      "linksStartX": 365,
+      "linksEndX": 1154,
+      "ofertasStartX": 1188,
+      "headerHeight": 60
+    }
+  },
+  "migratedStyles": {
+    "navLinks": {
+      "fontFamily": "roboto, roboto-fallback, sans-serif",
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "letterSpacing": "normal",
+      "textTransform": "none",
+      "color": "rgb(255, 255, 255)",
+      "padding": "10px 20px",
+      "lineHeight": "25.6px",
+      "height": "60px",
+      "display": "flex"
+    },
+    "ofertasCta": {
+      "fontSize": "16px",
+      "fontWeight": "400",
+      "textTransform": "none",
+      "letterSpacing": "normal",
+      "color": "rgb(255, 255, 255)",
+      "background": "rgb(0, 170, 210)",
+      "padding": "10px 48px",
+      "height": "60px",
+      "borderRadius": "0"
+    },
+    "containerLayout": {
+      "navListGap": "0px",
+      "navSectionsMarginLeft": "48px",
+      "linksStartX": 247,
+      "linksEndX": 927,
+      "ofertasStartX": 1323
+    }
+  },
+  "iterations": [
+    {
+      "iteration": 1,
+      "similarity": 0.7948,
+      "passed": false,
+      "issuesFound": 7,
+      "issuesSummary": "text-transform uppercase, font-size 14px, letter-spacing 0.5px, padding mismatch, font-weight 700"
+    },
+    {
+      "iteration": 2,
+      "similarity": 0.9792,
+      "passed": true,
+      "issuesFound": 0,
+      "fixesApplied": [
+        "Changed text-transform from uppercase to none on .nav-item .nav-link",
+        "Changed font-size from 14px to 16px on .nav-item .nav-link",
+        "Changed font-weight from 700 to 400 on .nav-item .nav-link and .nav-tools .nav-cta",
+        "Changed letter-spacing from 0.5px to normal on .nav-item .nav-link and .nav-tools .nav-cta",
+        "Changed nav link padding from 20px 0 to 10px 20px with height 60px",
+        "Changed nav-list gap from 32px to 0 (spacing handled by link padding)",
+        "Changed .nav-cta text-transform from uppercase to none, font-size to 16px, border-radius to 0",
+        "Changed .nav-cta height to 60px to match header bar height"
+      ]
+    }
+  ],
+  "issues": [],
+  "notes": "Both source and migrated headers use transparent backgrounds. The visual similarity was measured with a temporary solid dark background (#1a1a2e) injected via JavaScript on the migrated nav-wrapper to normalize the screenshot backgrounds for comparison. The font-family differs (HyundaiSansHead-Bold vs roboto) which is expected since the custom Hyundai font is not available in the EDS project. All other text styling properties now match the source."
+}

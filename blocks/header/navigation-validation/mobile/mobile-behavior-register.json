@@ -1,0 +1,177 @@
+{
+  "allValidated": true,
+  "items": [
+    {
+      "id": "mobile-hamburger",
+      "label": "Hamburger icon",
+      "tapMatch": { "matches": true, "description": "Opens mobile menu on tap" },
+      "behaviorMatch": { "matches": true, "description": "Toggles nav aria-expanded, shows mobile-menu-container" },
+      "animationMatch": {
+        "matches": true,
+        "description": "Morphs to cross (×) via CSS transform rotate(45deg/-45deg) on ::before/::after pseudo-elements, middle span becomes transparent",
+        "sourceSpeed": "0.5s ease-out",
+        "migratedSpeed": "0.5s ease-out"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-ofertas-cta",
+      "label": "Ofertas CTA bar",
+      "tapMatch": { "matches": true, "description": "Teal bar at top of menu — links to /content/hmb/br/ofertas.html" },
+      "behaviorMatch": { "matches": true, "description": "Navigates to ofertas page on tap" },
+      "animationMatch": { "matches": true, "description": "No animation, direct link", "sourceSpeed": "n/a", "migratedSpeed": "n/a" },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-heading-proprietarios",
+      "label": "Proprietários",
+      "tapMatch": { "matches": true, "description": "Opens Proprietários slide-in sub-panel" },
+      "behaviorMatch": {
+        "matches": true,
+        "pattern": "slide-in-panel",
+        "description": "Main panel slides left (translateX(-100%)), sub-panel slides in from right (translateX(100%) → 0). Back button returns to main panel."
+      },
+      "animationMatch": {
+        "matches": true,
+        "sourceSpeed": "0.5s ease-out",
+        "migratedSpeed": "0.5s ease-out",
+        "description": "Slide transition on both main panel and sub-panel"
+      },
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-heading-servicos",
+      "label": "Serviços",
+      "tapMatch": { "matches": true, "description": "Opens Serviços slide-in sub-panel" },
+      "behaviorMatch": {
+        "matches": true,
+        "pattern": "slide-in-panel",
+        "description": "Sub-panel with 2 icon cards (Planos de Manutenção, myHyundaiCare) + Recall link. Back button works."
+      },
+      "animationMatch": {
+        "matches": true,
+        "sourceSpeed": "0.5s ease-out",
+        "migratedSpeed": "0.5s ease-out"
+      },
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-heading-veiculos",
+      "label": "Veículos",
+      "tapMatch": { "matches": true, "description": "Opens Veículos slide-in sub-panel" },
+      "behaviorMatch": {
+        "matches": true,
+        "pattern": "slide-in-panel",
+        "description": "Sub-panel with 9 vehicle cards with thumbnails (Novo CRETA, HB20, Novo CRETA N Line, HB20S, Tucson, KONA Híbrido, Palisade, IONIQ 5, HR). Back button works."
+      },
+      "animationMatch": {
+        "matches": true,
+        "sourceSpeed": "0.5s ease-out",
+        "migratedSpeed": "0.5s ease-out"
+      },
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-heading-concessionarias",
+      "label": "Concessionárias",
+      "tapMatch": { "matches": true, "description": "Opens Concessionárias slide-in sub-panel" },
+      "behaviorMatch": {
+        "matches": true,
+        "pattern": "slide-in-panel",
+        "description": "Sub-panel with 2 icon cards (Agendamento de Serviço, Test Drive) + dealer search form with 3 radio buttons + search input. Back button works."
+      },
+      "animationMatch": {
+        "matches": true,
+        "sourceSpeed": "0.5s ease-out",
+        "migratedSpeed": "0.5s ease-out"
+      },
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-heading-alugar",
+      "label": "Alugar",
+      "tapMatch": { "matches": true, "description": "Direct link to /content/hmb/br/hyundai-assina.html" },
+      "behaviorMatch": {
+        "matches": true,
+        "pattern": "direct-link",
+        "description": "Navigates directly — no sub-panel (matches source)"
+      },
+      "animationMatch": {
+        "matches": true,
+        "description": "No animation, direct navigation",
+        "sourceSpeed": "n/a",
+        "migratedSpeed": "n/a"
+      },
+      "splitLinkPattern": {
+        "textClickBehavior": "navigate",
+        "chevronClickBehavior": "navigate"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-heading-comprar",
+      "label": "Comprar",
+      "tapMatch": { "matches": true, "description": "Opens Comprar slide-in sub-panel" },
+      "behaviorMatch": {
+        "matches": true,
+        "pattern": "slide-in-panel",
+        "description": "Sub-panel with 3 icon cards (Ofertas, Estoque, Solicite Cotação IA [mobile-only]) + 7 text links. Back button works."
+      },
+      "animationMatch": {
+        "matches": true,
+        "sourceSpeed": "0.5s ease-out",
+        "migratedSpeed": "0.5s ease-out"
+      },
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-institutional-section",
+      "label": "Institutional section (4 icon cards)",
+      "tapMatch": { "matches": true, "description": "Each card links to institutional page (A Hyundai, Universo Hyundai, Hyundai Financiamentos, Fale com a Hyundai)" },
+      "behaviorMatch": { "matches": true, "description": "Icon cards with row-reverse layout (icon on right), direct navigation links" },
+      "animationMatch": { "matches": true, "description": "No animation, direct links", "sourceSpeed": "n/a", "migratedSpeed": "n/a" },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-extra-links",
+      "label": "Extra links section (8 links)",
+      "tapMatch": { "matches": true, "description": "Text links at bottom of mobile menu (Sobre N Line, Copa Hyundai HB20, Conmebol Libertadores, ESG, etc.)" },
+      "behaviorMatch": { "matches": true, "description": "Direct navigation links" },
+      "animationMatch": { "matches": true, "description": "No animation, direct links", "sourceSpeed": "n/a", "migratedSpeed": "n/a" },
+      "status": "validated"
+    },
+    {
+      "id": "mobile-back-buttons",
+      "label": "Back buttons (all 5 sub-panels)",
+      "tapMatch": { "matches": true, "description": "Each sub-panel has ‹ CategoryName back button that returns to main panel" },
+      "behaviorMatch": { "matches": true, "description": "Closes sub-panel (translateX(100%)), slides main panel back (translateX(0))" },
+      "animationMatch": {
+        "matches": true,
+        "sourceSpeed": "0.5s ease-out",
+        "migratedSpeed": "0.5s ease-out",
+        "description": "Reverse slide transition"
+      },
+      "status": "validated"
+    }
+  ]
+}

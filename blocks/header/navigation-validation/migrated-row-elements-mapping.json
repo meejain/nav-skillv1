@@ -1,0 +1,132 @@
+{
+  "rows": [
+    {
+      "rowIndex": 0,
+      "elements": [
+        {
+          "id": "row-0-hamburger",
+          "label": "Hamburger icon",
+          "type": "hamburger",
+          "hoverBehavior": {
+            "hasEffect": false,
+            "description": "hamburger is display:none on desktop, not visible"
+          },
+          "clickBehavior": {
+            "navigates": false,
+            "description": "hamburger is display:none on desktop, not clickable. Present in DOM (.nav-hamburger) but hidden via CSS."
+          }
+        },
+        {
+          "id": "row-0-logo",
+          "label": "Hyundai logo",
+          "type": "logo",
+          "hoverBehavior": {
+            "hasEffect": false,
+            "description": "no hover effect"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to homepage",
+            "url": "/content/hmb/br"
+          }
+        },
+        {
+          "id": "row-0-nav-proprietarios",
+          "label": "Propriet\u00e1rios",
+          "type": "nav-link",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens dropdown panel with icon cards (Bluelink, Assist\u00eancia 24H) and text links (7 items), header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to proprietarios page",
+            "url": "/content/hmb/br/proprietarios.html"
+          }
+        },
+        {
+          "id": "row-0-nav-servicos",
+          "label": "Servi\u00e7os",
+          "type": "nav-button",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens dropdown panel with icon cards (Planos de Manuten\u00e7\u00e3o, myHyundaiCare) and text link (Recall), header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+          },
+          "clickBehavior": {
+            "navigates": false,
+            "description": "opens same dropdown panel, href is # so no page navigation"
+          }
+        },
+        {
+          "id": "row-0-nav-veiculos",
+          "label": "Ve\u00edculos",
+          "type": "nav-button",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens megamenu with featured vehicle card (Novo CRETA with specs) on left, category tabs (Todos, SUV, Hatchback, Sedan, Utilitario) and vehicle thumbnails on right, header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+          },
+          "clickBehavior": {
+            "navigates": false,
+            "description": "opens same megamenu panel, href is # so no page navigation"
+          }
+        },
+        {
+          "id": "row-0-nav-concessionarias",
+          "label": "Concession\u00e1rias",
+          "type": "nav-link",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens dropdown with icon cards (Agendamento de Servi\u00e7o, Test Drive) and dealer search form with radio buttons and text input, header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to concessionarias page",
+            "url": "/content/hmb/br/concessionarias.html"
+          }
+        },
+        {
+          "id": "row-0-nav-alugar",
+          "label": "Alugar",
+          "type": "nav-link",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "text underline highlight effect, teal underline"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to hyundai-assina page",
+            "url": "/content/hmb/br/hyundai-assina.html"
+          }
+        },
+        {
+          "id": "row-0-nav-comprar",
+          "label": "Comprar",
+          "type": "nav-link",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "opens dropdown panel with icon cards (Ofertas, Estoque - Pronta Entrega) and text links (7 items), header background turns white, teal underline via ::after pseudo-element (rgb(0,170,210) 2px)"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to monte-o-seu page",
+            "url": "/content/hmb/br/monte-o-seu.html"
+          }
+        },
+        {
+          "id": "row-0-cta",
+          "label": "Ofertas CTA",
+          "type": "cta-button",
+          "hoverBehavior": {
+            "hasEffect": true,
+            "description": "darker teal background on hover, changes from rgb(0,170,210) to rgb(0,144,181)"
+          },
+          "clickBehavior": {
+            "navigates": true,
+            "description": "navigates to ofertas page",
+            "url": "/content/hmb/br/ofertas.html"
+          }
+        }
+      ]
+    }
+  ]
+}

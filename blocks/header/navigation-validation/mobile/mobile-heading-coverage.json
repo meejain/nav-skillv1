@@ -1,0 +1,59 @@
+{
+  "headings": [
+    {
+      "label": "Proprietários",
+      "clicked": true,
+      "subItemCount": 9,
+      "behaviorMatches": true,
+      "pattern": "slide-in-panel",
+      "backButtonWorks": true,
+      "notes": "2 icon cards (Bluelink, Assistência 24H) + 7 text links"
+    },
+    {
+      "label": "Serviços",
+      "clicked": true,
+      "subItemCount": 3,
+      "behaviorMatches": true,
+      "pattern": "slide-in-panel",
+      "backButtonWorks": true,
+      "notes": "2 icon cards (Planos de Manutenção, myHyundaiCare) + 1 text link (Recall)"
+    },
+    {
+      "label": "Veículos",
+      "clicked": true,
+      "subItemCount": 9,
+      "behaviorMatches": true,
+      "pattern": "slide-in-panel",
+      "backButtonWorks": true,
+      "notes": "9 vehicle cards with thumbnails: Novo CRETA, HB20, Novo CRETA N Line, HB20S, Tucson, KONA Híbrido, Palisade, IONIQ 5, HR"
+    },
+    {
+      "label": "Concessionárias",
+      "clicked": true,
+      "subItemCount": 5,
+      "behaviorMatches": true,
+      "pattern": "slide-in-panel",
+      "backButtonWorks": true,
+      "notes": "2 icon cards (Agendamento de Serviço, Test Drive) + dealer search form with 3 radio buttons"
+    },
+    {
+      "label": "Alugar",
+      "clicked": true,
+      "subItemCount": 0,
+      "behaviorMatches": true,
+      "pattern": "direct-link",
+      "backButtonWorks": null,
+      "notes": "Direct link to /content/hmb/br/hyundai-assina.html — no sub-panel (matches source)"
+    },
+    {
+      "label": "Comprar",
+      "clicked": true,
+      "subItemCount": 10,
+      "behaviorMatches": true,
+      "pattern": "slide-in-panel",
+      "backButtonWorks": true,
+      "notes": "3 icon cards (Ofertas, Estoque, Solicite Cotação IA [mobile-only]) + 7 text links"
+    }
+  ],
+  "allCovered": true
+}

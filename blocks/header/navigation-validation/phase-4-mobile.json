@@ -1,0 +1,167 @@
+{
+  "breakpointPx": 768,
+  "menuTrigger": "hamburger",
+  "openBehavior": "slide-in-panel",
+  "tapVsHover": "tap-only",
+  "nestedBehavior": "slide-in-subpanel",
+  "hasMegamenuOnMobile": true,
+  "hamburgerAnimation": {
+    "type": "morph-to-cross",
+    "method": "css-transform",
+    "transition": "transform 0.5s ease-out",
+    "details": "3 span elements (.mh-bars .mh-first/.mh-middle/.mh-end), class toggle .mh-closed → .mh-open. First span rotates 45deg + translateY, middle fades/scales to 0, last span rotates -45deg + translateY."
+  },
+  "mobileMenuLayout": "slide-in-subpanel",
+  "menuItemsWidthLayout": "full-width-flush",
+  "accordionBehavior": {
+    "type": "none",
+    "description": "Source mobile menu does NOT use accordion/expand-collapse behavior. All nav items with sub-menus use a slide-in-panel pattern where the entire main panel slides left and a sub-panel slides in from the right. No accordion toggling, no expand/collapse within the root panel."
+  },
+  "overlayBehavior": {
+    "hasBackdropOverlay": false,
+    "description": "Source mobile menu does NOT have a semi-transparent backdrop overlay. The menu panel is a full-screen opaque white container (position: absolute, top: 100%, width: 100%, background: #fff) that fully covers the page content. Body scroll is not locked (overflow: auto). No overlay/backdrop/mask elements found in the DOM."
+  },
+  "slideInPanelBehavior": {
+    "direction": "right-to-left",
+    "backButtonPosition": "top-left",
+    "backButtonFormat": "← {categoryName}",
+    "transitionType": "transform-translateX",
+    "transitionDuration": "0.5s",
+    "transitionEasing": "ease-out",
+    "panelDepth": 1,
+    "mainMenuSlides": true
+  },
+  "hasSearchForm": false,
+  "hasLocaleSelector": false,
+  "mobileMenuItems": [
+    {
+      "label": "Ofertas CTA",
+      "type": "cta-link",
+      "url": "/content/hmb/br/ofertas.html",
+      "hasIcon": true,
+      "iconUrl": "ico_ofertas_branco.avif",
+      "splitLinkPattern": {
+        "textClickBehavior": "navigate",
+        "chevronClickBehavior": "no-chevron"
+      }
+    },
+    {
+      "label": "Veículos",
+      "type": "button",
+      "hasChevron": true,
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "subPanel": {
+        "type": "vehicle-grid",
+        "itemCount": 9,
+        "items": ["Novo CRETA", "HB20", "Novo CRETA N Line", "HB20S", "Tucson", "KONA Híbrido", "Palisade", "IONIQ 5", "HR"],
+        "hasImages": true
+      }
+    },
+    {
+      "label": "Proprietários",
+      "type": "button",
+      "hasChevron": true,
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "subPanel": {
+        "type": "mixed",
+        "iconCards": ["Bluelink", "Assistência 24H"],
+        "textLinks": ["Programa Meu Hyundai", "Acessórios HB20", "Garantia", "Acessórios CRETA", "Manuais", "Agendamento de Serviço", "Proconve"]
+      }
+    },
+    {
+      "label": "Serviços",
+      "type": "button",
+      "hasChevron": true,
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "subPanel": {
+        "type": "mixed",
+        "iconCards": ["Planos de Manutenção", "myHyundaiCare Revisões Planejadas"],
+        "textLinks": ["Recall"]
+      }
+    },
+    {
+      "label": "Concessionárias",
+      "type": "button",
+      "hasChevron": true,
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "subPanel": {
+        "type": "mixed-with-form",
+        "iconCards": ["Agendamento de Serviço", "Test Drive"],
+        "hasDealerSearchForm": true,
+        "dealerSearchOptions": ["Minha localização", "Buscar por nome", "Buscar por CEP"]
+      }
+    },
+    {
+      "label": "Alugar",
+      "type": "link",
+      "url": "/content/hmb/br/hyundai-assina.html",
+      "hasChevron": true,
+      "splitLinkPattern": {
+        "textClickBehavior": "navigate",
+        "chevronClickBehavior": "navigate"
+      }
+    },
+    {
+      "label": "Comprar",
+      "type": "button",
+      "hasChevron": true,
+      "splitLinkPattern": {
+        "textClickBehavior": "same-as-chevron",
+        "chevronClickBehavior": "expand"
+      },
+      "subPanel": {
+        "type": "mixed",
+        "iconCards": ["Ofertas", "Estoque - Pronta Entrega", "Solicite Cotação com nossa IA."],
+        "textLinks": ["Click to Buy", "Hyundai Semprenovos", "Monte o seu", "Vendas Diretas e PcD", "Test Drive", "Financiamentos", "Compare seu Hyundai"]
+      }
+    }
+  ],
+  "institutionalSection": {
+    "label": "A Hyundai",
+    "items": [
+      { "label": "A Hyundai", "url": "/content/hmb/br/a-hyundai.html", "hasIcon": true, "iconFile": "icon_a_hyundai.svg" },
+      { "label": "Universo Hyundai", "url": "/content/hmb/br/universo-hyundai.html", "hasIcon": true, "iconFile": "icon_mundo_hyundai.svg" },
+      { "label": "Hyundai Financiamentos", "url": "/content/hmb/br/financiamentos.html", "hasIcon": true, "iconFile": "icon_h_financiamentos.svg" },
+      { "label": "Fale com a Hyundai", "url": "/content/hmb/br/fale-com-a-hyundai.html", "hasIcon": true, "iconFile": "icon_fale_hyundai.svg" }
+    ]
+  },
+  "extraLinksSection": {
+    "items": [
+      { "label": "Sobre N Line", "url": "/content/hmb/br/sobre-n.html" },
+      { "label": "Copa Hyundai HB20", "url": "/content/hmb/br/copa-hyundai-hb20-2026.html" },
+      { "label": "Conmebol Libertadores", "url": "/content/hmb/br/conmebol-libertadores.html" },
+      { "label": "ESG", "url": "/content/hmb/br/esg.html" },
+      { "label": "Ética e Compliance", "url": "/content/hmb/br/a-hyundai/etica-e-compliance.html" },
+      { "label": "Fã Clubes", "url": "/content/hmb/br/clubes.html" },
+      { "label": "Etiquetas de Segurança", "url": "/content/hmb/br/etiquetas-de-seguranca.html" },
+      { "label": "Trabalhe Conosco", "url": "https://trabalheconosco.vagas.com.br/hyundai" }
+    ]
+  },
+  "mobileOnlyContent": [
+    {
+      "item": "Solicite Cotação com nossa IA.",
+      "location": "Comprar sub-panel",
+      "description": "Icon card with IA icon, links to https://ia.hyundai.com.br/"
+    },
+    {
+      "item": "Ofertas CTA bar",
+      "location": "Mobile menu top",
+      "description": "Teal CTA bar with Ofertas icon at top of mobile menu"
+    }
+  ],
+  "confidence": 0.95,
+  "uncertainty": false,
+  "notes": "Slide-in-panel pattern confirmed. Entire row is a single click target (same-as-chevron). Alugar is a direct navigation link, not a panel trigger. A Hyundai section has 4 icon cards. Extra text links at bottom include 3 mobile-only items (Conmebol Libertadores, ESG, Trabalhe Conosco). Comprar panel has mobile-only Solicite Cotação com IA icon card."
+}

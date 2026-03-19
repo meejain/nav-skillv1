@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-03-19T17:00:04.932Z",
+  "expectedCount": 19,
+  "actualCount": 25,
+  "validatedOnDisk": 22,
+  "uniqueRefsInNav": 22,
+  "passed": true,
+  "expectedSlots": [
+    {
+      "location": "Row 0",
+      "description": "Logo, icons, or images in this row"
+    },
+    {
+      "location": "Megamenu \"Proprietários\" → Bluelink",
+      "description": "Panel item image (Bluelink)"
+    },
+    {
+      "location": "Megamenu \"Proprietários\" → Assistência 24H",
+      "description": "Panel item image (Assistência 24H)"
+    },
+    {
+      "location": "Megamenu \"Serviços\" → Planos de Manutenção",
+      "description": "Panel item image (Planos de Manutenção)"
+    },
+    {
+      "location": "Megamenu \"Serviços\" → myHyundaiCare Revisões Planejadas",
+      "description": "Panel item image (myHyundaiCare Revisões Planejadas)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → Featured Vehicle Card (Novo CRETA default)",
+      "description": "Panel item image (Featured Vehicle Card (Novo CRETA default))"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → Novo CRETA",
+      "description": "Panel item image (Novo CRETA)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → HB20",
+      "description": "Panel item image (HB20)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → Novo CRETA N Line",
+      "description": "Panel item image (Novo CRETA N Line)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → HB20S",
+      "description": "Panel item image (HB20S)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → Tucson",
+      "description": "Panel item image (Tucson)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → KONA Híbrido",
+      "description": "Panel item image (KONA Híbrido)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → Palisade",
+      "description": "Panel item image (Palisade)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → IONIQ 5",
+      "description": "Panel item image (IONIQ 5)"
+    },
+    {
+      "location": "Megamenu \"Veículos\" → HR",
+      "description": "Panel item image (HR)"
+    },
+    {
+      "location": "Megamenu \"Concessionárias\" → Agendamento de Serviço",
+      "description": "Panel item image (Agendamento de Serviço)"
+    },
+    {
+      "location": "Megamenu \"Concessionárias\" → Test Drive",
+      "description": "Panel item image (Test Drive)"
+    },
+    {
+      "location": "Megamenu \"Comprar\" → Ofertas",
+      "description": "Panel item image (Ofertas)"
+    },
+    {
+      "location": "Megamenu \"Comprar\" → Estoque - Pronta Entrega",
+      "description": "Panel item image (Estoque - Pronta Entrega)"
+    }
+  ],
+  "missingByLocation": [],
+  "missingOrEmpty": []
+}
