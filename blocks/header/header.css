@@ -1,273 +1,888 @@
+/* stylelint-disable no-descending-specificity */
 
-/* header and nav layout */
+/* Hyundai header — transparent by default, solid white on interaction */
+
+/* === Base / Nav Wrapper === */
 header .nav-wrapper {
-  background-color: var(--background-color);
-  width: 100%;
-  z-index: 2;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background: transparent;
+  background-image: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 0%));
+  transition: background 0.3s ease;
+  color: #fff;
+  backdrop-filter: blur(10px);
 }
 
-header nav {
-  box-sizing: border-box;
-  display: grid;
-  grid-template:
-    'hamburger brand tools' var(--nav-height)
-    'sections sections sections' 1fr / auto 1fr auto;
+header .nav-wrapper.is-open {
+  background: #fff;
+  background-image: none;
+  color: #000;
+}
+
+/* === Header Container === */
+header .header-container {
+  display: flex;
   align-items: center;
-  gap: 0 24px;
-  margin: auto;
-  max-width: 1248px;
-  height: var(--nav-height);
-  padding: 0 24px;
-  font-family: var(--body-font-family);
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
-header nav[aria-expanded='true'] {
-  grid-template:
-    'hamburger brand' var(--nav-height)
-    'sections sections' 1fr
-    'tools tools' var(--nav-height) / auto 1fr;
-  overflow-y: auto;
-  min-height: 100dvh;
+/* === Logo === */
+header .nav-brand {
+  margin-right: auto;
+}
+
+header .nav-brand p {
+  margin: 0;
+}
+
+header .nav-brand-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+header .nav-brand img {
+  height: 16px;
+  width: auto;
+}
+
+header .nav-wrapper .nav-brand img {
+  filter: brightness(0) invert(1);
+}
+
+header .nav-wrapper.is-open .nav-brand img,
+header .nav-wrapper.drawer-open .nav-brand img {
+  filter: brightness(0) saturate(100%) invert(12%) sepia(85%) saturate(3000%) hue-rotate(210deg) brightness(70%) contrast(110%);
+}
+
+/* === Hamburger Button === */
+header .hamburger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  border-right: 1px solid rgb(255 255 255 / 30%);
+  cursor: pointer;
+  padding: 8px;
+  padding-right: 16px;
+  margin-right: 16px;
+  width: auto;
+  height: 40px;
+  position: relative;
+  z-index: 10;
+  color: inherit;
+}
+
+header .nav-wrapper.drawer-open .hamburger-btn {
+  border-right-color: rgb(0 0 0 / 15%);
+}
+
+header .hamburger-bars {
+  display: flex;
+  flex-direction: column;
+  width: 18px;
+  height: 9px;
+  position: relative;
+}
+
+header .bar {
+  display: block;
+  width: 18px;
+  height: 1px;
+  background: currentcolor;
+  border-radius: 0;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  position: absolute;
+  left: 0;
+}
+
+header .bar-1 {
+  top: 0;
+}
+
+header .bar-2 {
+  top: 4px;
+}
+
+header .bar-3 {
+  top: 8px;
+  width: 12px;
+}
+
+/* Hamburger → Cross animation */
+header .nav-wrapper.drawer-open .bar-1 {
+  transform: translateY(4px) rotate(45deg);
+  width: 18px;
+}
+
+header .nav-wrapper.drawer-open .bar-2 {
+  opacity: 0;
+}
+
+header .nav-wrapper.drawer-open .bar-3 {
+  transform: translateY(-4px) rotate(-45deg);
+  width: 18px;
+}
+
+/* === Nav Sections === */
+header .nav-sections {
+  display: none;
 }
 
 @media (width >= 900px) {
-  header .nav-wrapper {
-    position: relative;
-  }
-
-  header nav {
-    display: flex;
-    justify-content: space-between;
-    gap: 0 32px;
-    max-width: 1264px;
-    padding: 0 32px;
-  }
-
-  header nav[aria-expanded='true'] {
-    min-height: 0;
-    overflow: visible;
+  header .nav-sections {
+    display: block;
+    flex: 1 1 auto;
   }
 }
 
-header nav p {
-  margin: 0;
-  line-height: 1;
+header .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  height: 60px;
 }
 
-header nav a:any-link {
-  color: currentcolor;
-}
-
-/* hamburger */
-header nav .nav-hamburger {
-  grid-area: hamburger;
-  height: 22px;
+/* === Nav Item === */
+header .nav-item {
+  position: relative;
+  height: 100%;
   display: flex;
   align-items: center;
 }
 
-header nav .nav-hamburger button {
-  height: 22px;
-  margin: 0;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  background-color: var(--background-color);
+header .nav-item-trigger {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Hyundai Sans Head', Arial, Helvetica, sans-serif;
   color: inherit;
-  overflow: initial;
-  text-overflow: initial;
-  white-space: initial;
-}
-
-header nav .nav-hamburger-icon,
-header nav .nav-hamburger-icon::before,
-header nav .nav-hamburger-icon::after {
-  box-sizing: border-box;
-  display: block;
+  text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  white-space: nowrap;
   position: relative;
-  width: 20px;
+  letter-spacing: normal;
 }
 
-header nav .nav-hamburger-icon::before,
-header nav .nav-hamburger-icon::after {
+/* Active underline on hover */
+header .nav-item.is-active .nav-item-trigger::after {
   content: '';
   position: absolute;
-  background: currentcolor;
+  bottom: 0;
+  left: 14px;
+  right: 14px;
+  height: 3px;
+  background: rgb(0 170 210);
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon,
-header nav[aria-expanded='false'] .nav-hamburger-icon::before,
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  height: 2px;
-  border-radius: 2px;
-  background: currentcolor;
+/* === CTA Button (Ofertas) === */
+header .nav-item.nav-cta {
+  margin-left: auto;
+  border: 1px solid rgb(0 170 210);
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::before {
-  top: -6px;
+header .nav-item.nav-cta .nav-item-trigger {
+  background: rgb(0 170 210);
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 0;
+  font-weight: 400;
+  height: 100%;
+  font-size: 16px;
+  letter-spacing: normal;
 }
 
-header nav[aria-expanded='false'] .nav-hamburger-icon::after {
-  top: 6px;
+header .nav-wrapper.is-open .nav-item.nav-cta .nav-item-trigger,
+header .nav-wrapper.drawer-open .nav-item.nav-cta .nav-item-trigger {
+  color: #fff;
 }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon {
-  height: 22px;
+/* === Dropdown Panels (shared) === */
+header .nav-dropdown-panel {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  box-shadow: 0 4px 16px rgb(0 0 0 / 10%);
+  z-index: 100;
+  animation: nav-slide-down 0.2s ease;
 }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon::before,
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: 3px;
-  left: 1px;
-  transform: rotate(45deg);
-  transform-origin: 2px 1px;
-  width: 24px;
-  height: 2px;
-  border-radius: 2px;
+header .nav-dropdown-panel.is-active {
+  display: block;
 }
 
-header nav[aria-expanded='true'] .nav-hamburger-icon::after {
-  top: unset;
-  bottom: 3px;
-  transform: rotate(-45deg);
-}
+@keyframes nav-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
 
-@media (width >= 900px) {
-  header nav .nav-hamburger {
-    display: none;
-    visibility: hidden;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* brand */
-header .nav-brand {
-  grid-area: brand;
-  flex-basis: 128px;
-  font-size: var(--heading-font-size-s);
-  font-weight: 700;
-  line-height: 1;
+/* === Panel Container (2-column layout) === */
+header .panel-container {
+  display: flex;
+  gap: 0;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header nav .nav-brand img {
-  width: 128px;
-  height: auto;
+header .panel-col {
+  padding: 32px 24px;
 }
 
-/* sections */
-header nav .nav-sections {
-  grid-area: sections;
+header .panel-col-icons {
+  flex: 0 0 auto;
+  min-width: 260px;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+header .panel-col-links {
   flex: 1 1 auto;
-  display: none;
-  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 32px 40px;
 }
 
-header nav[aria-expanded='true'] .nav-sections {
-  display: block;
-  visibility: visible;
-  align-self: start;
+/* === Icon Cards === */
+header .icon-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+  font-size: 14px;
 }
 
-header nav .nav-sections ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: var(--body-font-size-s);
+header .icon-card:hover {
+  background: #eaeaea;
 }
 
-header nav .nav-sections ul > li {
+header .icon-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+header .icon-card-icon img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+header .icon-card-label {
   font-weight: 500;
 }
 
-header nav .nav-sections ul > li > ul {
-  margin-top: 0;
+/* === Text Links === */
+header .text-link {
+  display: block;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.15s ease;
+  border-bottom: 1px solid #eee;
 }
 
-header nav .nav-sections ul > li > ul > li {
+header .text-link:hover {
+  color: rgb(0 170 210);
+}
+
+header .text-link:last-child {
+  border-bottom: none;
+}
+
+/* === Vehicles Megamenu === */
+header .vehicles-panel .panel-container {
+  display: grid;
+  grid-template: "tabs tabs" auto "featured grid" 1fr / 340px 1fr;
+  padding: 24px;
+}
+
+header .vehicles-panel .panel-container > .vehicle-featured + .vehicle-grid {
+  display: flex;
+}
+
+header .vehicle-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+  grid-area: tabs;
+}
+
+header .vehicle-tab {
+  padding: 6px 16px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #666;
+  transition: all 0.15s ease;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+header .vehicle-tab.is-active {
+  background: #002c5f;
+  color: #fff;
+  border-color: #002c5f;
+}
+
+header .vehicle-tab:hover:not(.is-active) {
+  border-color: #999;
+  color: #333;
+}
+
+header .vehicle-featured {
+  grid-area: featured;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background: #f6f6f6;
+  border-radius: 8px;
+  min-height: 280px;
+}
+
+header .featured-img {
+  max-width: 280px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+header .featured-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #002c5f;
+  margin: 0 0 12px;
+}
+
+header .featured-specs {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 12px;
+  font-size: 12px;
+  margin: 0 0 16px;
+  width: 100%;
+  max-width: 280px;
+}
+
+header .featured-specs dt {
+  font-weight: 600;
+  color: #666;
+  margin: 0;
+}
+
+header .featured-specs dd {
+  color: #333;
+  margin: 0;
+}
+
+header .featured-link {
+  display: inline-block;
+  padding: 8px 24px;
+  background: rgb(0 170 210);
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 0;
+  margin-top: auto;
+}
+
+header .featured-link:hover {
+  background: rgb(0 150 190);
+}
+
+/* Vehicle Grid */
+header .vehicle-grid {
+  grid-area: grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 12px;
+  padding: 0 16px;
+  align-content: start;
+}
+
+header .vehicle-card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 12px 8px;
+  border-radius: 4px;
+  transition: background 0.15s ease;
+  color: #333;
+}
+
+header .vehicle-card-item:hover,
+header .vehicle-card-item.is-featured {
+  background: #f0f0f0;
+}
+
+header .vehicle-card-img {
+  width: 100%;
+  max-width: 120px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header .vehicle-card-img img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+header .vehicle-card-name {
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+  text-align: center;
+  color: #002c5f;
+}
+
+/* === Dealer Panel === */
+header .dealer-panel .panel-container {
+  display: flex;
+}
+
+header .panel-col-dealer {
+  flex: 1 1 auto;
+  padding: 32px 40px;
+}
+
+header .dealer-heading {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: #002c5f;
+}
+
+header .dealer-radio-group {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+header .dealer-radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+}
+
+header .dealer-radio-group input[type="radio"] {
+  accent-color: rgb(0 170 210);
+}
+
+header .dealer-input-group {
+  display: flex;
+  gap: 0;
+}
+
+header .dealer-input-group input[type="text"] {
+  flex: 1 1 auto;
+  padding: 10px 16px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  outline: none;
+}
+
+header .dealer-input-group input[type="text"]:focus {
+  border-color: rgb(0 170 210);
+}
+
+header .dealer-input-group button {
+  padding: 10px 16px;
+  background: rgb(0 170 210);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* === Hamburger Drawer === */
+header .hamburger-drawer {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  color: #333;
+  box-shadow: 4px 0 16px rgb(0 0 0 / 10%);
+  z-index: 99;
+  overflow-y: auto;
+  max-height: calc(100vh - 60px);
+  padding: 24px;
+  animation: nav-slide-in-left 0.3s ease-out;
+}
+
+header .hamburger-drawer.is-active {
+  display: block;
+}
+
+@keyframes nav-slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+header .drawer-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+header .drawer-icons .icon-card {
+  flex-direction: column;
+  text-align: center;
+  padding: 16px 8px;
+  gap: 8px;
+  background: #f6f6f6;
+  border-radius: 8px;
+}
+
+header .drawer-icons .icon-card-icon {
+  width: 48px;
+  height: 48px;
+}
+
+header .drawer-icons .icon-card-icon img {
+  width: 44px;
+  height: 44px;
+}
+
+header .drawer-icons .icon-card-label {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+header .drawer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+header .drawer-links .text-link {
+  padding: 12px 0;
+  font-size: 14px;
+}
+
+/* === Mobile Menu (slide-in-panel) === */
+header .mobile-menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: #fff;
+  z-index: 98;
+  overflow: hidden;
+}
+
+header .mobile-menu.is-active {
+  display: block;
+}
+
+header .mobile-slider {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  transition: transform 0.5s ease-out;
+}
+
+header .mobile-main-panel,
+header .mobile-sub-panel {
+  width: 100vw;
+  min-height: calc(100vh - 60px);
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+
+header .mobile-main-panel {
+  background: #fff;
+}
+
+/* Mobile nav items */
+header .mobile-nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 6px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  background: none;
+  cursor: pointer;
+  font-family: 'Hyundai Sans Head', Arial, Helvetica, sans-serif;
+  min-height: 48px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+header .mobile-nav-item:first-child {
+  border-top: none;
+}
+
+/* Ofertas CTA row */
+header .mobile-nav-cta {
+  background: rgb(0 170 210);
+  color: #000;
+  font-weight: 400;
+  border-bottom: none;
+  margin: 10px 18.75px;
+  width: auto;
+  height: 60px;
+}
+
+header .mobile-nav-chevron {
+  font-size: 22px;
+  color: #999;
+  flex-shrink: 0;
+  margin-left: 8px;
+}
+
+/* === Mobile Sub-Panel === */
+header .mobile-sub-panel {
+  background: #fff;
+}
+
+header .mobile-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #002c5f;
+  border: none;
+  border-bottom: 1px solid #eee;
+  background: #f8f8f8;
+  cursor: pointer;
+  font-family: 'Hyundai Sans Head', Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+
+header .mobile-back-arrow {
+  font-size: 24px;
+  line-height: 1;
+}
+
+/* Mobile icon cards (vehicles, highlighted items) */
+header .mobile-icon-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+header .mobile-icon-card img {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Mobile sub-panel text links */
+header .mobile-sub-link {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Dealer search in mobile */
+header .mobile-sub-list .dealer-search {
+  padding: 20px;
+}
+
+header .mobile-sub-list .dealer-heading {
+  font-size: 15px;
+  font-weight: 600;
+  color: #002c5f;
+  margin: 0 0 12px;
+}
+
+header .mobile-sub-list .dealer-radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin-bottom: 12px;
+}
+
+header .mobile-sub-list .dealer-radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+}
+
+header .mobile-sub-list .dealer-input-group {
+  display: flex;
+}
+
+header .mobile-sub-list .dealer-input-group input[type="text"] {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+}
+
+header .mobile-sub-list .dealer-input-group button {
+  padding: 10px 14px;
+  background: rgb(0 170 210);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* === Mobile Utility Section === */
+header .mobile-utility-section {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 0;
+}
+
+header .mobile-utility-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Hyundai Sans Head', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+header .mobile-utility-label {
   font-weight: 400;
 }
 
-@media (width >= 900px) {
-  header nav .nav-sections {
-    display: block;
-    visibility: visible;
-    white-space: nowrap;
-  }
+header .mobile-utility-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
 
-  header nav[aria-expanded='true'] .nav-sections {
-    align-self: unset;
-  }
+header .mobile-utility-icon img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
 
-  header nav .nav-sections .nav-drop {
-    position: relative;
-    padding-right: 16px;
-    cursor: pointer;
-  }
+/* === Mobile Extra Links === */
+header .mobile-extra-links {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 0;
+}
 
-  header nav .nav-sections .nav-drop::after {
-    content: '';
-    display: inline-block;
-    position: absolute;
-    top: 0.5em;
-    right: 2px;
-    transform: rotate(135deg);
-    width: 6px;
-    height: 6px;
-    border: 2px solid currentcolor;
-    border-radius: 0 1px 0 0;
-    border-width: 2px 2px 0 0;
-  }
+header .mobile-extra-link {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-family: 'Hyundai Sans Head', Arial, Helvetica, sans-serif;
+  border-bottom: none;
+}
 
-  header nav .nav-sections .nav-drop[aria-expanded='true']::after {
-    top: unset;
-    bottom: 0.5em;
-    transform: rotate(315deg);
-  }
-
-  header nav .nav-sections ul {
-    display: flex;
-    gap: 24px;
-    margin: 0;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li {
-    flex: 0 1 auto;
-    position: relative;
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul {
+/* === Responsive Breakpoints === */
+@media (width <= 899px) {
+  header .nav-sections {
     display: none;
-    position: relative;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul {
-    display: block;
-    position: absolute;
-    left: -24px;
-    width: 200px;
-    top: 150%;
-    padding: 16px;
-    background-color: var(--light-color);
-    white-space: initial;
+  header .header-container {
+    padding: 0 16px;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 16px;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
-  }
-
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
+  /* Hide desktop drawer on mobile */
+  header .hamburger-drawer {
+    display: none !important;
   }
 }
 
-/* tools */
-header nav .nav-tools {
-  grid-area: tools;
+@media (width >= 900px) {
+  header .hamburger-btn {
+    /* Hamburger visible on desktop too per source design */
+  }
+
+  header .hamburger-drawer {
+    top: 60px;
+  }
+
+  /* Hide mobile menu on desktop */
+  header .mobile-menu {
+    display: none !important;
+  }
 }
