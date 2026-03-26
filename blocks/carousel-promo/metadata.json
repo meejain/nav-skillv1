@@ -1,0 +1,31 @@
+{
+  "variantName": "carousel-promo",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-02-21T11:23:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.hyundai.com.br/",
+    "originPage": "Hyundai Brazil Homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "promo-carousel",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image + optional heading + optional CTA per slide",
+    "buttonCount": 1,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": ["homepage hero banners", "promotional landing pages", "campaign pages"],
+    "notSuitableFor": ["article pages", "product detail pages", "text-heavy pages"]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-02-21T11:23:00.000Z"
+  }
+}

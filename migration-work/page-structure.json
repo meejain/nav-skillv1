@@ -1,0 +1,172 @@
+{
+  "url": "https://www.hyundai.com.br/",
+  "title": "Hyundai Motor Brasil",
+  "sections": [
+    {
+      "id": "section-1-hero-carousel",
+      "name": "Hero Carousel",
+      "htmlLine": 892,
+      "description": "Full-width rotating banner with 6 slides. Mix of promotional images and video backgrounds. Slides: 1) Promoção Copa banner image, 2) Video lineup 'quem testa', 3) Creta N Line promo image, 4) Hyundai Assina video, 5) Palisade video with title/CTA, 6) IONIQ 5 promo image.",
+      "styling": "Dark background, full-width, auto-rotating with pagination dots and arrows",
+      "contentSequences": [
+        {
+          "type": "carousel-slide",
+          "content": "Promotional banner image linking to promocao.hyundai.com.br",
+          "image": "./images/eaa1f4ea39b6e98bc25652843c3ae7f7.png"
+        },
+        {
+          "type": "carousel-slide",
+          "content": "Video slide linking to /ofertas.html"
+        },
+        {
+          "type": "carousel-slide",
+          "content": "Creta N Line promotional image linking to /ofertas.html",
+          "image": "./images/b5726341101546e1b5aaa829e70e6abc.png"
+        },
+        {
+          "type": "carousel-slide",
+          "content": "Hyundai Assina video slide linking to /hyundai-assina.html"
+        },
+        {
+          "type": "carousel-slide",
+          "content": "Palisade video with heading 'Hyundai PALISADE', subtext 'A primeira classe dos SUVs', CTA 'Saiba mais'",
+          "image": null,
+          "hasText": true
+        },
+        {
+          "type": "carousel-slide",
+          "content": "IONIQ 5 promotional image with offer details",
+          "image": "https://www.hyundai.com.br/content/dam/hmb/new-home/mkv/ioniq-5/1920X800_MKV_Converao_IONIQ5_Signature_janeiro.webp"
+        }
+      ]
+    },
+    {
+      "id": "section-2-kona-video",
+      "name": "Kona Hybrid Video Hero",
+      "htmlLine": 1020,
+      "description": "Full-width video background section with Kona Hybrid car image overlay and CTA button 'Conheça' linking to /veiculos/kona-hibrido.html",
+      "styling": "Video background, car cutout overlay, dark theme",
+      "contentSequences": [
+        {
+          "type": "hero-with-video",
+          "content": "Kona Hybrid promotion with video background and car image overlay",
+          "image": "./images/021444cb61befd8390468b82bbe9e34c.png",
+          "cta": {"text": "Conheça", "url": "/veiculos/kona-hibrido.html"}
+        }
+      ]
+    },
+    {
+      "id": "section-3-vehicle-showroom",
+      "name": "Vehicle Showroom",
+      "htmlLine": 1052,
+      "description": "Interactive vehicle browser with h1 'Confira os carros da Hyundai'. Category tabs (SUV(6), Hatchback(1), Sedan(1), Utilitário(1)). Shows vehicle with model, version, engine, transmission, color swatches, price, and CTA buttons. Currently displaying KONA Híbrido ULTIMATE 2025/2026. Vehicle slider with 9 models: KONA Híbrido, Novo CRETA, CRETA N Line, Tucson, PALISADE, IONIQ 5, HB20, HB20S, HR.",
+      "styling": "Dark background (#000), white text, vehicle image carousel",
+      "contentSequences": [
+        {
+          "type": "heading",
+          "content": "Confira os carros da Hyundai"
+        },
+        {
+          "type": "vehicle-card",
+          "content": "KONA Híbrido ULTIMATE 2025/2026 - Motor Kappa 1.6 GDI HEV - DCT - A partir de R$ 215.590,00",
+          "image": "./images/1df91e39d05dfaa0d8f94cb579c7cc50.png"
+        },
+        {
+          "type": "vehicle-slider",
+          "content": "9 vehicle thumbnails in slider",
+          "vehicles": ["KONA Híbrido", "Novo CRETA", "CRETA N Line", "Tucson", "PALISADE", "IONIQ 5", "HB20", "HB20S", "HR"]
+        }
+      ]
+    },
+    {
+      "id": "section-4-mosaic",
+      "name": "Mosaic Grid",
+      "htmlLine": 1211,
+      "description": "Image mosaic grid with 5 items: top row has 2 side-by-side promotional cards (Creta offer, Kona offer), then 3 items below (IONIQ 5, Novo CRETA, Hyundai Now). All are linked images.",
+      "styling": "Grid layout, no text overlays - images contain text",
+      "contentSequences": [
+        {
+          "type": "mosaic-dual",
+          "content": "Oferta Novo CRETA Comfort Safety",
+          "image": "./images/24f35a83132c067ae11497b7b451037b.png",
+          "link": "/content/hmb/br/ofertas/oferta.html?codigo=02AE507F"
+        },
+        {
+          "type": "mosaic-dual",
+          "content": "Oferta KONA Híbrido Ultimate",
+          "image": "./images/2680548901c61c614357f9b669440c90.png",
+          "link": "/content/hmb/br/ofertas/oferta.html?codigo=4D76109A"
+        },
+        {
+          "type": "mosaic-single",
+          "content": "IONIQ 5",
+          "image": "./images/e83c67b267a25ade24d14ee32e7cd95a.png",
+          "link": "/content/hmb/br/veiculos/ioniq-5.html"
+        },
+        {
+          "type": "mosaic-single",
+          "content": "Novo Hyundai CRETA",
+          "image": "./images/1197c8706776e6b3b08514c8995c6cae.png",
+          "link": "/content/hmb/br/veiculos/novo-hyundai-creta_old2025.html"
+        },
+        {
+          "type": "mosaic-single",
+          "content": "Hyundai Now",
+          "image": "./images/fb3f0aae0ee8ff3f5064168acfd8602e.png",
+          "link": "/content/hmb/br/hyundai-now.html"
+        }
+      ]
+    },
+    {
+      "id": "section-5-offers",
+      "name": "Offers Slider",
+      "htmlLine": 1282,
+      "description": "Offers section with h2 'Ofertas', subtitle 'Garanta já seu novo Hyundai 0 km.' Contains offer cards in slider format. Each card has vehicle image, model name, version, price, highlights, action icons (Falar consultor, Cotação, Reservar, Test Drive, Bluelink), and expandable specs list. Multiple vehicles shown.",
+      "styling": "Light background, card-based slider with dark offer cards",
+      "contentSequences": [
+        {
+          "type": "section-heading",
+          "content": "Ofertas - Garanta já seu novo Hyundai 0 km."
+        },
+        {
+          "type": "offer-cards",
+          "content": "Multiple vehicle offer cards with pricing and CTAs"
+        }
+      ]
+    },
+    {
+      "id": "section-6-cta-offers",
+      "name": "Call to Action - Offers",
+      "htmlLine": 8187,
+      "description": "CTA section with image icon and text: 'A condição que você esperava para garantir o seu Hyundai 0km.' subtitle 'Conheça nossa página de ofertas.' CTA button 'Clique e confira' linking to /ofertas.html",
+      "styling": "Clean layout with icon + text + button",
+      "contentSequences": [
+        {
+          "type": "cta-with-image",
+          "content": "Offers CTA with icon",
+          "image": "https://www.hyundai.com.br/content/dam/hmb/new-home/icons/ofertas.avif",
+          "cta": {"text": "Clique e confira", "url": "/ofertas.html"}
+        }
+      ]
+    },
+    {
+      "id": "section-7-services-hub",
+      "name": "Services Link Hub",
+      "htmlLine": 8225,
+      "description": "Services hub section with h2 'Proprietários', icon + h3 'Serviços'. Contains service links: Recall, Revisão programada, Garantia, Manuais, Bluelink, Agendamento de serviços. Also has a large scheduling services banner image with CTA.",
+      "styling": "White background, link list with banner image",
+      "contentSequences": [
+        {
+          "type": "link-hub",
+          "content": "Service links for vehicle owners",
+          "links": ["Recall", "Revisão programada", "Garantia", "Manuais", "Bluelink", "Agendamento de serviços"]
+        }
+      ]
+    }
+  ],
+  "blockInventory": {
+    "local": ["cards", "columns", "footer", "fragment", "header", "hero"],
+    "library": ["Hero", "Carousel", "Cards", "Columns"]
+  },
+  "notes": "This is a React SPA homepage with complex interactive components. The vehicle showroom has interactive category filtering, color swatches, and vehicle slider - these need simplification for EDS authoring. The offers section contains extensive vehicle specification lists that should be condensed for the homepage migration."
+}
