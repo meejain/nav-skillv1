@@ -307,7 +307,17 @@ function setupGlobalListeners(nav) {
 export default async function decorate(block) {
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
-  const fragment = await loadFragment(navPath);
+
+  // Try raw content path first (local dev) to avoid double-processing by AEM pipeline.
+  // The AEM route (/nav.plain.html) pre-processes content server-side, then loadFragment
+  // processes it again, which can alter the expected 4-section structure.
+  let fragment = null;
+  if (!navMeta) {
+    fragment = await loadFragment('/content/nav');
+  }
+  if (!fragment) {
+    fragment = await loadFragment(navPath);
+  }
   if (!fragment) return;
 
   block.textContent = '';
