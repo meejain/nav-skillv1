@@ -1,20 +1,390 @@
+/* Footer block — Hyundai Motor Brasil */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #000;
+  color: #fff;
+  font-family: HyundaiSansText-Regular, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.2;
+  padding: 0;
+  margin: 0;
 }
 
 footer .footer > div {
-  margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
 }
 
 footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* CTA Button */
+footer .footer-cta {
+  text-align: center;
+}
+
+footer .footer-cta a {
+  display: inline-block;
+  background: #002c5f;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: HyundaiSansText-Medium, Arial, sans-serif;
+  text-decoration: none;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer-cta a:hover {
+  background: #003d7a;
+  text-decoration: none;
+}
+
+/* Hero Image */
+footer .footer-hero-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+footer .footer-hero-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Form Section */
+footer .footer-form {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 10px 0 30px;
+}
+
+footer .footer-form h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: HyundaiSansHead-Medium, Arial, sans-serif;
+  margin: 0 0 20px;
+}
+
+footer .footer-form .form-fields {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+footer .footer-form .form-field {
+  flex: 1;
+}
+
+footer .footer-form .form-field label {
+  display: block;
+  font-size: 12px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+footer .footer-form .form-field input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #fff;
+  font-size: 16px;
+  padding: 6px 0 7px 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+footer .footer-form .form-field input:focus {
+  border-bottom-color: #fff;
+}
+
+footer .footer-form .channel-preferences p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+footer .footer-form .channel-options {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+footer .footer-form .channel-options label,
+footer .footer-form .consent-options label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+footer .footer-form .consent-options {
+  margin-bottom: 16px;
+}
+
+footer .footer-form .consent-options label {
+  margin-bottom: 8px;
+}
+
+footer .footer-form input[type="checkbox"] {
+  accent-color: #002c5f;
+  min-width: 16px;
+  min-height: 16px;
+  cursor: pointer;
+}
+
+footer .footer-form button[type="submit"] {
+  display: block;
+  margin-left: auto;
+  background: #002c5f;
+  color: #fff;
+  border: 1px solid #002c5f;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-family: HyundaiSansText-Medium, Arial, sans-serif;
+  cursor: pointer;
+}
+
+footer .footer-form button[type="submit"]:hover {
+  background: #003d7a;
+  border-color: #003d7a;
+}
+
+/* Disclaimer */
+footer .footer-disclaimer {
+  max-width: 780px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+  padding: 0 0 16px;
+}
+
+/* Footer Links */
+footer .footer-links {
+  display: flex;
+  max-width: 780px;
+  margin: 0 auto 40px;
+  padding: 0 58px;
+}
+
+footer .footer-links-left {
+  flex: 1;
+  max-width: 50%;
+}
+
+footer .footer-links-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer-links-left li {
+  margin-bottom: 8px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer-links-left a {
+  font-size: 12px;
+  line-height: 1.2;
+}
+
+footer .footer-links-right {
+  flex: 1;
+  max-width: 50%;
+}
+
+/* Accordion */
+footer .accordion-item {
+  margin-bottom: 8px;
+}
+
+footer .accordion-toggle {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-family: HyundaiSansText-Bold, Arial, sans-serif;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+footer .accordion-toggle:hover {
+  opacity: 0.8;
+}
+
+footer .accordion-body {
+  padding: 8px 0 0 16px;
+}
+
+footer .accordion-body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .accordion-body li {
+  margin-bottom: 6px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .accordion-body a {
+  font-size: 12px;
+}
+
+/* Legal Links */
+footer .footer-legal {
+  display: flex;
+  gap: 16px;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 58px 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer-legal a {
+  font-size: 12px;
+}
+
+footer .footer-legal .cookie-manager {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 12px;
+  padding: 0;
+  cursor: pointer;
+  font-family: HyundaiSansText-Regular, Arial, sans-serif;
+}
+
+footer .footer-legal .cookie-manager:hover {
+  text-decoration: underline;
+}
+
+/* Logo + Copyright + Social */
+footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 780px;
+  margin: 0 auto 40px;
+  padding: 0 58px;
+}
+
+footer .footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+footer .footer-logo img {
+  width: 133px;
+  height: 19px;
+}
+
+footer .footer-logo .copyright {
+  color: #b4b4b4;
+  font-size: 12px;
+}
+
+footer .footer-social {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer-social a {
+  display: flex;
+  align-items: center;
+}
+
+footer .footer-social a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+footer .footer-social img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Proconve Notice */
+footer .footer-proconve {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  color: #000;
+  padding: 7px 15px 11px 12px;
+}
+
+footer .footer-proconve img {
+  width: 64px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer-proconve p {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000;
+  margin: 0;
+}
+
+/* Responsive: Mobile */
+@media (width <= 599px) {
+  footer .footer-form .form-fields {
+    flex-direction: column;
+  }
+
+  footer .footer-links {
+    flex-direction: column;
+    padding: 0 16px;
+  }
+
+  footer .footer-links-left,
+  footer .footer-links-right {
+    max-width: 100%;
+  }
+
+  footer .footer-links-left {
+    margin-bottom: 24px;
+  }
+
+  footer .footer-legal {
+    padding: 0 16px 16px;
+  }
+
+  footer .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+    align-items: flex-start;
+  }
+
+  footer .footer-form {
+    padding: 10px 16px 30px;
+  }
+
+  footer .footer-disclaimer {
+    padding: 0 16px 16px;
   }
 }
