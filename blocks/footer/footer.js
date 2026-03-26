@@ -130,39 +130,73 @@ function decorateSections(footer) {
     if (sectionNames[i]) section.classList.add(sectionNames[i]);
   });
 
-  // Links section: first child = left column, second = right column (accordions)
+  // Links section: flat structure — first UL = left column, h5+UL pairs = right column
   const linksSection = footer.querySelector('.footer-links');
   if (linksSection) {
-    const cols = linksSection.querySelectorAll(':scope > div');
-    if (cols[0]) cols[0].classList.add('footer-links-left');
-    if (cols[1]) {
-      cols[1].classList.add('footer-links-right');
-      buildAccordions(cols[1]);
+    const firstUl = linksSection.querySelector(':scope > ul');
+    const left = document.createElement('div');
+    left.className = 'footer-links-left';
+    if (firstUl) {
+      left.append(firstUl);
+      linksSection.prepend(left);
     }
+    const right = document.createElement('div');
+    right.className = 'footer-links-right';
+    [...linksSection.querySelectorAll(':scope > h5, :scope > ul')].forEach((el) => {
+      right.append(el);
+    });
+    linksSection.append(right);
+    buildAccordions(right);
   }
 
-  // Bottom section: logo paragraph, copyright, social icons
+  // Bottom section: logo, copyright, social icons
+  // Identify by content: logo has img[alt*=Logo], copyright starts with ©, rest = social
   const bottomSection = footer.querySelector('.footer-bottom');
   if (bottomSection) {
-    const paragraphs = bottomSection.querySelectorAll(':scope > p');
-    if (paragraphs[0]) paragraphs[0].classList.add('footer-logo');
-    if (paragraphs[1]) paragraphs[1].classList.add('copyright');
-    if (paragraphs[2]) paragraphs[2].classList.add('footer-social');
+    const paragraphs = [...bottomSection.querySelectorAll(':scope > p')];
+    const socialLinks = [];
+    paragraphs.forEach((p) => {
+      const text = p.textContent.trim();
+      if (p.querySelector('img[alt*="Logo"]')) {
+        p.classList.add('footer-logo');
+      } else if (text.startsWith('\u24D2') || text.startsWith('\u00A9') || text.startsWith('©')) {
+        p.classList.add('copyright');
+      } else if (p.querySelector('a[href]')) {
+        socialLinks.push(p);
+      }
+    });
+    // Merge social icon paragraphs into a single <p>
+    if (socialLinks.length > 1) {
+      const socialP = document.createElement('p');
+      socialP.className = 'footer-social';
+      socialLinks.forEach((p) => {
+        socialP.append(...p.childNodes);
+        p.remove();
+      });
+      bottomSection.append(socialP);
+    } else if (socialLinks.length === 1) {
+      socialLinks[0].classList.add('footer-social');
+    }
   }
 
-  // Legal section: convert pipe-separated links
+  // Legal section: convert cookie manager link to button
+  // DA may strip data-action, so match by text or data-action
   const legalSection = footer.querySelector('.footer-legal');
   if (legalSection) {
-    const cookieLink = legalSection.querySelector('a[data-action="cookie-manager"]');
-    if (cookieLink) {
-      const btn = document.createElement('button');
-      btn.className = 'cookie-manager';
-      btn.textContent = cookieLink.textContent;
-      btn.addEventListener('click', () => {
-        if (window.OneTrust) window.OneTrust.ToggleInfoDisplay();
-      });
-      cookieLink.replaceWith(btn);
-    }
+    const links = legalSection.querySelectorAll('a');
+    links.forEach((a) => {
+      const isCookie = a.getAttribute('data-action') === 'cookie-manager'
+        || a.textContent.trim().toLowerCase().includes('gerenciar cookies');
+      if (isCookie) {
+        const btn = document.createElement('button');
+        btn.className = 'cookie-manager';
+        btn.textContent = a.textContent;
+        btn.addEventListener('click', () => {
+          if (window.OneTrust) window.OneTrust.ToggleInfoDisplay();
+        });
+        a.replaceWith(btn);
+      }
+    });
   }
 
   // Form section: build the lead-capture form via JS
