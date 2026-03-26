@@ -1,5 +1,31 @@
 import { getMetadata } from '../../scripts/aem.js';
-import { loadFragment } from '../fragment/fragment.js';
+
+/**
+ * Fetches footer fragment HTML directly, bypassing decorateMain/loadSections.
+ * The AEM decoration pipeline mangles <form>, <input>, <label> elements and
+ * treats class-named divs as blocks (causing 404s). Since footer.js handles
+ * all its own decoration, we skip the pipeline entirely.
+ * @param {string} path The fragment path (without .plain.html)
+ * @returns {HTMLElement|null} A <div> containing the raw footer HTML
+ */
+async function fetchFooterHTML(path) {
+  if (!path || !path.startsWith('/') || path.startsWith('//')) return null;
+  const resp = await fetch(`${path}.plain.html`);
+  if (!resp.ok) return null;
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = await resp.text();
+
+  // rebase media paths (same as fragment.js does)
+  const resetBase = (tag, attr) => {
+    wrapper.querySelectorAll(`${tag}[${attr}^="./media_"]`).forEach((el) => {
+      el[attr] = new URL(el.getAttribute(attr), new URL(path, window.location)).href;
+    });
+  };
+  resetBase('img', 'src');
+  resetBase('source', 'srcset');
+
+  return wrapper;
+}
 
 /**
  * Adds accordion toggle behavior to footer link sections.
@@ -91,15 +117,23 @@ function decorateColumns(footer) {
  */
 export default async function decorate(block) {
   const footerMeta = getMetadata('footer');
-  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/content/footer';
-  const fragment = await loadFragment(footerPath);
+  const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
 
-  block.textContent = '';
-  const footer = document.createElement('div');
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  // Try raw content path first (preserves form elements and CSS classes).
+  // The AEM route (/footer.plain.html) processes content through the decoration
+  // pipeline which strips class names and converts <form>/<input>/<label> to text.
+  let footer = null;
+  if (!footerMeta) {
+    footer = await fetchFooterHTML('/content/footer');
+  }
+  if (!footer) {
+    footer = await fetchFooterHTML(footerPath);
+  }
+  if (!footer) return;
 
-  // Rebase relative image paths to fragment base
-  const base = new URL(footerPath, window.location);
+  // Determine base path for relative image rebasing
+  const basePath = footer.querySelector('.footer-cta-band') ? '/content/footer' : footerPath;
+  const base = new URL(basePath, window.location);
   footer.querySelectorAll('img[src^="images/"], source[srcset^="images/"]').forEach((el) => {
     const attr = el.hasAttribute('srcset') ? 'srcset' : 'src';
     el[attr] = new URL(el.getAttribute(attr), base).href;
@@ -112,5 +146,6 @@ export default async function decorate(block) {
   // Create two-column layout (links left, info right)
   decorateColumns(footer);
 
+  block.textContent = '';
   block.append(footer);
 }
