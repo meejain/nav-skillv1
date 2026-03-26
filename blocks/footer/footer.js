@@ -37,6 +37,79 @@ function buildAccordions(container) {
 }
 
 /**
+ * Builds the newsletter signup form for the footer.
+ * @param {Element} section The form section element (contains the h4 heading)
+ */
+function buildForm(section) {
+  const form = document.createElement('form');
+  form.addEventListener('submit', (e) => e.preventDefault());
+
+  const fields = document.createElement('div');
+  fields.className = 'form-fields';
+  [
+    { label: 'NOME*', name: 'name' },
+    { label: 'SOBRENOME*', name: 'surname' },
+    { label: 'WHATSAPP*', name: 'cellphone' },
+    { label: 'E-MAIL*', name: 'email' },
+  ].forEach(({ label, name }) => {
+    const field = document.createElement('div');
+    field.className = 'form-field';
+    const lbl = document.createElement('label');
+    lbl.textContent = label;
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.name = name;
+    field.append(lbl, input);
+    fields.append(field);
+  });
+
+  const channels = document.createElement('div');
+  channels.className = 'channel-preferences';
+  const channelText = document.createElement('p');
+  channelText.textContent = 'Desejo ser contatado pelos seguintes canais:';
+  const channelOpts = document.createElement('div');
+  channelOpts.className = 'channel-options';
+  [
+    { label: 'E-mail', name: 'channel-email', checked: true },
+    { label: 'SMS', name: 'channel-sms', checked: false },
+    { label: 'Telefone', name: 'channel-telefone', checked: false },
+    { label: 'Whatsapp', name: 'channel-whatsapp', checked: false },
+    { label: 'Vídeo Chamada', name: 'channel-videochamada', checked: false },
+  ].forEach(({ label, name, checked }) => {
+    const lbl = document.createElement('label');
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.name = name;
+    cb.checked = checked;
+    lbl.append(cb, ` ${label}`);
+    channelOpts.append(lbl);
+  });
+  channels.append(channelText, channelOpts);
+
+  const consent = document.createElement('div');
+  consent.className = 'consent-options';
+  [
+    { name: 'consent-marketing', checked: true, text: 'Das opções marcadas, desejo receber informações da HMB, sua Rede de Concessionárias e Banco Hyundai, sobre ofertas, lançamentos, serviços, pesquisas, eventos e comunicação institucional.' },
+    { name: 'consent-privacy', checked: true, text: 'Declaro que li e estou ciente com os termos da Politíca de Privacidade Hyundai' },
+  ].forEach(({ name, checked, text }) => {
+    const lbl = document.createElement('label');
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.name = name;
+    cb.checked = checked;
+    lbl.append(cb, ` ${text}`);
+    consent.append(lbl);
+  });
+
+  const submit = document.createElement('button');
+  submit.type = 'submit';
+  submit.textContent = 'ENVIAR';
+
+  form.append(fields, channels, consent, submit);
+  section.append(form);
+}
+
+/**
  * Decorates the footer sections by position.
  * Section order: CTA, Hero Image, Form, Disclaimer, Links, Legal, Bottom, Proconve
  * @param {Element} footer The footer wrapper element
@@ -92,25 +165,9 @@ function decorateSections(footer) {
     }
   }
 
-  // Form section: classify inner divs
+  // Form section: build the lead-capture form via JS
   const formSection = footer.querySelector('.footer-form');
-  if (formSection) {
-    const form = formSection.querySelector('form');
-    if (form) {
-      const formDivs = form.querySelectorAll(':scope > div');
-      if (formDivs[0]) {
-        formDivs[0].classList.add('form-fields');
-        formDivs[0].querySelectorAll(':scope > div').forEach((f) => f.classList.add('form-field'));
-      }
-      if (formDivs[1]) {
-        formDivs[1].classList.add('channel-preferences');
-        const optionsDiv = formDivs[1].querySelector(':scope > div');
-        if (optionsDiv) optionsDiv.classList.add('channel-options');
-      }
-      if (formDivs[2]) formDivs[2].classList.add('consent-options');
-      form.addEventListener('submit', (e) => e.preventDefault());
-    }
-  }
+  if (formSection) buildForm(formSection);
 }
 
 /**
