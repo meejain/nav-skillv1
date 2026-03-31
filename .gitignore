@@ -11,3 +11,9 @@ helix-importer-ui
 # Ensure these files are tracked
 !CLAUDE.md
 !AGENTS.md
+
+# Navigation validation infrastructure (auto-added by nav orchestrator hook)
+migration-work/navigation-validation/
+
+# Footer validation infrastructure (auto-added by footer orchestrator hook)
+migration-work/footer-validation/
