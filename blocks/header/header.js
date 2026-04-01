@@ -2,6 +2,35 @@ import { getMetadata } from '../../scripts/aem.js';
 
 const isDesktop = window.matchMedia('(min-width: 900px)');
 
+/**
+ * Find the first anchor in a list item, whether it's a direct child
+ * or wrapped in a <p> (as DA/EDS content delivery does).
+ */
+function findItemLink(li) {
+  return li.querySelector(':scope > a') || li.querySelector(':scope > p > a');
+}
+
+/**
+ * Extract the text label for a nav sub-item.
+ * DA may split <a><picture></a> and text into separate <p> siblings,
+ * so if the anchor text is empty, check sibling <p> elements.
+ */
+function getItemLabel(li, a) {
+  const text = a.textContent.trim();
+  if (text) return text;
+  // DA format: <li><p><a><picture>...</picture></a></p><p>Label</p></li>
+  const paragraphs = li.querySelectorAll(':scope > p');
+  for (let i = 0; i < paragraphs.length; i += 1) {
+    const p = paragraphs[i];
+    if (!p.querySelector('a') && p.textContent.trim()) {
+      return p.textContent.trim();
+    }
+  }
+  // Fallback to img alt text
+  const img = a.querySelector('img');
+  return img ? (img.alt || '') : '';
+}
+
 const VEHICLE_CATEGORIES = [
   { label: 'Todos', filter: null },
   { label: 'SUV', filter: ['Novo CRETA', 'Novo CRETA N Line', 'Tucson', 'KONA Híbrido', 'Palisade', 'IONIQ 5'] },
@@ -72,7 +101,7 @@ function buildImageCard(li) {
   }
   const label = document.createElement('span');
   label.className = 'nav-card-label';
-  label.textContent = a.textContent.trim();
+  label.textContent = getItemLabel(li, a);
   card.append(label);
   return card;
 }
@@ -83,7 +112,7 @@ function buildTextLink(li) {
   const link = document.createElement('a');
   link.href = a.href;
   link.className = 'nav-panel-link';
-  link.textContent = a.textContent.trim();
+  link.textContent = getItemLabel(li, a);
   return link;
 }
 
@@ -171,7 +200,7 @@ function buildVehiclePanel(subItems) {
     if (!a) return;
     const img = a.querySelector('img');
     if (!img) return;
-    const name = a.textContent.trim();
+    const name = getItemLabel(li, a);
     const card = document.createElement('a');
     card.href = a.href;
     card.className = 'nav-vehicle-card';
@@ -493,7 +522,6 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   let resp = await fetch('/content/nav.plain.html');
   if (!resp.ok) {
-    console.log(navPath);
     resp = await fetch(`${navPath}.plain.html`);
   }
   if (!resp.ok) return;
@@ -535,12 +563,12 @@ export default async function decorate(block) {
   navList.className = 'nav-list';
   const topItems = sections[1].querySelectorAll(':scope > ul > li');
   topItems.forEach((li, idx) => {
-    const a = li.querySelector(':scope > a');
+    const a = findItemLink(li);
     if (!a) return;
     const navItem = document.createElement('li');
     navItem.className = 'nav-item';
     navItem.setAttribute('aria-expanded', 'false');
-    const triggerText = a.textContent.trim();
+    const triggerText = getItemLabel(li, a);
     const subUl = li.querySelector(':scope > ul');
     const isLastItem = idx === topItems.length - 1;
     if (isLastItem) {
