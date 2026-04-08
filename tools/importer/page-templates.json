@@ -34,6 +34,131 @@
           "instances": [".link-hub"]
         }
       ]
+    },
+    {
+      "name": "vehicle-detail-page",
+      "urls": ["https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html"],
+      "description": "Vehicle detail page showcasing a specific Hyundai model with features, specs, gallery, and CTAs",
+      "blocks": [
+        {
+          "name": "hero-product",
+          "instances": [".product-banner"]
+        },
+        {
+          "name": "tabs-design",
+          "instances": [".product-design"]
+        },
+        {
+          "name": "cards-feature",
+          "instances": [".container-colors"]
+        },
+        {
+          "name": "carousel-gallery",
+          "instances": [".container-colors .product-carousel"]
+        },
+        {
+          "name": "columns-media",
+          "instances": ["#creta_potamalas"]
+        },
+        {
+          "name": "accordion-tech",
+          "instances": ["#tecnologia-e-conectividade .product-accordion"]
+        },
+        {
+          "name": "cards-gallery",
+          "instances": ["[id$='product_gallery']", "[id$='product_gallery_282470564']"]
+        },
+        {
+          "name": "carousel-lifestyle",
+          "instances": [".product-parallax"]
+        },
+        {
+          "name": "columns-compare",
+          "instances": [".product-comparator"]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero-banner",
+          "name": "Hero Banner",
+          "selector": ".product-banner",
+          "style": null,
+          "blocks": ["hero-product"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-design",
+          "name": "Design",
+          "selector": ".product-design",
+          "style": null,
+          "blocks": ["tabs-design"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3-performance-safety",
+          "name": "Performance and Safety",
+          "selector": ".container-colors",
+          "style": null,
+          "blocks": ["cards-feature", "carousel-gallery"],
+          "defaultContent": [".container-colors > .product-header"]
+        },
+        {
+          "id": "section-4-trunk-space",
+          "name": "Trunk Space",
+          "selector": "#creta_potamalas",
+          "style": "dark",
+          "blocks": ["columns-media"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5-technology",
+          "name": "Technology",
+          "selector": "#tecnologia-e-conectividade",
+          "style": null,
+          "blocks": ["accordion-tech"],
+          "defaultContent": ["#tecnologia-e-conectividade > .product-header"]
+        },
+        {
+          "id": "section-6-comfort",
+          "name": "Comfort",
+          "selector": "[id$='product_gallery']:not([id$='product_gallery_282470564'])",
+          "style": null,
+          "blocks": ["cards-gallery"],
+          "defaultContent": ["[id$='product_gallery']:not([id$='product_gallery_282470564']) > .product-header"]
+        },
+        {
+          "id": "section-7-accessories",
+          "name": "Accessories",
+          "selector": "[id$='product_gallery_282470564']",
+          "style": null,
+          "blocks": ["cards-gallery"],
+          "defaultContent": ["[id$='product_gallery_282470564'] > .product-header"]
+        },
+        {
+          "id": "section-8-parallax",
+          "name": "Parallax Gallery",
+          "selector": ".product-parallax",
+          "style": null,
+          "blocks": ["carousel-lifestyle"],
+          "defaultContent": []
+        },
+        {
+          "id": "section-9-cta",
+          "name": "Call to Action",
+          "selector": "#button_quote_add",
+          "style": "dark",
+          "blocks": [],
+          "defaultContent": ["#button_quote_add"]
+        },
+        {
+          "id": "section-10-comparator",
+          "name": "Version Comparator",
+          "selector": ".product-comparator",
+          "style": null,
+          "blocks": ["columns-compare"],
+          "defaultContent": [".product-comparator > .product-header"]
+        }
+      ]
     }
   ]
 }

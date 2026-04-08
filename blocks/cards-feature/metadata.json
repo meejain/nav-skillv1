@@ -1,0 +1,31 @@
+{
+  "variantName": "cards-feature",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-04-07T20:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html",
+    "originPage": "Hyundai Novo Creta Vehicle Detail Page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "color-selector",
+    "imagePattern": "icon"
+  },
+  "contentPattern": {
+    "structure": "color swatch + label per card",
+    "buttonCount": 0,
+    "imageCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": ["vehicle color selectors", "product variant choosers", "swatch grids"],
+    "notSuitableFor": ["text-heavy cards", "article listings"]
+  },
+  "usage": {
+    "pagesUsing": ["/veiculos/novo-hyundai-creta"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-07T20:20:00.000Z"
+  }
+}

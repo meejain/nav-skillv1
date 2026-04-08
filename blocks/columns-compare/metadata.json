@@ -1,0 +1,31 @@
+{
+  "variantName": "columns-compare",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-04-07T20:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html",
+    "originPage": "Hyundai Novo Creta Vehicle Detail Page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "version-comparator",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "vehicle silhouette + version selector + specs table per column",
+    "buttonCount": 0,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": ["vehicle version comparators", "product tier comparison", "spec comparison layouts"],
+    "notSuitableFor": ["simple text columns", "image galleries"]
+  },
+  "usage": {
+    "pagesUsing": ["/veiculos/novo-hyundai-creta"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-07T20:20:00.000Z"
+  }
+}

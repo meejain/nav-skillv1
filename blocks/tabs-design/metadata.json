@@ -1,0 +1,31 @@
+{
+  "variantName": "tabs-design",
+  "baseBlock": "tabs",
+  "version": "1.0.0",
+  "created": "2026-04-07T20:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html",
+    "originPage": "Hyundai Novo Creta Vehicle Detail Page",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "design-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + subtitle + description + tab labels + carousel content per tab",
+    "buttonCount": 0,
+    "imageCount": 8
+  },
+  "reuseGuidance": {
+    "suitableFor": ["vehicle design sections", "product feature tabs", "exterior/interior showcases"],
+    "notSuitableFor": ["FAQ tabs", "simple text tabs"]
+  },
+  "usage": {
+    "pagesUsing": ["/veiculos/novo-hyundai-creta"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-07T20:20:00.000Z"
+  }
+}

@@ -1,294 +1,291 @@
 {
-  "url": "https://www.hyundai.com.br/",
-  "pageTitle": "Hyundai Motor Brasil",
+  "url": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html",
+  "pageTitle": "Novo CRETA | Um SUV tão poderoso quanto você",
   "sections": [
     {
-      "sectionId": "section-1-hero-carousel",
+      "sectionId": "section-1-hero-banner",
       "sectionStyle": null,
-      "sequences": [
-        {
-          "decision": "block",
-          "blockName": "carousel-promo",
-          "blockVariant": "carousel-promo",
-          "rationale": "Hero area with 6 rotating slides containing promotional images and text. Maps directly to Carousel block with image + text per row.",
-          "content": {
-            "slides": [
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/new-home/mkv/promo_copa/1920x800_MKV_IBR_Promocao-Copa.webp",
-                "imageAlt": "Promoção Copa Hyundai",
-                "link": "https://promocao.hyundai.com.br/"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/new-home/mkv/ofertas/2026/jan/1920x800_MKV_CONVERSAO_CRETA-N-LINE_Quem-compara-compra-Hyundai.webp",
-                "imageAlt": "CRETA N Line - Quem compara, compra Hyundai",
-                "link": "https://www.hyundai.com.br/ofertas.html"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/new-home/mkv/ioniq-5/1920X800_MKV_Converao_IONIQ5_Signature_janeiro.webp",
-                "imageAlt": "Hyundai IONIQ 5 - Redefina a experiência de dirigir um 100% elétrico",
-                "link": "https://www.hyundai.com.br/ofertas/oferta.html?codigo=576D2B9F&formulario=cotacao"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/promo-2026/desktop_2598x738.webp",
-                "imageAlt": "Hyundai PALISADE - A primeira classe dos SUVs",
-                "title": "Hyundai PALISADE",
-                "text": "A primeira classe dos SUVs",
-                "cta": {"text": "Saiba mais", "url": "https://www.hyundai.com.br/veiculos/palisade.html"},
-                "link": "https://www.hyundai.com.br/veiculos/palisade.html"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "sectionId": "section-2-kona-video",
-      "sectionStyle": null,
+      "sectionMetadata": false,
+      "sectionMetadataReason": "Hero block has its own dark background image design - no section-metadata needed",
       "sequences": [
         {
           "decision": "block",
           "blockName": "hero-product",
-          "blockVariant": "hero-product",
-          "rationale": "Full-width hero section showcasing the Kona Hybrid with background imagery and CTA button. Maps to Hero block.",
+          "rationale": "Structured hero component with vehicle logo, model name, tagline, CTA button, large car image, scroll indicator, and brand logos. Requires specific layout and cannot be typed as default content.",
           "content": {
-            "image": "https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/360/ecotronic_gray_pearl/KONA_HEV-Ecotronic_Gray_Pearl-32.webp",
-            "imageAlt": "Kona Híbrido",
-            "cta": {"text": "Conheça", "url": "https://www.hyundai.com.br/veiculos/kona-hibrido.html"}
+            "vehicleLogo": "./images/d90e0abea24fe65fe5a8ecc8bda63e17.png",
+            "vehicleName": "Novo CRETA",
+            "title": "Sinta o Efeito CRETA",
+            "subtitle": "N° 1 em vendas no varejo de 2025",
+            "cta": "SOLICITE COTAÇÃO",
+            "heroImage": "./images/604739a25209a187776d024da03fee06.png",
+            "heroImageAlt": "Hyundai Creta 2025 cinza estacionado em cenário urbano ao lado de uma mulher, destacando os prêmios nacionais de melhor SUV.",
+            "logos": [
+              {"src": "./images/217f8605bae2976284402a01227fffbb.png", "alt": "Logo Hyundai Bluelink"},
+              {"src": "./images/4fd4f6682b4d1c8848c990b69aed9ad2.png", "alt": "Logo garantia Hyundai"}
+            ]
           }
         }
       ]
     },
     {
-      "sectionId": "section-3-vehicle-showroom",
+      "sectionId": "section-2-design",
+      "sectionStyle": null,
+      "sectionMetadata": false,
+      "sequences": [
+        {
+          "decision": "block",
+          "blockName": "tabs-design",
+          "rationale": "Design section with tabbed navigation switching between Exterior and Interior views. Each tab has a heading, subtitle, description, and image carousel. Tabs block is the obvious match for switchable content panels.",
+          "content": {
+            "sectionTitle": "Design",
+            "subtitle": "Presença marcante e acabamento premium",
+            "description": "Rodas exclusivas, spoiler traseiro e novo conjunto ótico se unem em um visual requintado, elevando seus padrões de sofisticação.",
+            "tabs": [
+              {
+                "label": "Design Externo",
+                "content": "Image carousel with exterior details: wheels, headlights, taillights, grille"
+              },
+              {
+                "label": "Design Interno",
+                "content": "Image carousel with interior details: dashboard, seats, console"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionId": "section-3-performance-safety",
+      "sectionStyle": null,
+      "sectionMetadata": false,
+      "sequences": [
+        {
+          "decision": "default",
+          "blockName": null,
+          "rationale": "Section heading, decorative icon, subtitle, and description paragraph can be typed as default content by an author.",
+          "content": {
+            "title": "Desempenho e Segurança",
+            "subtitle": "Potência e proteção a cada quilômetro",
+            "description": "O Novo CRETA une potência, segurança e tecnologia avançada para tornar cada viagem uma experiência inesquecível."
+          }
+        },
+        {
+          "decision": "block",
+          "blockName": "cards-feature",
+          "rationale": "Color swatch selector showing 6 vehicle color options with corresponding vehicle image. Structured repeating pattern of color items.",
+          "content": {
+            "colors": ["Branco Atlas", "Cinza Shadow", "Prata Sand", "Preto Onyx", "Vermelho Ruby", "Azul Sapphire"]
+          }
+        },
+        {
+          "decision": "block",
+          "blockName": "carousel-gallery",
+          "rationale": "Performance features displayed as an image carousel with thumbnails - engine, transmission, driving modes. Interactive rotating content.",
+          "content": {
+            "subsectionTitle": "Desempenho",
+            "features": ["Motor Turbo", "Transmissão", "Modos de direção"]
+          }
+        },
+        {
+          "decision": "block",
+          "blockName": "carousel-gallery",
+          "rationale": "Safety/Smartsense features displayed as an image carousel with thumbnails showing ADAS features. Interactive rotating content.",
+          "content": {
+            "subsectionTitle": "Segurança",
+            "features": ["Forward Collision Avoidance", "Blind Spot Detection", "Lane Keep Assist", "Rear Cross Traffic Alert", "Driver Attention Warning"]
+          }
+        }
+      ]
+    },
+    {
+      "sectionId": "section-4-trunk-space",
       "sectionStyle": "dark",
+      "sectionMetadata": true,
+      "sectionMetadataReason": "Columns block doesn't have intrinsic background - section-metadata provides dark container styling",
       "sequences": [
         {
-          "decision": "default-content",
-          "rationale": "Section heading for the vehicle showroom area.",
+          "decision": "block",
+          "blockName": "columns-media",
+          "rationale": "Side-by-side layout with text content on one side and video on the other. Columns block is the obvious match for this layout.",
           "content": {
-            "heading": "Confira os carros da Hyundai",
-            "level": "h2"
+            "title": "Um espaço que se adapta a você.",
+            "description": "Viagem, trabalho ou família? O porta-malas versátil de 422 litros pode chegar a até 1.401 litros. Com os bancos traseiros rebatidos, tem espaço de sobra para carregar toda a sua rotina.",
+            "cta": "SOLICITE COTAÇÃO",
+            "video": "https://www.hyundai.com.br/content/dam/hmb/product-page/novo-hyundai-creta/portamalas/creta_porta-malas_opt.mp4"
+          }
+        }
+      ]
+    },
+    {
+      "sectionId": "section-5-technology",
+      "sectionStyle": null,
+      "sectionMetadata": false,
+      "sequences": [
+        {
+          "decision": "default",
+          "blockName": null,
+          "rationale": "Section heading, subtitle, and description paragraph can be typed as default content.",
+          "content": {
+            "title": "Tecnologia e Conectividade",
+            "subtitle": "Inovação por onde você olhar",
+            "description": "O Novo CRETA é preparado para te conectar com o futuro. Com recursos de ponta, cada viagem se transforma em uma experiência única."
           }
         },
         {
           "decision": "block",
-          "blockName": "cards-vehicle",
-          "blockVariant": "cards-vehicle",
-          "rationale": "Vehicle lineup displayed as browsable cards. Each vehicle shows image, model name, version, and price. The interactive showroom is simplified to a card grid for EDS authoring.",
+          "blockName": "accordion-tech",
+          "rationale": "Expandable feature list with image panel. Each accordion item reveals tech feature description and updates the accompanying image. Accordion block is the obvious match.",
           "content": {
-            "cards": [
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/7-8/ultimate/kona-ultimate-7_8-atlas_white.webp",
-                "imageAlt": "KONA Híbrido",
-                "title": "KONA Híbrido",
-                "text": "A partir de R$ 215.590,00",
-                "cta": {"text": "Conheça", "url": "https://www.hyundai.com.br/veiculos/novo-kona-hibrido.html"}
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2025-2026/comfort/7-8/creta_comfort_7-8_branco-atlas.webp",
-                "imageAlt": "Novo CRETA",
-                "title": "Novo CRETA",
-                "text": "Conheça o SUV que é referência",
-                "cta": {"text": "Conheça", "url": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html"}
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/creta-n-line/2026/7-8/CRETA-N-LINE_7-8_PRETO-ONIX.webp",
-                "imageAlt": "CRETA N Line",
-                "title": "CRETA N Line",
-                "text": "Performance e estilo N Line",
-                "cta": {"text": "Conheça", "url": "https://www.hyundai.com.br/veiculos/creta-n-line.html"}
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2025-2026/comfort-1-0-mt/7-8/HB20-comfort-1.0MT_Branco.webp",
-                "imageAlt": "HB20",
-                "title": "HB20",
-                "text": "O hatch mais querido do Brasil",
-                "cta": {"text": "Conheça", "url": "https://www.hyundai.com.br/veiculos/hb20.html"}
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2025-2026/comfort-mt/7-8/HB20S-comfort-mt_Preto.webp",
-                "imageAlt": "HB20S",
-                "title": "HB20S",
-                "text": "Sedan compacto com design marcante",
-                "cta": {"text": "Conheça", "url": "https://www.hyundai.com.br/veiculos/hb20s.html"}
-              }
+            "items": [
+              {"title": "Painel de instrumentos digital e colorido", "description": "Com 10.25\", informações interativas e em tempo real sobre o carro.", "image": "./images/d9c763dc118869cca7d7a8364fce6102.png"},
+              {"title": "Carregamento sem fio", "description": "Carregue seu smartphone sem fio."},
+              {"title": "Tela conectada", "description": "Tela multimídia conectada."},
+              {"title": "Volante multifuncional", "description": "Controle tudo na ponta dos dedos."}
             ]
           }
         }
       ]
     },
     {
-      "sectionId": "section-4-mosaic",
+      "sectionId": "section-6-comfort",
       "sectionStyle": null,
+      "sectionMetadata": false,
       "sequences": [
         {
-          "decision": "block",
-          "blockName": "cards-promo",
-          "blockVariant": "cards-promo",
-          "rationale": "Mosaic grid of promotional image cards. Each links to a product or offer page. Maps to Cards block with linked images.",
+          "decision": "default",
+          "blockName": null,
+          "rationale": "Section heading, subtitle, and description paragraph can be typed as default content.",
           "content": {
-            "cards": [
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/hmb-react/puzzles/card-home-oferta-creta.webp",
-                "imageAlt": "Oferta Novo CRETA Comfort Safety Automático 25/26",
-                "title": "Oferta Novo CRETA",
-                "text": "Comfort Safety Automático 25/26",
-                "link": "https://www.hyundai.com.br/ofertas/oferta.html?codigo=02AE507F&formulario=cotacao"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/hmb-react/puzzles/618x1278_CARD_HOME_CONVERSAO_KONA_v3.webp",
-                "imageAlt": "Oferta KONA Híbrido Ultimate",
-                "title": "Oferta KONA Híbrido",
-                "text": "Bônus de até R$ 20.000 com seu Hyundai na troca",
-                "link": "https://www.hyundai.com.br/ofertas/oferta.html?codigo=4D76109A&formulario=cotacao"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/hmb-react/puzzles/mosaico_squad_ioniq.webp",
-                "imageAlt": "Hyundai IONIQ 5",
-                "title": "IONIQ 5",
-                "text": "O futuro é elétrico",
-                "link": "https://www.hyundai.com.br/veiculos/ioniq-5.html"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/hmb-react/puzzles/mosaico_vert_creta.webp",
-                "imageAlt": "Novo Hyundai CRETA",
-                "title": "Novo CRETA",
-                "text": "Descubra o novo CRETA",
-                "link": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/hmb-react/puzzles/mosaico_half_hyundainow.webp",
-                "imageAlt": "Hyundai Now",
-                "title": "Hyundai Now",
-                "text": "Seminovos Hyundai com qualidade garantida",
-                "link": "https://www.hyundai.com.br/hyundai-now.html"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "sectionId": "section-5-offers",
-      "sectionStyle": null,
-      "sequences": [
-        {
-          "decision": "default-content",
-          "rationale": "Section heading and subtitle for offers area",
-          "content": {
-            "heading": "Ofertas",
-            "level": "h2",
-            "subtext": "Garanta já seu novo Hyundai 0 km."
+            "title": "Conforto e conveniência",
+            "subtitle": "Pronto para facilitar sua rotina",
+            "description": "Seja em viagens ou no dia a dia, o Novo CRETA foi pensado para oferecer uma experiência única, com recursos que facilitam a sua vida."
           }
         },
         {
           "decision": "block",
-          "blockName": "cards-offer",
-          "blockVariant": "cards-offer",
-          "rationale": "Offer cards showing vehicle promotions with pricing, highlights, and CTAs. Simplified from the interactive offer slider to authorable card format.",
+          "blockName": "cards-gallery",
+          "rationale": "Grid of feature images with hover-reveal titles. Repeating structured pattern of image + title items. Cards block is the obvious match for this grid layout.",
           "content": {
-            "cards": [
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/kona/2025-2026/7-8/ultimate/kona-ultimate-7_8-gray_pearl.webp",
-                "imageAlt": "KONA Híbrido Ultimate",
-                "title": "KONA Híbrido Ultimate AT 25/26",
-                "text": "Bônus de até R$ 20.000 com seu Hyundai na troca\n\n- Pacote ADAS completo de segurança\n- Serviço de carro conectado Bluelink\n- Multimídia com conexão sem fio",
-                "link": "https://www.hyundai.com.br/ofertas/oferta.html?codigo=4D76109A&formulario=cotacao"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/creta/2025-2026/comfort/7-8/creta_comfort_7-8_prata-brisk.webp",
-                "imageAlt": "Novo CRETA Comfort Safety",
-                "title": "Novo CRETA Comfort Safety AT 25/26",
-                "text": "Por R$ 139.990 à vista + Taxa Zero\n\n- Serviço de carro conectado Bluelink\n- Central Multimídia com conexão sem fio\n- Seis airbags",
-                "link": "https://www.hyundai.com.br/ofertas/oferta.html?codigo=02AE507F&formulario=cotacao"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20/2025-2026/comfort-pack-1-0-mt/7-8/HB20-7-8-dianteira-passageiro-comfort-pack-1.0-mt-azul-saphire.webp",
-                "imageAlt": "HB20 Comfort Pack",
-                "title": "HB20 Comfort Pack 1.0 MT 25/26",
-                "text": "Parcelas a partir de R$ 1.190\n\n- Chave presencial Smart Key\n- Painel de instrumentos digital\n- Serviço de carro conectado Bluelink",
-                "link": "https://www.hyundai.com.br/ofertas/oferta.html?codigo=2C9FA72A&formulario=cotacao"
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/cars/hb20s/2025-2026/comfort-mt/7-8/HB20S-comfort-mt_Preto.webp",
-                "imageAlt": "HB20S Comfort",
-                "title": "HB20S Comfort MT 25/26",
-                "text": "Confira as condições especiais\n\n- Camera de ré\n- Serviço de carro conectado Bluelink\n- Seis airbags",
-                "link": "https://www.hyundai.com.br/ofertas/oferta.html"
-              }
+            "items": [
+              {"image": "./images/966d60d86b2f80c5e1df2ac0f569b93e.png", "title": "Acabamento em cromo acetinado"},
+              {"image": "./images/ab965990575be4587a54cecd29cbc2ac.png", "title": "Antena tipo Barbatana"},
+              {"image": "./images/86c87c28b9e8a19cba4b10cb04372dd3.png", "title": "Câmera para monitoramento"},
+              {"image": "./images/40a56505975e04aaf806a72faa50f6b7.png", "title": "Vidros elétricos com antiesmagamento"},
+              {"image": "./images/d8b65b8acabd25bbbf3702fc0b707363.png", "title": "Porta-copos traseiro retrátil"},
+              {"image": "./images/9e74fa616987cf9eb7ee0d695d7f9be8.png", "title": "Rede organizadora"}
             ]
           }
         }
       ]
     },
     {
-      "sectionId": "section-6-cta-offers",
+      "sectionId": "section-7-accessories",
       "sectionStyle": null,
+      "sectionMetadata": false,
       "sequences": [
         {
-          "decision": "block",
-          "blockName": "columns-cta",
-          "blockVariant": "columns-cta",
-          "rationale": "CTA section with icon image and text side by side. Maps to Columns block with 2 columns.",
+          "decision": "default",
+          "blockName": null,
+          "rationale": "Section heading, subtitle, and description paragraph can be typed as default content.",
           "content": {
-            "columns": [
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/new-home/icons/ofertas.avif",
-                "imageAlt": "Toda linha Hyundai Ofertas"
-              },
-              {
-                "title": "A condição que você esperava para garantir o seu Hyundai 0km.",
-                "text": "Conheça nossa página de ofertas.",
-                "cta": {"text": "Clique e confira", "url": "https://www.hyundai.com.br/ofertas.html"}
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "sectionId": "section-7-services-hub",
-      "sectionStyle": null,
-      "sequences": [
-        {
-          "decision": "default-content",
-          "rationale": "Section heading for services area",
-          "content": {
-            "heading": "Proprietários",
-            "level": "h2",
-            "subtext": "Serviços"
+            "title": "Acessórios",
+            "subtitle": "Pensados para todos os momentos da sua vida",
+            "description": "Tecnologia e conveniência para viagens ainda mais completas, com praticidade, conforto e segurança em cada detalhe."
           }
         },
         {
           "decision": "block",
-          "blockName": "columns-service",
-          "blockVariant": "columns-service",
-          "rationale": "Services hub with links on one side and a banner image on the other. Maps to Columns block.",
+          "blockName": "cards-gallery",
+          "rationale": "Grid of accessory images with hover-reveal titles. Same repeating structured pattern as comfort section. Cards block is the obvious match.",
           "content": {
-            "columns": [
-              {
-                "links": [
-                  {"text": "Recall", "url": "https://www.hyundai.com.br/proprietarios.html?anchor=anchor_recall_owners"},
-                  {"text": "Revisão programada", "url": "https://www.hyundai.com.br/manutencao.html#Revisoes_Programadas"},
-                  {"text": "Garantia", "url": "https://www.hyundai.com.br/proprietarios.html?anchor=Garantia"},
-                  {"text": "Manuais", "url": "https://www.hyundai.com.br/proprietarios.html?anchor=Manuais"},
-                  {"text": "Bluelink", "url": "https://www.hyundai.com.br/bluelink.html"},
-                  {"text": "Agendamento de serviços", "url": "https://www.hyundai.com.br/servicos.html#Agendamento_de_servicos"}
-                ]
-              },
-              {
-                "image": "https://www.hyundai.com.br/content/dam/hmb/new-home/hub-links/scheduling_services_banner_v2.webp",
-                "imageAlt": "Agendamento de Serviços Hyundai"
-              }
+            "items": [
+              {"image": "./images/8b4aff57542ae71c94a7cf8b32d7faa5.png", "title": "Travas antifurto das rodas"},
+              {"image": "./images/8944abdf2681df4ab6afbb08ab562d09.png", "title": "Peitoral para pet"},
+              {"image": "./images/9125db10b61ef6153d8daeeffc7373e0.png", "title": "Tapete de carpete"},
+              {"image": "./images/4c08ee2bfdc46ec5b914782b0eb90310.png", "title": "Iluminação do assoalho"},
+              {"image": "./images/9e74fa616987cf9eb7ee0d695d7f9be8.png", "title": "Rede organizadora"}
             ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionId": "section-8-parallax",
+      "sectionStyle": null,
+      "sectionMetadata": false,
+      "sectionMetadataReason": "Full-bleed image carousel - no section container styling needed",
+      "sequences": [
+        {
+          "decision": "block",
+          "blockName": "carousel-lifestyle",
+          "rationale": "Full-width image slider with 2 lifestyle photos and pagination dots. Carousel block is the obvious match for rotating images.",
+          "content": {
+            "slides": [
+              {"image": "./images/6eb2e82cab9a9693a9383bce0b897c40.png", "alt": "Novo CRETA estaciona na garagem de uma casa com uma familia ao lado"},
+              {"image": "./images/fdcedcd3574bc801e4a58ee40eff2ebd.png", "alt": "Novo CRETA estácionado na rua em frente a um prédio com pessoas ao redor"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "sectionId": "section-9-cta",
+      "sectionStyle": "dark",
+      "sectionMetadata": true,
+      "sectionMetadataReason": "CTA button needs dark section background for visual prominence",
+      "sequences": [
+        {
+          "decision": "default",
+          "blockName": null,
+          "rationale": "Single centered CTA button can be authored as a simple link styled as a button. Default content.",
+          "content": {
+            "cta": "SOLICITE COTAÇÃO",
+            "link": "https://www.hyundai.com.br/monte-o-seu.html"
+          }
+        }
+      ]
+    },
+    {
+      "sectionId": "section-10-comparator",
+      "sectionStyle": null,
+      "sectionMetadata": false,
+      "sequences": [
+        {
+          "decision": "default",
+          "blockName": null,
+          "rationale": "Section heading, subtitle, and description paragraph can be typed as default content.",
+          "content": {
+            "title": "Compare as versões",
+            "subtitle": "Seu Novo CRETA do seu jeito",
+            "description": "Veja os detalhes de design, tecnologia e desempenho das versões do carro e escolha a sua."
+          }
+        },
+        {
+          "decision": "block",
+          "blockName": "columns-compare",
+          "rationale": "Vehicle version comparator with two side-by-side selectors showing vehicle silhouettes, version dropdowns, and detailed specs comparison table. Columns block provides the side-by-side layout.",
+          "content": {
+            "versions": ["Comfort", "Limited", "Ultimate"],
+            "specCategories": ["Motor", "Transmissão", "Dimensões", "Equipamentos"]
           }
         }
       ]
     }
   ],
-  "metadata": {
-    "title": "Hyundai Motor Brasil",
-    "description": "Adquira um Hyundai 0km! Confira os carros das categorias SUV, hatchback, sedan e utilitário. Fique por dentro das novidades sobre o futuro da eletrificação.",
-    "robots": "index,follow"
+  "blockStructures": {
+    "hero": "1 row: 1 column [image, heading, paragraph(s)]",
+    "tabs": "N rows: 2 columns each [tab-label | tab-content]",
+    "cards": "N rows: 2 columns each [image | heading, paragraph(s)]",
+    "carousel": "N rows: 1-2 columns [image | optional heading, paragraph(s)]",
+    "accordion": "N rows: 2 columns each [question | answer]",
+    "columns": "1-N rows: 2-3 columns each [content | content]"
+  },
+  "summary": {
+    "totalSections": 10,
+    "defaultContentSequences": 5,
+    "blockSequences": 10,
+    "blocksUsed": ["hero-product", "tabs-design", "cards-feature", "cards-gallery", "carousel-gallery", "carousel-lifestyle", "columns-media", "columns-compare", "accordion-tech"],
+    "sectionsWithMetadata": ["section-4-trunk-space", "section-9-cta"]
   }
 }

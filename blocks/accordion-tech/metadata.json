@@ -1,0 +1,31 @@
+{
+  "variantName": "accordion-tech",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-04-07T20:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html",
+    "originPage": "Hyundai Novo Creta Vehicle Detail Page",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "tech-features",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "feature title | feature description + image per accordion item",
+    "buttonCount": 0,
+    "imageCount": 4
+  },
+  "reuseGuidance": {
+    "suitableFor": ["technology feature lists", "product spec accordions", "feature detail sections"],
+    "notSuitableFor": ["FAQ sections", "simple Q&A"]
+  },
+  "usage": {
+    "pagesUsing": ["/veiculos/novo-hyundai-creta"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-07T20:20:00.000Z"
+  }
+}

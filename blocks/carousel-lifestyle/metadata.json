@@ -1,0 +1,31 @@
+{
+  "variantName": "carousel-lifestyle",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-04-07T20:20:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html",
+    "originPage": "Hyundai Novo Creta Vehicle Detail Page",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "lifestyle-gallery",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "full-width image per slide with pagination",
+    "buttonCount": 0,
+    "imageCount": 2
+  },
+  "reuseGuidance": {
+    "suitableFor": ["lifestyle image galleries", "parallax sections", "full-width image sliders"],
+    "notSuitableFor": ["feature carousels with text", "promotional banners"]
+  },
+  "usage": {
+    "pagesUsing": ["/veiculos/novo-hyundai-creta"],
+    "reuseCount": 1,
+    "lastUsed": "2026-04-07T20:20:00.000Z"
+  }
+}

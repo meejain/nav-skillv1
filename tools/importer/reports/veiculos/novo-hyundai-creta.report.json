@@ -1,0 +1,26 @@
+{
+  "status": "success",
+  "url": "https://www.hyundai.com.br/veiculos/novo-hyundai-creta.html",
+  "path": "veiculos/novo-hyundai-creta",
+  "timestamp": "2026-04-07T20:42:56.292Z",
+  "title": "Novo CRETA | Um SUV tão poderoso quanto você",
+  "template": "vehicle-detail-page",
+  "blocks": [
+    "hero-product",
+    "tabs-design",
+    "cards-feature",
+    "cards-feature",
+    "carousel-gallery",
+    "carousel-gallery",
+    "columns-media",
+    "accordion-tech",
+    "cards-gallery",
+    "cards-gallery",
+    "cards-gallery",
+    "cards-gallery",
+    "cards-gallery",
+    "cards-gallery",
+    "carousel-lifestyle",
+    "columns-compare"
+  ]
+}

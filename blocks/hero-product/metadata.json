@@ -24,8 +24,8 @@
     "notSuitableFor": ["text-heavy blog pages", "FAQ pages"]
   },
   "usage": {
-    "pagesUsing": ["content/index"],
-    "reuseCount": 1,
-    "lastUsed": "2026-02-21T11:23:00.000Z"
+    "pagesUsing": ["content/index", "/veiculos/novo-hyundai-creta"],
+    "reuseCount": 2,
+    "lastUsed": "2026-04-07T20:20:00.000Z"
   }
 }
