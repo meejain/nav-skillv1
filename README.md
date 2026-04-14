@@ -2,6 +2,8 @@
 
 Node tool that loads one or more URLs, extracts third-party references from HTML, runs **Playwright** (headless Chromium) to capture network requests after optional consent clicks, and writes JSON + Markdown under `site-urls/`.
 
+**Full behavior (for humans or AI agents):** [docs/BACKEND_LINKAGES_AI_AGENT.md](docs/BACKEND_LINKAGES_AI_AGENT.md)
+
 ## Setup
 
 ```bash
