@@ -1,34 +1,39 @@
-# Your Project's Title...
-Your project's description...
+# Backend linkages scanner
 
-## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+Node tool that loads one or more URLs, extracts third-party references from HTML, runs **Playwright** (headless Chromium) to capture network requests after optional consent clicks, and writes JSON + Markdown under `site-urls/`.
 
-## Documentation
+## Setup
 
-Before using the aem-boilerplate, we recommand you to go through the documentation on https://www.aem.live/docs/ and more specifically:
-1. [Developer Tutorial](https://www.aem.live/developer/tutorial)
-2. [The Anatomy of a Project](https://www.aem.live/developer/anatomy-of-a-project)
-3. [Web Performance](https://www.aem.live/developer/keeping-it-100)
-4. [Markup, Sections, Blocks, and Auto Blocking](https://www.aem.live/developer/markup-sections-blocks)
-
-## Installation
-
-```sh
-npm i
+```bash
+npm install
+npx playwright install chromium
 ```
 
-## Linting
+## Usage
 
-```sh
-npm run lint
+```bash
+npm run scan -- --url "https://example.com/page"
 ```
 
-## Local development
+Optional flags (see `tools/backend-linkages/scan.mjs` header):
 
-1. Create a new repository based on the `aem-boilerplate` template
-1. Add the [AEM Code Sync GitHub App](https://github.com/apps/aem-code-sync) to the repository
-1. Install the [AEM CLI](https://github.com/adobe/helix-cli): `npm install -g @adobe/aem-cli`
-1. Start AEM Proxy: `aem up` (opens your browser at `http://localhost:3000`)
-1. Open the `{repo}` directory in your favorite IDE and start coding :)
+- `--out site-urls/my-run` — default is `site-urls/<slug-from-url>/`
+- `--first-party-host hostname` — treat extra hosts as first-party
+- `--skip-fetch` / `--skip-playwright` — run only one phase
+- `--reference-only --out <dir>` — regenerate MD from existing `backend-linkages-post-hcp-report.json`
+
+## Outputs
+
+Typical bundle:
+
+- `backend-linkages-report.json` / `.md` — static fetch
+- `backend-linkages-post-hcp-report.json` / `.md` — Playwright + network
+- `third-party-hosts-inventory.md` — all third-party hostnames
+- `third-party-integrations-reference.md`, `integrations-vendors-and-proof.md`
+- `urls-all.json`
+
+Playwright must run outside overly restrictive sandboxes if the browser fails to launch.
+
+## License
+
+See [LICENSE](LICENSE) (Apache 2.0, inherited from upstream template).

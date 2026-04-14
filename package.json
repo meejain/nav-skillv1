@@ -1,40 +1,14 @@
 {
-  "name": "@adobe/aem-boilerplate",
+  "name": "backend-linkages-scanner",
   "private": true,
-  "version": "1.3.0",
-  "description": "Starter project for Adobe Helix",
+  "version": "1.0.0",
+  "description": "Detect third-party and AEM /bin linkages for any URL (fetch + Playwright)",
+  "type": "module",
   "scripts": {
-    "lint:js": "eslint .",
-    "lint:css": "stylelint \"blocks/**/*.css\" \"styles/*.css\"",
-    "lint": "npm run lint:js && npm run lint:css",
-    "lint:fix": "npm run lint:js -- --fix && npm run lint:css -- --fix",
-    "scan:az-jp-post-hcp": "node \"./AZ-JP-Backend Details/scan-post-hcp.mjs\"",
-    "scan:az-jp-reference-only": "node \"./AZ-JP-Backend Details/scan-post-hcp.mjs\" --reference-only",
-    "scan:az-jp-integrations-md": "node \"./AZ-JP-Backend Details/build-integrations-clear-report.mjs\"",
-    "scan:az-it-html": "node \"./AZ-IT-Backend Details/scan-backend-linkages.mjs\"",
-    "scan:az-it-html-grouped": "node \"./AZ-IT-Backend Details/scan-backend-linkages.mjs\" --grouped",
-    "scan:az-it-post-hcp": "node \"./AZ-IT-Backend Details/scan-post-hcp.mjs\"",
-    "scan:az-it-post-hcp-grouped": "node \"./AZ-IT-Backend Details/scan-post-hcp.mjs\" --grouped",
-    "scan:az-it-reference-only": "node \"./AZ-IT-Backend Details/scan-post-hcp.mjs\" --reference-only",
-    "scan:az-it-integrations-md": "node \"./AZ-IT-Backend Details/build-integrations-clear-report.mjs\""
+    "scan": "node \"./tools/backend-linkages/scan.mjs\"",
+    "scan:linkages": "node \"./tools/backend-linkages/scan.mjs\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adobe/aem-boilerplate.git"
-  },
-  "author": "Adobe",
-  "license": "Apache License 2.0",
-  "bugs": {
-    "url": "https://github.com/adobe/aem-boilerplate/issues"
-  },
-  "homepage": "https://github.com/adobe/aem-boilerplate#readme",
   "devDependencies": {
-    "playwright": "1.49.1",
-    "@babel/eslint-parser": "7.28.6",
-    "eslint": "8.57.1",
-    "eslint-config-airbnb-base": "15.0.0",
-    "eslint-plugin-import": "2.32.0",
-    "stylelint": "17.3.0",
-    "stylelint-config-standard": "40.0.0"
+    "playwright": "1.49.1"
   }
 }

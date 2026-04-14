@@ -1,19 +1,8 @@
-.hlx/*
-coverage/*
-logs/*
-node_modules/*
-
-helix-importer-ui
+node_modules/
 .DS_Store
 *.bak
 .idea
 
-# Ensure these files are tracked
-!CLAUDE.md
-!AGENTS.md
-
-# Navigation validation infrastructure (auto-added by nav orchestrator hook)
-migration-work/navigation-validation/
-
-# Footer validation infrastructure (auto-added by footer orchestrator hook)
-migration-work/footer-validation/
+# Scan output (keep directory via .gitkeep)
+site-urls/*
+!site-urls/.gitkeep
